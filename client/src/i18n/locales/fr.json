@@ -124,5 +124,71 @@
     "de": "Allemand",
     "en": "Anglais",
     "fr": "Français"
+  },
+  "legal": {
+    "imprint": {
+      "title": "Mentions légales",
+      "info": "Informations selon § 5 TMG",
+      "contact": "Contact",
+      "responsible": "Responsable du contenu",
+      "register": "Inscription au registre du commerce",
+      "register_text": "Inscrit au registre du commerce du canton de Zurich",
+      "register_number": "Numéro de registre du commerce",
+      "vat": "Numéro d'identification TVA",
+      "vat_text": "Numéro d'identification TVA selon § 27a de la loi sur la TVA",
+      "disclaimer": "Clause de non-responsabilité",
+      "content_liability": "Responsabilité pour le contenu",
+      "content_text": "Le contenu de notre site a été créé avec le plus grand soin. Cependant, nous ne pouvons garantir l'exactitude, l'exhaustivité et l'actualité du contenu. En tant que fournisseur de services, nous sommes responsables de notre propre contenu sur ces pages selon les lois générales. Cependant, nous ne sommes pas obligés de surveiller les informations transmises ou stockées par des tiers ou de rechercher des circonstances qui indiquent une activité illégale.",
+      "link_liability": "Responsabilité pour les liens",
+      "link_text": "Notre offre contient des liens vers des sites web externes de tiers, sur le contenu desquels nous n'avons aucune influence. Par conséquent, nous ne pouvons assumer aucune garantie pour ces contenus externes. Le fournisseur ou l'opérateur respectif des pages est toujours responsable du contenu des pages liées. Les pages liées ont été vérifiées pour d'éventuelles violations de la loi au moment de la création du lien. Aucun contenu illégal n'était reconnaissable au moment de la création du lien.",
+      "copyright": "Droits d'auteur",
+      "copyright_text": "Le contenu et les œuvres créés par les opérateurs du site sur ces pages sont soumis au droit d'auteur suisse. La duplication, le traitement, la distribution et toute forme d'utilisation en dehors des limites du droit d'auteur nécessitent le consentement écrit de l'auteur ou du créateur respectif. Les téléchargements et les copies de cette page ne sont autorisés que pour un usage privé et non commercial."
+    },
+    "privacy": {
+      "title": "Politique de confidentialité",
+      "intro": "Cette politique de confidentialité vous informe sur le type, la portée et l'objectif du traitement des données personnelles dans le cadre de notre offre en ligne et des sites web, fonctions et contenus associés. La politique de confidentialité s'applique indépendamment des domaines, systèmes, plateformes et appareils utilisés pour exécuter l'offre en ligne.",
+      "responsible": "Responsable",
+      "data_types": "Types de données traitées",
+      "data_types_list": {
+        "inventory": "Données d'inventaire (par ex., noms, adresses)",
+        "contact": "Données de contact (par ex., e-mail, numéros de téléphone)",
+        "content": "Données de contenu (par ex., saisies de texte, photographies, vidéos)",
+        "usage": "Données d'utilisation (par ex., sites web visités, intérêt pour le contenu, temps d'accès)",
+        "meta": "Données méta/communication (par ex., informations sur l'appareil, adresses IP)"
+      },
+      "categories": "Catégories de personnes concernées",
+      "categories_text": "Visiteurs et utilisateurs de l'offre en ligne (ci-après, nous désignons collectivement les personnes concernées comme utilisateurs).",
+      "processing_purpose": "Objectif du traitement",
+      "purpose_list": {
+        "provision": "Mise à disposition de l'offre en ligne, de ses fonctions et contenus",
+        "contact": "Réponse aux demandes de contact et communication avec les utilisateurs",
+        "security": "Mesures de sécurité",
+        "reach": "Mesure d'audience/Marketing"
+      },
+      "terminology": "Terminologie utilisée",
+      "personal_data": "Les données personnelles sont toutes les informations qui se rapportent à une personne.",
+      "processing": "Le traitement est tout processus effectué avec des données personnelles.",
+      "pseudonymization": "La pseudonymisation est le traitement des données personnelles de manière à ce que les données ne puissent plus être attribuées sans informations supplémentaires.",
+      "profiling": "Le profilage est tout traitement automatisé de données personnelles pour évaluer certains aspects personnels."
+    },
+    "terms": {
+      "title": "Conditions générales",
+      "intro": "Les conditions générales suivantes (CGV) régissent la relation contractuelle entre l'utilisateur et Spitex JCare concernant l'accès, la navigation et toute forme d'utilisation du site web de Spitex JCare.",
+      "scope": "1. Champ d'application",
+      "scope_text": "Ces CGV s'appliquent à tous les services et offres proposés par Spitex JCare. En utilisant nos services, vous acceptez ces conditions. Veuillez les lire attentivement.",
+      "services": "2. Description des services",
+      "services_text": "Spitex JCare offre un soutien aux proches aidants à travers divers services, y compris des activités de conseil et de soutien dans le domaine des soins et de l'accompagnement des personnes nécessitant des soins.",
+      "contract": "3. Conclusion du contrat",
+      "contract_text": "Un contrat entre l'utilisateur et Spitex JCare est conclu par la commande expresse de l'utilisateur ou par l'utilisation des services de Spitex JCare.",
+      "prices": "4. Prix et conditions de paiement",
+      "prices_text": "Les prix de nos services sont convenus individuellement et dépendent de l'étendue des services respectifs. Les conditions de paiement sont déterminées au cas par cas et communiquées au client. Tous les prix sont en francs suisses (CHF) et incluent la TVA légale.",
+      "liability": "5. Responsabilité",
+      "liability_text": "Spitex JCare n'est responsable des dommages qu'en cas d'intention ou de négligence grave. Une responsabilité pour négligence légère n'existe qu'en cas de violation d'obligations contractuelles essentielles, sur l'exécution desquelles le client peut particulièrement compter. Dans ce cas, la responsabilité est limitée aux dommages prévisibles typiques.",
+      "data_protection": "6. Protection des données",
+      "data_protection_text": "La protection de vos données personnelles est une préoccupation importante pour nous. Nous adhérons strictement aux dispositions légales de la loi sur la protection des données lors de la collecte, du traitement et de l'utilisation des données personnelles. Vous trouverez les détails dans notre politique de confidentialité.",
+      "final": "7. Dispositions finales",
+      "final_text": "Le droit suisse s'applique à l'exclusion de la Convention des Nations Unies sur les contrats de vente internationale de marchandises. Le lieu d'exécution et la juridiction exclusive pour tous les litiges découlant de ce contrat est Zurich, Suisse.",
+      "final_text2": "Si des dispositions individuelles de ces CGV sont totalement ou partiellement invalides ou le deviennent, la validité des dispositions restantes n'en sera pas affectée."
+    }
   }
 }
