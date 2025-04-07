@@ -207,7 +207,7 @@ export function ContactForm() {
 
         <Button 
           type="submit" 
-          className="w-full py-3 px-4 text-lg font-medium rounded-lg bg-gradient-to-r from-[#FF9155] to-[#E23B3B] hover:shadow-lg text-white"
+          className="w-full py-3 px-4 text-lg font-medium rounded-full bg-gradient-to-r from-[#FF9155] to-[#E23B3B] hover:shadow-lg text-white"
           disabled={form.formState.isSubmitting}
         >
           {form.formState.isSubmitting ? "Wird gesendet..." : "Absenden"}

@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRightIcon, CalendarIcon, ClipboardIcon, PuzzleIcon, UsersIcon } from "lucide-react";
+import { BackgroundBubbles } from "@/components/ui/background-bubbles";
 
 type Step = {
   id: number;
@@ -44,8 +45,11 @@ export function SupportProcess() {
   };
 
   return (
-    <section id="support" className="bg-white py-16 md:py-24">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="support" className="bg-white py-16 md:py-24 relative overflow-hidden">
+      {/* Background bubbles */}
+      <BackgroundBubbles density="high" opacity="low" className="z-0" />
+      
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <h2 className="text-3xl font-bold text-center mb-12 bg-gradient-to-r from-[#FF9155] to-[#E23B3B] bg-clip-text text-transparent">
           So erhalten Sie Lohn und Unterstützung bei Spitex JCare
         </h2>

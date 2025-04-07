@@ -7,6 +7,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { BackgroundBubbles } from "@/components/ui/background-bubbles";
 
 type FAQ = {
   question: string;
@@ -45,8 +46,11 @@ export function FAQSection() {
   };
 
   return (
-    <section id="faq" className="bg-white py-16 md:py-24">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="faq" className="bg-white py-16 md:py-24 relative overflow-hidden">
+      {/* Background bubbles */}
+      <BackgroundBubbles density="medium" opacity="low" className="z-0" />
+      
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <h2 className="text-3xl font-bold text-center mb-12 bg-gradient-to-r from-[#FF9155] to-[#E23B3B] bg-clip-text text-transparent">
           Häufig gestellte Fragen
         </h2>
@@ -70,7 +74,7 @@ export function FAQSection() {
           <p className="text-lg text-gray-600 mb-6">Haben Sie weitere Fragen? Kontaktieren Sie uns für ein persönliches Gespräch.</p>
           <Button 
             onClick={scrollToContact}
-            className="bg-gradient-to-r from-[#FF9155] to-[#E23B3B] text-white hover:shadow-lg px-6 py-3 rounded-lg text-lg font-medium inline-flex items-center transition-all"
+            className="bg-gradient-to-r from-[#FF9155] to-[#E23B3B] text-white hover:shadow-lg px-6 py-3 rounded-full text-lg font-medium inline-flex items-center transition-all"
           >
             Zum Kontaktformular
             <ChevronRightIcon className="h-5 w-5 ml-2" />

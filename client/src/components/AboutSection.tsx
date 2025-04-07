@@ -1,20 +1,20 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRightIcon } from "lucide-react";
 import aboutImage from "@assets/aboutimg.png";
+import { BackgroundBubbles } from "@/components/ui/background-bubbles";
 
 export function AboutSection() {
-  const scrollToSupport = () => {
-    const supportSection = document.getElementById("support");
-    if (supportSection) {
-      supportSection.scrollIntoView({ behavior: "smooth" });
+  const scrollToContact = () => {
+    const contactSection = document.getElementById("contact");
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth" });
     }
   };
 
   return (
     <section id="about" className="bg-white py-16 md:py-24 relative overflow-hidden">
-      {/* Decorative circles for background */}
-      <div className="absolute bottom-0 left-0 w-48 h-48 rounded-full bg-[#FF9155] opacity-10 blur-xl"></div>
-      <div className="absolute top-20 right-20 w-64 h-64 rounded-full bg-[#E23B3B] opacity-10 blur-xl"></div>
+      {/* Background bubbles */}
+      <BackgroundBubbles density="medium" opacity="low" className="z-0" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -37,10 +37,10 @@ export function AboutSection() {
             </div>
             <div className="mt-8">
               <Button 
-                onClick={scrollToSupport}
-                className="bg-gradient-to-r from-[#FF9155] to-[#E23B3B] text-white hover:shadow-lg px-6 py-3 rounded-lg font-medium inline-flex items-center transition-all"
+                onClick={scrollToContact}
+                className="bg-gradient-to-r from-[#FF9155] to-[#E23B3B] text-white hover:shadow-lg px-6 py-3 rounded-full text-lg font-medium inline-flex items-center transition-all"
               >
-                Mehr erfahren
+                Kontaktieren Sie uns
                 <ArrowRightIcon className="h-5 w-5 ml-2" />
               </Button>
             </div>
