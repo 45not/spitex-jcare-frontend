@@ -19,9 +19,9 @@ export default function PrivacyPolicy() {
             </h1>
             
             <div className="prose prose-lg max-w-none">
-              <p>Diese Datenschutzerklärung klärt Sie über die Art, den Umfang und Zweck der Verarbeitung von personenbezogenen Daten innerhalb unseres Onlineangebotes und der mit ihm verbundenen Webseiten, Funktionen und Inhalte (nachfolgend gemeinsam bezeichnet als „Onlineangebot" oder „Website") auf. Die Datenschutzerklärung gilt unabhängig von den verwendeten Domains, Systemen, Plattformen und Geräten (z.B. Desktop oder Mobile) auf denen das Onlineangebot ausgeführt wird.</p>
+              <p>{t('legal.privacy.intro')}</p>
               
-              <h2>Verantwortlicher</h2>
+              <h2>{t('legal.privacy.responsible')}</h2>
               <p>Spitex JCare<br />
               Bahnhofstrasse 10<br />
               8001 Zürich<br />
@@ -29,34 +29,34 @@ export default function PrivacyPolicy() {
               E-Mail: info@spitex-jcare.ch<br />
               Telefon: +41 800 247 247</p>
               
-              <h2>Arten der verarbeiteten Daten</h2>
+              <h2>{t('legal.privacy.data_types')}</h2>
               <ul>
-                <li>Bestandsdaten (z.B., Namen, Adressen).</li>
-                <li>Kontaktdaten (z.B., E-Mail, Telefonnummern).</li>
-                <li>Inhaltsdaten (z.B., Texteingaben, Fotografien, Videos).</li>
-                <li>Nutzungsdaten (z.B., besuchte Webseiten, Interesse an Inhalten, Zugriffszeiten).</li>
-                <li>Meta-/Kommunikationsdaten (z.B., Geräte-Informationen, IP-Adressen).</li>
+                <li>{t('legal.privacy.data_types_list.inventory')}</li>
+                <li>{t('legal.privacy.data_types_list.contact')}</li>
+                <li>{t('legal.privacy.data_types_list.content')}</li>
+                <li>{t('legal.privacy.data_types_list.usage')}</li>
+                <li>{t('legal.privacy.data_types_list.meta')}</li>
               </ul>
               
-              <h2>Kategorien betroffener Personen</h2>
-              <p>Besucher und Nutzer des Onlineangebotes (Nachfolgend bezeichnen wir die betroffenen Personen zusammenfassend auch als „Nutzer").</p>
+              <h2>{t('legal.privacy.categories')}</h2>
+              <p>{t('legal.privacy.categories_text')}</p>
               
-              <h2>Zweck der Verarbeitung</h2>
+              <h2>{t('legal.privacy.processing_purpose')}</h2>
               <ul>
-                <li>Zurverfügungstellung des Onlineangebotes, seiner Funktionen und Inhalte.</li>
-                <li>Beantwortung von Kontaktanfragen und Kommunikation mit Nutzern.</li>
-                <li>Sicherheitsmaßnahmen.</li>
-                <li>Reichweitenmessung/Marketing</li>
+                <li>{t('legal.privacy.purpose_list.provision')}</li>
+                <li>{t('legal.privacy.purpose_list.contact')}</li>
+                <li>{t('legal.privacy.purpose_list.security')}</li>
+                <li>{t('legal.privacy.purpose_list.reach')}</li>
               </ul>
               
-              <h2>Verwendete Begrifflichkeiten</h2>
-              <p>„Personenbezogene Daten" sind alle Informationen, die sich auf eine identifizierte oder identifizierbare natürliche Person beziehen; als identifizierbar wird eine natürliche Person angesehen, die direkt oder indirekt, insbesondere mittels Zuordnung zu einer Kennung wie einem Namen, zu einer Kennnummer, zu Standortdaten, zu einer Online-Kennung oder zu einem oder mehreren besonderen Merkmalen identifiziert werden kann, die Ausdruck der physischen, physiologischen, genetischen, psychischen, wirtschaftlichen, kulturellen oder sozialen Identität dieser natürlichen Person sind.</p>
+              <h2>{t('legal.privacy.terminology')}</h2>
+              <p>{t('legal.privacy.personal_data')}</p>
               
-              <p>„Verarbeitung" ist jeder mit oder ohne Hilfe automatisierter Verfahren ausgeführter Vorgang oder jede solche Vorgangsreihe im Zusammenhang mit personenbezogenen Daten. Der Begriff reicht weit und umfasst praktisch jeden Umgang mit Daten.</p>
+              <p>{t('legal.privacy.processing')}</p>
               
-              <p>„Pseudonymisierung" die Verarbeitung personenbezogener Daten in einer Weise, dass die personenbezogenen Daten ohne Hinzuziehung zusätzlicher Informationen nicht mehr einer spezifischen betroffenen Person zugeordnet werden können, sofern diese zusätzlichen Informationen gesondert aufbewahrt werden und technischen und organisatorischen Maßnahmen unterliegen, die gewährleisten, dass die personenbezogenen Daten nicht einer identifizierten oder identifizierbaren natürlichen Person zugewiesen werden.</p>
+              <p>{t('legal.privacy.pseudonymization')}</p>
               
-              <p>„Profiling" jede Art der automatisierten Verarbeitung personenbezogener Daten, die darin besteht, dass diese personenbezogenen Daten verwendet werden, um bestimmte persönliche Aspekte, die sich auf eine natürliche Person beziehen, zu bewerten, insbesondere um Aspekte bezüglich Arbeitsleistung, wirtschaftliche Lage, Gesundheit, persönliche Vorlieben, Interessen, Zuverlässigkeit, Verhalten, Aufenthaltsort oder Ortswechsel dieser natürlichen Person zu analysieren oder vorherzusagen.</p>
+              <p>{t('legal.privacy.profiling')}</p>
             </div>
           </div>
         </section>

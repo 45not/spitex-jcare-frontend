@@ -19,9 +19,9 @@ export default function Imprint() {
             </h1>
             
             <div className="prose prose-lg max-w-none">
-              <h2>Impressum</h2>
+              <h2>{t('legal.imprint.title')}</h2>
               
-              <h3>Angaben gemäß § 5 TMG</h3>
+              <h3>{t('legal.imprint.info')}</h3>
               <p>
                 Spitex JCare<br />
                 Bahnhofstrasse 10<br />
@@ -29,13 +29,13 @@ export default function Imprint() {
                 Schweiz
               </p>
               
-              <h3>Kontakt</h3>
+              <h3>{t('legal.imprint.contact')}</h3>
               <p>
                 Telefon: +41 800 247 247<br />
                 E-Mail: info@spitex-jcare.ch
               </p>
               
-              <h3>Verantwortlich für den Inhalt</h3>
+              <h3>{t('legal.imprint.responsible')}</h3>
               <p>
                 Spitex JCare<br />
                 Bahnhofstrasse 10<br />
@@ -43,34 +43,28 @@ export default function Imprint() {
                 Schweiz
               </p>
               
-              <h3>Handelsregistereintrag</h3>
+              <h3>{t('legal.imprint.register')}</h3>
               <p>
-                Eingetragen im Handelsregister des Kantons Zürich<br />
-                Handelsregisternummer: CHE-XXX.XXX.XXX
+                {t('legal.imprint.register_text')}<br />
+                {t('legal.imprint.register_number')}: CHE-XXX.XXX.XXX
               </p>
               
-              <h3>Mehrwertsteuer-Identifikationsnummer</h3>
+              <h3>{t('legal.imprint.vat')}</h3>
               <p>
-                Umsatzsteuer-Identifikationsnummer gemäß §27 a Umsatzsteuergesetz:<br />
+                {t('legal.imprint.vat_text')}<br />
                 CHE-XXX.XXX.XXX MWST
               </p>
               
-              <h2>Haftungsausschluss</h2>
+              <h2>{t('legal.imprint.disclaimer')}</h2>
               
-              <h3>Haftung für Inhalte</h3>
-              <p>
-                Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.
-              </p>
+              <h3>{t('legal.imprint.content_liability')}</h3>
+              <p>{t('legal.imprint.content_text')}</p>
               
-              <h3>Haftung für Links</h3>
-              <p>
-                Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar.
-              </p>
+              <h3>{t('legal.imprint.link_liability')}</h3>
+              <p>{t('legal.imprint.link_text')}</p>
               
-              <h3>Urheberrecht</h3>
-              <p>
-                Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem schweizerischen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet.
-              </p>
+              <h3>{t('legal.imprint.copyright')}</h3>
+              <p>{t('legal.imprint.copyright_text')}</p>
             </div>
           </div>
         </section>
