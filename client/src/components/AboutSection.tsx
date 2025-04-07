@@ -29,7 +29,32 @@ export function AboutSection() {
             <p className="text-xl text-gray-700 mb-6">{t('about.subtitle')}</p>
             <div className="space-y-4 text-lg text-gray-700">
               <p>{t('about.description')}</p>
+              
+              {/* German contact info (non-translated) */}
+              <div className="mt-8 space-y-4">
+                <div>
+                  <p className="font-semibold">Telefonisch erreichen Sie uns unter:</p>
+                  <p className="text-xl text-[#E23B3B] font-bold">+41 800 247 247</p>
+                  <p className="text-sm text-gray-600">zwischen 8:00 - 17:00 Uhr CET</p>
+                </div>
+                
+                <div>
+                  <p className="font-semibold">Per E-Mail:</p>
+                  <p className="text-[#E23B3B]">info@spitex-jcare.ch</p>
+                </div>
+                
+                <div>
+                  <p className="font-semibold">Wir unterstützen Sie in den folgenden Bereichen:</p>
+                  <ul className="list-disc pl-5 mt-2 space-y-1">
+                    <li>Antragsstellung und Behördengänge</li>
+                    <li>Pflegetipps und -schulungen</li>
+                    <li>Emotionale Unterstützung</li>
+                    <li>Finanzielle Beratung</li>
+                  </ul>
+                </div>
+              </div>
             </div>
+            
             <div className="mt-8">
               <Button 
                 onClick={scrollToContact}

@@ -1,5 +1,6 @@
-import { HeartIcon, MapPinIcon, PhoneIcon, MailIcon, FacebookIcon, InstagramIcon, LinkedinIcon } from "lucide-react";
+import { MapPinIcon, PhoneIcon, MailIcon, FacebookIcon, InstagramIcon, LinkedinIcon } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import heartLogo from "@assets/Jcare heart.jpg";
 
 export function Footer() {
   const { t } = useTranslation();
@@ -10,7 +11,7 @@ export function Footer() {
         <div className="grid md:grid-cols-4 gap-8">
           <div className="md:col-span-1">
             <div className="flex items-center">
-              <HeartIcon className="h-8 w-8 text-[#E23B3B]" />
+              <img src={heartLogo} alt="JCare Heart Logo" className="h-10 w-auto" />
               <span className="ml-2 text-xl font-bold">Spitex JCare</span>
             </div>
             <p className="mt-4 text-gray-400">
@@ -66,7 +67,6 @@ export function Footer() {
         
         <div className="border-t border-gray-700 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center">
           <div className="flex items-center">
-            <HeartIcon className="h-5 w-5 text-[#E23B3B] mr-2" />
             <p className="text-gray-400">&copy; {new Date().getFullYear()} Spitex JCare. {t('footer.rights')}</p>
           </div>
           <div className="mt-4 md:mt-0 flex space-x-4">

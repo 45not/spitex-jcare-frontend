@@ -19,7 +19,7 @@ export function HeroSection() {
       {/* Mobile hero layout (stacked) */}
       <div className="md:hidden w-full">
         {/* Colored background */}
-        <div className="w-full h-[40vh] relative bg-gradient-to-r from-[#FF9155] via-[#FF6A4D] to-[#E23B3B] overflow-hidden">
+        <div className="w-full h-[60vh] relative bg-gradient-to-r from-[#FF9155] via-[#FF6A4D] to-[#E23B3B] overflow-hidden">
           {/* Background bubbles */}
           <BackgroundBubbles density="medium" opacity="medium" />
           
@@ -28,7 +28,7 @@ export function HeroSection() {
             <img 
               src={heroImage} 
               alt="Spitex JCare Hero" 
-              className="w-[85%] h-auto object-contain max-h-[90%]"
+              className="w-[95%] h-auto object-contain max-h-[95%]"
             />
           </div>
         </div>
@@ -61,13 +61,13 @@ export function HeroSection() {
             {/* Background bubbles */}
             <BackgroundBubbles density="medium" opacity="medium" />
             
-            {/* Hero image - larger without box/shadow */}
+            {/* Hero image - much larger without box/shadow */}
             <div className="relative z-10 h-full flex items-center justify-center">
               <div className="px-6 py-12 w-full">
                 <img 
                   src={heroImage} 
                   alt="Spitex JCare Hero" 
-                  className="w-full object-contain h-auto md:h-[350px] lg:h-[450px] xl:h-[550px]"
+                  className="w-full object-contain h-auto md:h-[500px] lg:h-[650px] xl:h-[750px]"
                 />
               </div>
             </div>
