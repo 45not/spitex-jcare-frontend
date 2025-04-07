@@ -1,25 +1,31 @@
 import { useState } from "react";
-import { MenuIcon } from "lucide-react";
+import { MenuIcon, HomeIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useTranslation } from "react-i18next";
-import { Link } from "wouter";
+import { Link, useLocation } from "wouter";
 import heartLogo from "@assets/Jcare heart.png";
 import { LanguageSwitcher } from "@/components/ui/language-switcher";
 
-export function Header() {
+export function LegalPageHeader() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { t } = useTranslation();
+  const [_, navigate] = useLocation();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
-
-  const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-      setIsMenuOpen(false);
-    }
+  
+  // Navigate back to main page and scroll to section
+  const goToSection = (id: string) => {
+    navigate("/");
+    // Wait for navigation to complete before scrolling
+    setTimeout(() => {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+        setIsMenuOpen(false);
+      }
+    }, 100);
   };
 
   return (
@@ -35,30 +41,39 @@ export function Header() {
           
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <button 
-              onClick={() => scrollToSection("support")} 
+            <Button 
+              onClick={() => goToSection("support")} 
               className="text-gray-700 hover:text-[#E23B3B] px-3 py-2 text-sm font-medium"
+              variant="ghost"
             >
               {t('nav.support')}
-            </button>
-            <button 
-              onClick={() => scrollToSection("about")} 
+            </Button>
+            <Button 
+              onClick={() => goToSection("about")} 
               className="text-gray-700 hover:text-[#E23B3B] px-3 py-2 text-sm font-medium"
+              variant="ghost"
             >
               {t('nav.about')}
-            </button>
-            <button 
-              onClick={() => scrollToSection("faq")} 
+            </Button>
+            <Button 
+              onClick={() => goToSection("faq")} 
               className="text-gray-700 hover:text-[#E23B3B] px-3 py-2 text-sm font-medium"
+              variant="ghost"
             >
               {t('nav.faq')}
-            </button>
+            </Button>
             <Button 
-              onClick={() => scrollToSection("contact")}
+              onClick={() => goToSection("contact")}
               className="bg-gradient-to-r from-[#FF9155] to-[#E23B3B] text-white px-4 py-2 rounded-full text-sm font-medium hover:shadow-md transition-shadow"
             >
               {t('nav.contact')}
             </Button>
+            
+            {/* Back to Home */}
+            <Link href="/" className="text-gray-700 hover:text-[#E23B3B] px-3 py-2 text-sm font-medium flex items-center">
+              <HomeIcon className="h-4 w-4 mr-1" />
+              {t('nav.home')}
+            </Link>
             
             {/* Language switcher */}
             <LanguageSwitcher />
@@ -66,6 +81,11 @@ export function Header() {
           
           {/* Mobile Navigation Toggle */}
           <div className="md:hidden flex items-center space-x-4">
+            {/* Home button for mobile */}
+            <Link href="/" className="text-gray-700 hover:text-[#E23B3B]">
+              <HomeIcon className="h-5 w-5" />
+            </Link>
+            
             {/* Mobile Language switcher */}
             <LanguageSwitcher />
             
@@ -83,26 +103,29 @@ export function Header() {
       {/* Mobile Navigation Menu */}
       <div className={`md:hidden bg-white shadow-md ${isMenuOpen ? "" : "hidden"}`}>
         <div className="px-2 pt-2 pb-3 space-y-1">
-          <button 
-            onClick={() => scrollToSection("support")} 
+          <Button 
+            onClick={() => goToSection("support")} 
             className="text-gray-700 hover:text-[#E23B3B] block px-3 py-2 text-base font-medium w-full text-left"
+            variant="ghost"
           >
             {t('nav.support')}
-          </button>
-          <button 
-            onClick={() => scrollToSection("about")} 
+          </Button>
+          <Button 
+            onClick={() => goToSection("about")} 
             className="text-gray-700 hover:text-[#E23B3B] block px-3 py-2 text-base font-medium w-full text-left"
+            variant="ghost"
           >
             {t('nav.about')}
-          </button>
-          <button 
-            onClick={() => scrollToSection("faq")} 
+          </Button>
+          <Button 
+            onClick={() => goToSection("faq")} 
             className="text-gray-700 hover:text-[#E23B3B] block px-3 py-2 text-base font-medium w-full text-left"
+            variant="ghost"
           >
             {t('nav.faq')}
-          </button>
+          </Button>
           <Button 
-            onClick={() => scrollToSection("contact")}
+            onClick={() => goToSection("contact")}
             className="bg-gradient-to-r from-[#FF9155] to-[#E23B3B] text-white block px-3 py-2 rounded-full text-base font-medium mt-2 w-full"
           >
             {t('nav.contact')}

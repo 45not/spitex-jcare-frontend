@@ -1,7 +1,7 @@
 import { MapPinIcon, PhoneIcon, MailIcon, FacebookIcon, InstagramIcon, LinkedinIcon } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { Link } from "wouter";
-import heartLogo from "@assets/Jcare heart.jpg";
+import heartLogo from "@assets/Jcare heart.png";
 
 export function Footer() {
   const { t } = useTranslation();

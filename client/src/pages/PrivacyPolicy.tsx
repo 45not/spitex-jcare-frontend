@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { BackgroundBubbles } from "@/components/ui/background-bubbles";
-import { Header } from "@/components/Header";
+import { LegalPageHeader } from "@/components/LegalPageHeader";
 import { Footer } from "@/components/Footer";
 
 export default function PrivacyPolicy() {
@@ -8,7 +8,7 @@ export default function PrivacyPolicy() {
   
   return (
     <>
-      <Header />
+      <LegalPageHeader />
       <main className="min-h-screen bg-white pt-24">
         <section className="py-16 md:py-24 relative overflow-hidden">
           <BackgroundBubbles density="medium" opacity="low" className="z-0" />
