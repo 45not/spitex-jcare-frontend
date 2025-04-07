@@ -2,7 +2,7 @@ import { useState } from "react";
 import { MenuIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useTranslation } from "react-i18next";
-import heartLogo from "@assets/Jcare heart.jpg";
+import { HeartLogo } from "@/components/ui/HeartLogo";
 import { LanguageSwitcher } from "@/components/ui/language-switcher";
 
 export function Header() {
@@ -27,7 +27,7 @@ export function Header() {
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0 flex items-center">
             <a href="#" className="flex items-center">
-              <img src={heartLogo} alt="JCare Heart Logo" className="h-10 w-auto" />
+              <HeartLogo className="h-10 w-10" />
               <span className="ml-2 text-xl font-bold">Spitex JCare</span>
             </a>
           </div>

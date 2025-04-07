@@ -1,6 +1,7 @@
 import { MapPinIcon, PhoneIcon, MailIcon, FacebookIcon, InstagramIcon, LinkedinIcon } from "lucide-react";
 import { useTranslation } from "react-i18next";
-import heartLogo from "@assets/Jcare heart.jpg";
+import { Link } from "wouter";
+import { HeartLogo } from "@/components/ui/HeartLogo";
 
 export function Footer() {
   const { t } = useTranslation();
@@ -11,7 +12,7 @@ export function Footer() {
         <div className="grid md:grid-cols-4 gap-8">
           <div className="md:col-span-1">
             <div className="flex items-center">
-              <img src={heartLogo} alt="JCare Heart Logo" className="h-10 w-auto" />
+              <HeartLogo className="h-10 w-10" />
               <span className="ml-2 text-xl font-bold">Spitex JCare</span>
             </div>
             <p className="mt-4 text-gray-400">
@@ -58,9 +59,9 @@ export function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4">{t('footer.legal')}</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">{t('footer.imprint')}</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">{t('footer.privacy')}</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">{t('footer.terms')}</a></li>
+              <li><Link href="/imprint" target="_blank" className="text-gray-400 hover:text-white transition-colors">{t('footer.imprint')}</Link></li>
+              <li><Link href="/privacy" target="_blank" className="text-gray-400 hover:text-white transition-colors">{t('footer.privacy')}</Link></li>
+              <li><Link href="/terms" target="_blank" className="text-gray-400 hover:text-white transition-colors">{t('footer.terms')}</Link></li>
             </ul>
           </div>
         </div>
