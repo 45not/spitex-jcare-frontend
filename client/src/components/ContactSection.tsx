@@ -23,39 +23,39 @@ export function ContactSection() {
                 <div className="flex items-start">
                   <PhoneIcon className="h-6 w-6 mt-1 mr-4" />
                   <div>
-                    <p className="font-medium text-lg">Telefonisch erreichen Sie uns unter:</p>
+                    <p className="font-medium text-lg">{t('about.contact_phone_title')}</p>
                     <p className="text-2xl font-bold mt-2">+41 800 247 247</p>
-                    <p className="text-sm mt-1">zwischen 8:00 - 17:00 Uhr CET</p>
+                    <p className="text-sm mt-1">{t('about.contact_hours')}</p>
                   </div>
                 </div>
                 
                 <div className="flex items-start">
                   <MailIcon className="h-6 w-6 mt-1 mr-4" />
                   <div>
-                    <p className="font-medium text-lg">Per E-Mail:</p>
+                    <p className="font-medium text-lg">{t('about.contact_email_title')}</p>
                     <p className="text-xl mt-2">info@spitex-jcare.ch</p>
                   </div>
                 </div>
               </div>
             
               <div className="mt-12">
-                <p className="text-lg font-medium mb-4">Wir unterstützen Sie in den folgenden Bereichen:</p>
+                <p className="text-lg font-medium mb-4">{t('about.support_areas_title')}</p>
                 <ul className="space-y-3">
                   <li className="flex items-center">
                     <CheckIcon className="h-5 w-5 mr-3" />
-                    Antragsstellung und Behördengänge
+                    {t('about.support_areas.applications')}
                   </li>
                   <li className="flex items-center">
                     <CheckIcon className="h-5 w-5 mr-3" />
-                    Pflegetipps und -schulungen
+                    {t('about.support_areas.care_tips')}
                   </li>
                   <li className="flex items-center">
                     <CheckIcon className="h-5 w-5 mr-3" />
-                    Emotionale Unterstützung
+                    {t('about.support_areas.emotional_support')}
                   </li>
                   <li className="flex items-center">
                     <CheckIcon className="h-5 w-5 mr-3" />
-                    Finanzielle Beratung
+                    {t('about.support_areas.financial_advice')}
                   </li>
                 </ul>
               </div>
@@ -66,7 +66,7 @@ export function ContactSection() {
           <div className="bg-white p-8 lg:p-12">
             <h2 className="text-2xl md:text-3xl font-bold mb-6">{t('contact.title')}</h2>
             <p className="text-gray-600 mb-8">
-              Hinterlassen Sie uns Ihre Kontaktdaten, und wir melden uns innerhalb eines Werktages bei Ihnen.
+              {t('contact.leave_message')}
             </p>
             
             <ContactForm />

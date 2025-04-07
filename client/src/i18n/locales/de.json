@@ -14,7 +14,17 @@
     "title": "Über uns",
     "subtitle": "Unser Engagement für pflegende Angehörige",
     "description": "Spitex JCare wurde gegründet, um pflegenden Angehörigen in der Schweiz umfassende Unterstützung zu bieten. Wir verstehen die Herausforderungen, mit denen Sie konfrontiert sind, und sind hier, um Ihnen durch personalisierte Unterstützung, Ressourcen und Beratung zu helfen. Unser Team aus erfahrenen Pflegefachleuten ist darauf spezialisiert, Sie durch den Pflegeprozess zu führen und sicherzustellen, dass Sie die Unterstützung erhalten, die Sie benötigen.",
-    "button": "Mehr erfahren"
+    "button": "Mehr erfahren",
+    "contact_phone_title": "Telefonisch erreichen Sie uns unter:",
+    "contact_hours": "zwischen 8:00 - 17:00 Uhr CET",
+    "contact_email_title": "Per E-Mail:",
+    "support_areas_title": "Wir unterstützen Sie in den folgenden Bereichen:",
+    "support_areas": {
+      "applications": "Antragsstellung und Behördengänge",
+      "care_tips": "Pflegetipps und -schulungen",
+      "emotional_support": "Emotionale Unterstützung",
+      "financial_advice": "Finanzielle Beratung"
+    }
   },
   "support": {
     "title": "Unser Unterstützungsprozess",
@@ -67,6 +77,7 @@
   "contact": {
     "title": "Kontaktieren Sie uns",
     "subtitle": "Wir sind hier, um zu helfen",
+    "leave_message": "Hinterlassen Sie uns Ihre Kontaktdaten, und wir melden uns innerhalb eines Werktages bei Ihnen.",
     "form": {
       "firstName": "Vorname",
       "lastName": "Nachname",

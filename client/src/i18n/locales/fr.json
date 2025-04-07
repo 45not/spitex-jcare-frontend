@@ -14,7 +14,17 @@
     "title": "À propos de nous",
     "subtitle": "Notre engagement envers les aidants",
     "description": "Spitex JCare a été fondé pour fournir un soutien complet aux proches aidants en Suisse. Nous comprenons les défis auxquels vous êtes confrontés et sommes là pour vous aider grâce à un soutien personnalisé, des ressources et des conseils. Notre équipe de professionnels de soins expérimentés se spécialise dans l'accompagnement à travers le processus de soins et veille à ce que vous receviez le soutien dont vous avez besoin.",
-    "button": "En savoir plus"
+    "button": "En savoir plus",
+    "contact_phone_title": "Vous pouvez nous joindre par téléphone au :",
+    "contact_hours": "entre 8h00 et 17h00 CET",
+    "contact_email_title": "Par email :",
+    "support_areas_title": "Nous vous soutenons dans les domaines suivants :",
+    "support_areas": {
+      "applications": "Soumission de demandes et démarches administratives",
+      "care_tips": "Conseils et formation aux soins",
+      "emotional_support": "Soutien émotionnel",
+      "financial_advice": "Conseils financiers"
+    }
   },
   "support": {
     "title": "Notre processus de soutien",
@@ -67,6 +77,7 @@
   "contact": {
     "title": "Contactez-nous",
     "subtitle": "Nous sommes là pour vous aider",
+    "leave_message": "Laissez-nous vos coordonnées, et nous vous contacterons dans un délai d'un jour ouvrable.",
     "form": {
       "firstName": "Prénom",
       "lastName": "Nom",

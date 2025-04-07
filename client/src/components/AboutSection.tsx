@@ -30,26 +30,26 @@ export function AboutSection() {
             <div className="space-y-4 text-lg text-gray-700">
               <p>{t('about.description')}</p>
               
-              {/* German contact info (non-translated) */}
+              {/* Translated contact info */}
               <div className="mt-8 space-y-4">
                 <div>
-                  <p className="font-semibold">Telefonisch erreichen Sie uns unter:</p>
+                  <p className="font-semibold">{t('about.contact_phone_title')}</p>
                   <p className="text-xl text-[#E23B3B] font-bold">+41 800 247 247</p>
-                  <p className="text-sm text-gray-600">zwischen 8:00 - 17:00 Uhr CET</p>
+                  <p className="text-sm text-gray-600">{t('about.contact_hours')}</p>
                 </div>
                 
                 <div>
-                  <p className="font-semibold">Per E-Mail:</p>
+                  <p className="font-semibold">{t('about.contact_email_title')}</p>
                   <p className="text-[#E23B3B]">info@spitex-jcare.ch</p>
                 </div>
                 
                 <div>
-                  <p className="font-semibold">Wir unterstützen Sie in den folgenden Bereichen:</p>
+                  <p className="font-semibold">{t('about.support_areas_title')}</p>
                   <ul className="list-disc pl-5 mt-2 space-y-1">
-                    <li>Antragsstellung und Behördengänge</li>
-                    <li>Pflegetipps und -schulungen</li>
-                    <li>Emotionale Unterstützung</li>
-                    <li>Finanzielle Beratung</li>
+                    <li>{t('about.support_areas.applications')}</li>
+                    <li>{t('about.support_areas.care_tips')}</li>
+                    <li>{t('about.support_areas.emotional_support')}</li>
+                    <li>{t('about.support_areas.financial_advice')}</li>
                   </ul>
                 </div>
               </div>

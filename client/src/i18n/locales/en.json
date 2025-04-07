@@ -14,7 +14,17 @@
     "title": "About Us",
     "subtitle": "Our Commitment to Caregivers",
     "description": "Spitex JCare was founded to provide comprehensive support to caregiving relatives in Switzerland. We understand the challenges you face and are here to help through personalized support, resources, and guidance. Our team of experienced care professionals specializes in guiding you through the caregiving process and ensuring you receive the support you need.",
-    "button": "Learn More"
+    "button": "Learn More",
+    "contact_phone_title": "You can reach us by phone at:",
+    "contact_hours": "between 8:00 - 17:00 CET",
+    "contact_email_title": "By Email:",
+    "support_areas_title": "We support you in the following areas:",
+    "support_areas": {
+      "applications": "Application submission and government procedures",
+      "care_tips": "Care tips and training",
+      "emotional_support": "Emotional support",
+      "financial_advice": "Financial advice"
+    }
   },
   "support": {
     "title": "Our Support Process",
@@ -67,6 +77,7 @@
   "contact": {
     "title": "Contact Us",
     "subtitle": "We're Here to Help",
+    "leave_message": "Leave us your contact details, and we will get back to you within one business day.",
     "form": {
       "firstName": "First Name",
       "lastName": "Last Name",

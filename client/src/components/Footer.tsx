@@ -1,7 +1,7 @@
 import { MapPinIcon, PhoneIcon, MailIcon, FacebookIcon, InstagramIcon, LinkedinIcon } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { Link } from "wouter";
-import { HeartLogo } from "@/components/ui/HeartLogo";
+import heartLogo from "@assets/Jcare heart.jpg";
 
 export function Footer() {
   const { t } = useTranslation();
@@ -11,10 +11,10 @@ export function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid md:grid-cols-4 gap-8">
           <div className="md:col-span-1">
-            <div className="flex items-center">
-              <HeartLogo className="h-10 w-10" />
+            <Link href="/" className="flex items-center">
+              <img src={heartLogo} alt="JCare Heart Logo" className="h-10 w-auto" />
               <span className="ml-2 text-xl font-bold">Spitex JCare</span>
-            </div>
+            </Link>
             <p className="mt-4 text-gray-400">
               {t('footer.tagline')}
             </p>
