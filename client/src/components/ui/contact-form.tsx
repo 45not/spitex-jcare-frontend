@@ -212,7 +212,7 @@ export function ContactForm() {
               </FormControl>
               <div className="space-y-1 leading-none">
                 <FormLabel>
-                  {t('contact.form.privacy')} <a href="#" className="text-teal-600 hover:underline">{t('privacy policy')}</a> *
+                  {t('contact.form.privacy')} <a href="/privacy" target="_blank" className="text-[#E23B3B] hover:underline">{t('privacy policy')}</a> *
                 </FormLabel>
                 <FormMessage />
               </div>

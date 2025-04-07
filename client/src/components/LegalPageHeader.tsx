@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { MenuIcon, HomeIcon } from "lucide-react";
+import { MenuIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useTranslation } from "react-i18next";
 import { Link, useLocation } from "wouter";
@@ -69,11 +69,7 @@ export function LegalPageHeader() {
               {t('nav.contact')}
             </Button>
             
-            {/* Back to Home */}
-            <Link href="/" className="text-gray-700 hover:text-[#E23B3B] px-3 py-2 text-sm font-medium flex items-center">
-              <HomeIcon className="h-4 w-4 mr-1" />
-              {t('nav.home')}
-            </Link>
+
             
             {/* Language switcher */}
             <LanguageSwitcher />
@@ -81,10 +77,7 @@ export function LegalPageHeader() {
           
           {/* Mobile Navigation Toggle */}
           <div className="md:hidden flex items-center space-x-4">
-            {/* Home button for mobile */}
-            <Link href="/" className="text-gray-700 hover:text-[#E23B3B]">
-              <HomeIcon className="h-5 w-5" />
-            </Link>
+
             
             {/* Mobile Language switcher */}
             <LanguageSwitcher />

@@ -124,5 +124,78 @@
     "de": "German",
     "en": "English",
     "fr": "French"
+  },
+  "legal": {
+    "imprint": {
+      "title": "Imprint",
+      "company_info": "Company Information",
+      "company_details": {
+        "name": "Spitex JCare",
+        "address": "Bahnhofstrasse 10, 8001 Zürich, Switzerland"
+      },
+      "contact": "Contact",
+      "contact_details": {
+        "phone": "Phone: +41 800 247 247",
+        "email": "Email: info@spitex-jcare.ch"
+      },
+      "responsible": "Responsible for Content",
+      "registry": "Commercial Registry Entry",
+      "registry_details": "Registered in the commercial registry of Canton Zurich, Commercial registry number: CHE-XXX.XXX.XXX",
+      "vat": "VAT Identification Number",
+      "vat_details": "VAT number according to §27a VAT law: CHE-XXX.XXX.XXX VAT",
+      "disclaimer": "Disclaimer",
+      "content_liability": "Content Liability",
+      "content_liability_text": "The contents of our pages were created with the utmost care. However, we cannot guarantee the accuracy, completeness and timeliness of the content. As a service provider, we are responsible for our own content on these pages in accordance with general law. However, we are not obliged to monitor transmitted or stored third-party information or to investigate circumstances that indicate illegal activity.",
+      "link_liability": "Link Liability",
+      "link_liability_text": "Our offer contains links to external websites of third parties, on whose contents we have no influence. Therefore, we cannot assume any liability for these external contents. The respective provider or operator of the linked pages is always responsible for the content of the linked pages. The linked pages were checked for possible legal violations at the time of linking. Illegal content was not recognizable at the time of linking.",
+      "copyright": "Copyright",
+      "copyright_text": "The content and works created by the site operators on these pages are subject to Swiss copyright law. The reproduction, editing, distribution and any kind of exploitation outside the limits of copyright law require the written consent of the respective author or creator. Downloads and copies of this site are only permitted for private, non-commercial use."
+    },
+    "privacy": {
+      "title": "Privacy Policy",
+      "intro": "This privacy policy informs you about the nature, scope and purpose of the processing of personal data within our online offering and the websites, functions and content associated with it. The privacy policy applies regardless of the domains, systems, platforms and devices used on which the online offering is executed.",
+      "responsible": "Data Controller",
+      "data_types": "Types of Data Processed",
+      "data_types_list": {
+        "inventory": "Inventory data (e.g., names, addresses)",
+        "contact": "Contact data (e.g., email, phone numbers)",
+        "content": "Content data (e.g., text entries, photographs, videos)",
+        "usage": "Usage data (e.g., websites visited, interest in content, access times)",
+        "meta": "Meta/communication data (e.g., device information, IP addresses)"
+      },
+      "categories": "Categories of Data Subjects",
+      "categories_text": "Visitors and users of the online offering (hereinafter we also collectively refer to the data subjects as 'users').",
+      "processing_purpose": "Purpose of Processing",
+      "purpose_list": {
+        "provision": "Providing the online offering, its functions and contents",
+        "contact": "Responding to contact requests and communicating with users",
+        "security": "Security measures",
+        "reach": "Reach measurement/marketing"
+      },
+      "terminology": "Terms Used",
+      "personal_data": "'Personal data' means any information relating to an identified or identifiable natural person; an identifiable natural person is one who can be identified, directly or indirectly, in particular by reference to an identifier such as a name, an identification number, location data, an online identifier or to one or more factors specific to the physical, physiological, genetic, mental, economic, cultural or social identity of that natural person.",
+      "processing": "'Processing' means any operation or set of operations which is performed on personal data, whether or not by automated means. The term is broad and encompasses practically any handling of data.",
+      "pseudonymization": "'Pseudonymization' means the processing of personal data in such a manner that the personal data can no longer be attributed to a specific data subject without the use of additional information, provided that such additional information is kept separately and is subject to technical and organizational measures to ensure that the personal data are not attributed to an identified or identifiable natural person.",
+      "profiling": "'Profiling' means any form of automated processing of personal data consisting of the use of personal data to evaluate certain personal aspects relating to a natural person, in particular to analyze or predict aspects concerning that natural person's performance at work, economic situation, health, personal preferences, interests, reliability, behavior, location or movements."
+    },
+    "terms": {
+      "title": "Terms and Conditions",
+      "intro": "The following General Terms and Conditions (GTC) govern the contractual relationship between the user and Spitex JCare concerning the access, browsing and any form of use of the Spitex JCare website.",
+      "scope": "1. Scope",
+      "scope_text": "These GTC apply to all services and offers provided by Spitex JCare. By using our services, you agree to these terms. Please read them carefully.",
+      "services": "2. Description of Services",
+      "services_text": "Spitex JCare offers support for caregiving relatives through various services, including advisory and supportive activities in the field of nursing and care for people in need of care.",
+      "contract": "3. Contract Formation",
+      "contract_text": "A contract between the user and Spitex JCare is concluded through the express commissioning by the user or through the use of the services of Spitex JCare.",
+      "prices": "4. Prices and Payment Terms",
+      "prices_text": "The prices for our services are individually agreed upon and depend on the respective scope of services. The payment terms are determined on a case-by-case basis and communicated to the customer. All prices are in Swiss francs (CHF) and include the statutory value-added tax.",
+      "liability": "5. Liability",
+      "liability_text": "Spitex JCare is liable for damages only in cases of intent or gross negligence. Liability for slight negligence exists only in the event of a breach of essential contractual obligations, the fulfillment of which the customer may particularly rely on. In this case, liability is limited to the typically foreseeable damage.",
+      "data_protection": "6. Data Protection",
+      "data_protection_text": "The protection of your personal data is important to us. We strictly adhere to the legal provisions of data protection law when collecting, processing and using personal data. Details can be found in our Privacy Policy.",
+      "final": "7. Final Provisions",
+      "final_text": "The law of Switzerland applies to the exclusion of the UN Convention on Contracts for the International Sale of Goods. Place of performance and exclusive place of jurisdiction for all disputes arising from this contract is Zurich, Switzerland.",
+      "final_text2": "Should individual provisions of these GTC be or become invalid in whole or in part, this shall not affect the validity of the remaining provisions."
+    }
   }
 }
