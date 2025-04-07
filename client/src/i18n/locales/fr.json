@@ -1,0 +1,109 @@
+{
+  "nav": {
+    "support": "Soutien",
+    "about": "À propos",
+    "faq": "FAQ",
+    "contact": "Contactez-nous"
+  },
+  "hero": {
+    "title": "Soutien aux proches aidants",
+    "subtitle": "Nous fournissons des ressources utiles pour faciliter votre parcours d'aidant.",
+    "button": "Contactez-nous"
+  },
+  "about": {
+    "title": "À propos de nous",
+    "subtitle": "Notre engagement envers les aidants",
+    "description": "Spitex JCare a été fondé pour fournir un soutien complet aux proches aidants en Suisse. Nous comprenons les défis auxquels vous êtes confrontés et sommes là pour vous aider grâce à un soutien personnalisé, des ressources et des conseils. Notre équipe de professionnels de soins expérimentés se spécialise dans l'accompagnement à travers le processus de soins et veille à ce que vous receviez le soutien dont vous avez besoin.",
+    "button": "En savoir plus"
+  },
+  "support": {
+    "title": "Notre processus de soutien",
+    "subtitle": "Comment nous vous aidons",
+    "steps": {
+      "1": {
+        "title": "Consultation",
+        "description": "Rencontre initiale personnelle pour comprendre vos besoins spécifiques."
+      },
+      "2": {
+        "title": "Planification",
+        "description": "Élaboration d'un plan de soins personnalisé adapté à votre situation."
+      },
+      "3": {
+        "title": "Soutien",
+        "description": "Soutien et conseils continus tout au long de votre parcours d'aidant."
+      },
+      "4": {
+        "title": "Suivi",
+        "description": "Contrôles réguliers pour s'assurer que vos besoins sont satisfaits."
+      }
+    }
+  },
+  "faq": {
+    "title": "Questions fréquemment posées",
+    "subtitle": "Réponses à vos questions les plus importantes",
+    "questions": {
+      "1": {
+        "question": "Quels services Spitex JCare propose-t-il ?",
+        "answer": "Nous offrons une gamme de services de soutien pour les proches aidants, notamment des consultations personnelles, des ressources d'aide aux soins, des formations et l'accès à une assistance professionnelle."
+      },
+      "2": {
+        "question": "Comment puis-je accéder à vos services ?",
+        "answer": "Vous pouvez facilement nous joindre via notre formulaire de contact, et un membre de notre équipe vous contactera dans les 24 heures pour organiser une consultation initiale."
+      },
+      "3": {
+        "question": "Vos services sont-ils couverts par l'assurance maladie ?",
+        "answer": "Beaucoup de nos services peuvent être couverts par l'assurance maladie en fonction de votre police spécifique. Nous pouvons vous aider à clarifier votre couverture et à soumettre les documents nécessaires."
+      },
+      "4": {
+        "question": "Dans quels cantons êtes-vous présents ?",
+        "answer": "Nous proposons actuellement nos services dans les cantons de Zurich, Berne, Bâle et Lucerne. Nous prévoyons d'étendre nos services à d'autres cantons dans un proche avenir."
+      },
+      "5": {
+        "question": "En quoi vous différenciez-vous des autres services de soins ?",
+        "answer": "Notre approche unique se concentre sur le soutien complet aux proches aidants. Nous fournissons non seulement des services de soins directs, mais nous veillons également à ce que les aidants eux-mêmes reçoivent le soutien, la formation et les ressources dont ils ont besoin pour fournir des soins de qualité tout en veillant à leur propre bien-être."
+      }
+    }
+  },
+  "contact": {
+    "title": "Contactez-nous",
+    "subtitle": "Nous sommes là pour vous aider",
+    "form": {
+      "firstName": "Prénom",
+      "lastName": "Nom",
+      "email": "Email",
+      "phone": "Numéro de téléphone",
+      "canton": "Canton de la personne nécessitant des soins",
+      "source": "Comment avez-vous entendu parler de nous ?",
+      "privacy": "J'accepte la",
+      "button": "Envoyer",
+      "success": "Merci pour votre message. Nous vous répondrons sous peu.",
+      "error": "Une erreur s'est produite lors de l'envoi de votre message. Veuillez réessayer plus tard."
+    }
+  },
+  "privacy policy": "politique de confidentialité",
+  "is required": "est requis",
+  "valid email required": "Adresse email valide requise",
+  "must agree to privacy policy": "Vous devez accepter la politique de confidentialité",
+  "sending...": "Envoi en cours...",
+  "please select": "Veuillez sélectionner...",
+  "footer": {
+    "tagline": "Nous soutenons les proches aidants avec des solutions claires et une compréhension humaine.",
+    "contact": "Contact",
+    "hours": "Heures d'ouverture",
+    "monday": "Lundi",
+    "friday": "Vendredi",
+    "saturday": "Samedi",
+    "sunday": "Dimanche",
+    "closed": "Fermé",
+    "legal": "Informations légales",
+    "imprint": "Mentions légales",
+    "privacy": "Politique de confidentialité",
+    "terms": "Conditions d'utilisation",
+    "rights": "Tous droits réservés."
+  },
+  "language": {
+    "de": "Allemand",
+    "en": "Anglais",
+    "fr": "Français"
+  }
+}

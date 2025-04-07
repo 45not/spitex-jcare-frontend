@@ -1,8 +1,11 @@
 import { ContactForm } from "@/components/ui/contact-form";
 import { PhoneIcon, MailIcon, CheckIcon } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import { BackgroundBubbles } from "@/components/ui/background-bubbles";
 
 export function ContactSection() {
+  const { t } = useTranslation();
+  
   return (
     <section id="contact" className="bg-white py-16 md:py-24 relative overflow-hidden">
       <div className="w-full mx-auto">
@@ -13,7 +16,8 @@ export function ContactSection() {
             <BackgroundBubbles density="medium" opacity="medium" className="z-0" />
             
             <div className="relative z-10">
-              <h3 className="text-2xl font-bold mb-8">Wir freuen uns auf Ihren Anruf</h3>
+              <h3 className="text-2xl font-bold mb-2">{t('contact.title')}</h3>
+              <p className="text-lg mb-8">{t('contact.subtitle')}</p>
               
               <div className="space-y-6">
                 <div className="flex items-start">
@@ -60,7 +64,7 @@ export function ContactSection() {
           
           {/* Form Side */}
           <div className="bg-white p-8 lg:p-12">
-            <h2 className="text-2xl md:text-3xl font-bold mb-6">Bitte rufen Sie mich an</h2>
+            <h2 className="text-2xl md:text-3xl font-bold mb-6">{t('contact.title')}</h2>
             <p className="text-gray-600 mb-8">
               Hinterlassen Sie uns Ihre Kontaktdaten, und wir melden uns innerhalb eines Werktages bei Ihnen.
             </p>

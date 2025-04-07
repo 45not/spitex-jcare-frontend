@@ -1,9 +1,12 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRightIcon } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import heroImage from "@assets/heroimg.png";
 import { BackgroundBubbles } from "@/components/ui/background-bubbles";
 
 export function HeroSection() {
+  const { t } = useTranslation();
+  
   const scrollToContact = () => {
     const contactSection = document.getElementById("contact");
     if (contactSection) {
@@ -25,7 +28,7 @@ export function HeroSection() {
               <img 
                 src={heroImage} 
                 alt="Spitex JCare Hero" 
-                className="w-full object-contain h-auto md:h-64 lg:h-80"
+                className="w-full object-contain h-auto md:h-80 lg:h-96"
               />
             </div>
           </div>
@@ -40,20 +43,17 @@ export function HeroSection() {
           {/* Text content (60%) */}
           <div className="col-span-12 md:col-span-7 text-left">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-gray-900">
-              Pflegen Sie einen <br className="hidden md:block" />Angehörigen?
+              {t('hero.title')}
             </h1>
-            <p className="mt-4 text-xl md:text-2xl font-medium text-gray-800">Sie verdienen das Beste.</p>
-            <div className="mt-6 text-lg text-gray-700">
-              <p>Deshalb unterstützen wir Sie – emotional, praktisch und finanziell.</p>
-              <p className="mt-2">Wie das alles funktioniert?</p>
-              <p className="mt-2">Melden Sie sich ganz unkompliziert und kostenlos bei uns.</p>
-            </div>
+            <p className="mt-4 text-xl md:text-2xl font-medium text-gray-800">
+              {t('hero.subtitle')}
+            </p>
             <div className="mt-8">
               <Button 
                 onClick={scrollToContact}
                 className="bg-gradient-to-r from-[#FF9155] to-[#E23B3B] text-white hover:shadow-lg px-6 py-3 rounded-full text-lg font-medium shadow-md inline-flex items-center transition-all"
               >
-                Kontaktieren Sie uns
+                {t('hero.button')}
                 <ArrowRightIcon className="h-5 w-5 ml-2" />
               </Button>
             </div>

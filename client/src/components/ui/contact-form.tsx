@@ -1,6 +1,7 @@
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { useTranslation } from "react-i18next";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
@@ -9,19 +10,15 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { useToast } from "@/hooks/use-toast";
 import { sendEmail } from "@/lib/emailjs";
 
-const formSchema = z.object({
-  firstName: z.string().min(1, { message: "Vorname ist erforderlich" }),
-  lastName: z.string().min(1, { message: "Nachname ist erforderlich" }),
-  email: z.string().email({ message: "Gültige E-Mail-Adresse erforderlich" }),
-  phone: z.string().min(1, { message: "Telefonnummer ist erforderlich" }),
-  canton: z.string().min(1, { message: "Kanton ist erforderlich" }),
-  source: z.string().optional(),
-  privacy: z.literal(true, {
-    errorMap: () => ({ message: "Sie müssen der Datenschutzerklärung zustimmen" }),
-  }),
-});
-
-type FormValues = z.infer<typeof formSchema>;
+type FormValues = {
+  firstName: string;
+  lastName: string;
+  email: string;
+  phone: string;
+  canton: string;
+  source?: string;
+  privacy: boolean;
+};
 
 const cantons = [
   "Aargau", "Appenzell Innerrhoden", "Appenzell Ausserrhoden", "Bern", 
@@ -36,7 +33,20 @@ const sources = [
 ];
 
 export function ContactForm() {
+  const { t } = useTranslation();
   const { toast } = useToast();
+  
+  const formSchema = z.object({
+    firstName: z.string().min(1, { message: t('contact.form.firstName') + " " + t('is required') }),
+    lastName: z.string().min(1, { message: t('contact.form.lastName') + " " + t('is required') }),
+    email: z.string().email({ message: t('valid email required') }),
+    phone: z.string().min(1, { message: t('contact.form.phone') + " " + t('is required') }),
+    canton: z.string().min(1, { message: t('contact.form.canton') + " " + t('is required') }),
+    source: z.string().optional(),
+    privacy: z.literal(true, {
+      errorMap: () => ({ message: t('must agree to privacy policy') }),
+    }),
+  });
   
   const form = useForm<FormValues>({
     resolver: zodResolver(formSchema),
@@ -55,14 +65,14 @@ export function ContactForm() {
     try {
       await sendEmail(data);
       toast({
-        title: "Vielen Dank!",
-        description: "Wir werden uns innerhalb eines Werktages bei Ihnen melden.",
+        title: t('contact.form.success'),
+        description: t('contact.form.success'),
       });
       form.reset();
     } catch (error) {
       toast({
-        title: "Ein Fehler ist aufgetreten",
-        description: "Bitte versuchen Sie es später erneut oder kontaktieren Sie uns telefonisch.",
+        title: t('contact.form.error'),
+        description: t('contact.form.error'),
         variant: "destructive",
       });
       console.error("Error sending email:", error);
@@ -78,9 +88,9 @@ export function ContactForm() {
             name="firstName"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Vorname *</FormLabel>
+                <FormLabel>{t('contact.form.firstName')} *</FormLabel>
                 <FormControl>
-                  <Input placeholder="Vorname" {...field} />
+                  <Input placeholder={t('contact.form.firstName')} {...field} />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -91,9 +101,9 @@ export function ContactForm() {
             name="lastName"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Nachname *</FormLabel>
+                <FormLabel>{t('contact.form.lastName')} *</FormLabel>
                 <FormControl>
-                  <Input placeholder="Nachname" {...field} />
+                  <Input placeholder={t('contact.form.lastName')} {...field} />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -107,9 +117,9 @@ export function ContactForm() {
             name="email"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>E-Mail *</FormLabel>
+                <FormLabel>{t('contact.form.email')} *</FormLabel>
                 <FormControl>
-                  <Input placeholder="E-Mail" type="email" {...field} />
+                  <Input placeholder={t('contact.form.email')} type="email" {...field} />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -120,9 +130,9 @@ export function ContactForm() {
             name="phone"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Telefonnummer *</FormLabel>
+                <FormLabel>{t('contact.form.phone')} *</FormLabel>
                 <FormControl>
-                  <Input placeholder="Telefonnummer" {...field} />
+                  <Input placeholder={t('contact.form.phone')} {...field} />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -136,11 +146,11 @@ export function ContactForm() {
             name="canton"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Kanton der pflegebedürftigen Person *</FormLabel>
+                <FormLabel>{t('contact.form.canton')} *</FormLabel>
                 <Select onValueChange={field.onChange} defaultValue={field.value}>
                   <FormControl>
                     <SelectTrigger>
-                      <SelectValue placeholder="Bitte wählen..." />
+                      <SelectValue placeholder={t('please select')} />
                     </SelectTrigger>
                   </FormControl>
                   <SelectContent>
@@ -160,14 +170,14 @@ export function ContactForm() {
             name="source"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Wie haben Sie von uns erfahren?</FormLabel>
+                <FormLabel>{t('contact.form.source')}</FormLabel>
                 <Select 
                   onValueChange={field.onChange} 
                   defaultValue={field.value}
                 >
                   <FormControl>
                     <SelectTrigger>
-                      <SelectValue placeholder="Bitte wählen..." />
+                      <SelectValue placeholder={t('please select')} />
                     </SelectTrigger>
                   </FormControl>
                   <SelectContent>
@@ -197,7 +207,7 @@ export function ContactForm() {
               </FormControl>
               <div className="space-y-1 leading-none">
                 <FormLabel>
-                  Ich stimme der <a href="#" className="text-teal-600 hover:underline">Datenschutzerklärung</a> zu *
+                  {t('contact.form.privacy')} <a href="#" className="text-teal-600 hover:underline">{t('privacy policy')}</a> *
                 </FormLabel>
                 <FormMessage />
               </div>
@@ -210,7 +220,7 @@ export function ContactForm() {
           className="w-full py-3 px-4 text-lg font-medium rounded-full bg-gradient-to-r from-[#FF9155] to-[#E23B3B] hover:shadow-lg text-white"
           disabled={form.formState.isSubmitting}
         >
-          {form.formState.isSubmitting ? "Wird gesendet..." : "Absenden"}
+          {form.formState.isSubmitting ? t('sending...') : t('contact.form.button')}
         </Button>
       </form>
     </Form>

@@ -1,6 +1,9 @@
 import { HeartIcon, MapPinIcon, PhoneIcon, MailIcon, FacebookIcon, InstagramIcon, LinkedinIcon } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 export function Footer() {
+  const { t } = useTranslation();
+  
   return (
     <footer className="bg-gray-800 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -11,12 +14,12 @@ export function Footer() {
               <span className="ml-2 text-xl font-bold">Spitex JCare</span>
             </div>
             <p className="mt-4 text-gray-400">
-              Wir unterstützen pflegende Angehörige mit klaren Lösungen und menschlichem Verständnis.
+              {t('footer.tagline')}
             </p>
           </div>
           
           <div>
-            <h3 className="text-lg font-semibold mb-4">Kontakt</h3>
+            <h3 className="text-lg font-semibold mb-4">{t('footer.contact')}</h3>
             <ul className="space-y-2">
               <li className="flex items-start">
                 <MapPinIcon className="h-5 w-5 mt-0.5 mr-3 text-gray-400" />
@@ -34,35 +37,35 @@ export function Footer() {
           </div>
           
           <div>
-            <h3 className="text-lg font-semibold mb-4">Öffnungszeiten</h3>
+            <h3 className="text-lg font-semibold mb-4">{t('footer.hours')}</h3>
             <ul className="space-y-2">
               <li className="flex justify-between">
-                <span>Montag - Freitag:</span>
+                <span>{t('footer.monday')} - {t('footer.friday')}:</span>
                 <span>8:00 - 17:00</span>
               </li>
               <li className="flex justify-between">
-                <span>Samstag:</span>
+                <span>{t('footer.saturday')}:</span>
                 <span>9:00 - 14:00</span>
               </li>
               <li className="flex justify-between">
-                <span>Sonntag:</span>
-                <span>Geschlossen</span>
+                <span>{t('footer.sunday')}:</span>
+                <span>{t('footer.closed')}</span>
               </li>
             </ul>
           </div>
           
           <div>
-            <h3 className="text-lg font-semibold mb-4">Rechtliches</h3>
+            <h3 className="text-lg font-semibold mb-4">{t('footer.legal')}</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Impressum</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Datenschutzerklärung</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">AGB</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">{t('footer.imprint')}</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">{t('footer.privacy')}</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">{t('footer.terms')}</a></li>
             </ul>
           </div>
         </div>
         
         <div className="border-t border-gray-700 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-gray-400">&copy; {new Date().getFullYear()} Spitex JCare. Alle Rechte vorbehalten.</p>
+          <p className="text-gray-400">&copy; {new Date().getFullYear()} Spitex JCare. {t('footer.rights')}</p>
           <div className="mt-4 md:mt-0 flex space-x-4">
             <a href="#" className="text-gray-400 hover:text-white" aria-label="Facebook">
               <FacebookIcon className="h-6 w-6" />
