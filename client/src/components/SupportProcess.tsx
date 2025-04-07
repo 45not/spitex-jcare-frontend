@@ -44,7 +44,7 @@ export function SupportProcess() {
   };
 
   return (
-    <section id="support" className="bg-gray-50 py-16 md:py-24">
+    <section id="support" className="bg-white py-16 md:py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl font-bold text-center mb-12 bg-gradient-to-r from-[#FF9155] to-[#E23B3B] bg-clip-text text-transparent">
           So erhalten Sie Lohn und Unterstützung bei Spitex JCare

@@ -70,8 +70,7 @@ export function FAQSection() {
           <p className="text-lg text-gray-600 mb-6">Haben Sie weitere Fragen? Kontaktieren Sie uns für ein persönliches Gespräch.</p>
           <Button 
             onClick={scrollToContact}
-            variant="outline" 
-            className="text-[#5A9A9A] border-2 border-[#5A9A9A] hover:bg-[#5A9A9A] hover:text-white px-6 py-3 rounded-lg text-lg font-medium inline-flex items-center transition-all"
+            className="bg-gradient-to-r from-[#FF9155] to-[#E23B3B] text-white hover:shadow-lg px-6 py-3 rounded-lg text-lg font-medium inline-flex items-center transition-all"
           >
             Zum Kontaktformular
             <ChevronRightIcon className="h-5 w-5 ml-2" />

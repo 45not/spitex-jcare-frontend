@@ -1,3 +1,5 @@
+import emailjs from 'emailjs-com';
+
 type ContactFormData = {
   firstName: string;
   lastName: string;
@@ -10,12 +12,20 @@ type ContactFormData = {
 
 export const sendEmail = async (data: ContactFormData): Promise<void> => {
   // Check if emailjs is available
-  if (typeof window.emailjs === 'undefined') {
+  if (typeof emailjs === 'undefined') {
     throw new Error('EmailJS is not available');
   }
 
-  const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID || 'default_service';
-  const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID || 'default_template';
+  const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+  const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+  const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+  
+  if (!serviceId || !templateId || !publicKey) {
+    throw new Error('EmailJS configuration is incomplete. Please check your environment variables.');
+  }
+  
+  // Initialize EmailJS with public key
+  emailjs.init(publicKey);
 
   const templateParams = {
     to_email: 'famelevitsky@gmail.com',
@@ -31,7 +41,7 @@ export const sendEmail = async (data: ContactFormData): Promise<void> => {
   };
 
   try {
-    await window.emailjs.send(serviceId, templateId, templateParams);
+    await emailjs.send(serviceId, templateId, templateParams);
   } catch (error) {
     console.error('Failed to send email:', error);
     throw error;

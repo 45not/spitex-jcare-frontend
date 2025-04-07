@@ -47,7 +47,7 @@ export function ContactForm() {
       phone: "",
       canton: "",
       source: "",
-      privacy: false,
+      privacy: false as any, // Using 'as any' to bypass TypeScript check, will be set by user interaction
     },
   });
 
@@ -207,7 +207,7 @@ export function ContactForm() {
 
         <Button 
           type="submit" 
-          className="w-full py-3 px-4 text-lg font-medium rounded-lg"
+          className="w-full py-3 px-4 text-lg font-medium rounded-lg bg-gradient-to-r from-[#FF9155] to-[#E23B3B] hover:shadow-lg text-white"
           disabled={form.formState.isSubmitting}
         >
           {form.formState.isSubmitting ? "Wird gesendet..." : "Absenden"}
