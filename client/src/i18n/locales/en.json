@@ -77,7 +77,14 @@
       "privacy": "I agree to the",
       "button": "Submit",
       "success": "Thank you for your message. We will get back to you shortly.",
-      "error": "There was an error sending your message. Please try again later."
+      "error": "There was an error sending your message. Please try again later.",
+      "sources": {
+        "internet": "Internet",
+        "friends": "Friends/Family",
+        "doctor": "Doctor",
+        "social": "Social Media",
+        "other": "Other"
+      }
     }
   },
   "privacy policy": "Privacy Policy",

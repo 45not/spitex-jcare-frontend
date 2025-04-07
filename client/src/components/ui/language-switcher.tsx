@@ -29,14 +29,17 @@ export function LanguageSwitcher() {
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end" className="w-[160px]">
-        <DropdownMenuItem onClick={() => changeLanguage('de')}>
-          {t('language.de')}
+        <DropdownMenuItem onClick={() => changeLanguage('de')} className="flex justify-between">
+          <span>{t('language.de')}</span>
+          <span className="text-sm font-medium text-gray-500">DE</span>
         </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => changeLanguage('en')}>
-          {t('language.en')}
+        <DropdownMenuItem onClick={() => changeLanguage('en')} className="flex justify-between">
+          <span>{t('language.en')}</span>
+          <span className="text-sm font-medium text-gray-500">EN</span>
         </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => changeLanguage('fr')}>
-          {t('language.fr')}
+        <DropdownMenuItem onClick={() => changeLanguage('fr')} className="flex justify-between">
+          <span>{t('language.fr')}</span>
+          <span className="text-sm font-medium text-gray-500">FR</span>
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>

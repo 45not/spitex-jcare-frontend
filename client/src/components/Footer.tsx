@@ -65,7 +65,10 @@ export function Footer() {
         </div>
         
         <div className="border-t border-gray-700 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-gray-400">&copy; {new Date().getFullYear()} Spitex JCare. {t('footer.rights')}</p>
+          <div className="flex items-center">
+            <HeartIcon className="h-5 w-5 text-[#E23B3B] mr-2" />
+            <p className="text-gray-400">&copy; {new Date().getFullYear()} Spitex JCare. {t('footer.rights')}</p>
+          </div>
           <div className="mt-4 md:mt-0 flex space-x-4">
             <a href="#" className="text-gray-400 hover:text-white" aria-label="Facebook">
               <FacebookIcon className="h-6 w-6" />

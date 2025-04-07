@@ -28,8 +28,13 @@ const cantons = [
   "Ticino", "Uri", "Vaud", "Valais", "Zug", "Zürich"
 ];
 
-const sources = [
-  "Internet", "Freunde/Familie", "Arzt/Ärztin", "Soziale Medien", "Sonstiges"
+// The sources will be translated according to the current language
+const getSourceOptions = (t: any) => [
+  t('contact.form.sources.internet'), 
+  t('contact.form.sources.friends'), 
+  t('contact.form.sources.doctor'), 
+  t('contact.form.sources.social'), 
+  t('contact.form.sources.other')
 ];
 
 export function ContactForm() {
@@ -181,7 +186,7 @@ export function ContactForm() {
                     </SelectTrigger>
                   </FormControl>
                   <SelectContent>
-                    {sources.map((source) => (
+                    {getSourceOptions(t).map((source) => (
                       <SelectItem key={source} value={source}>
                         {source}
                       </SelectItem>

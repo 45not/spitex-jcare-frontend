@@ -77,7 +77,14 @@
       "privacy": "Ich stimme der",
       "button": "Absenden",
       "success": "Vielen Dank für Ihre Nachricht. Wir werden uns in Kürze bei Ihnen melden.",
-      "error": "Beim Senden Ihrer Nachricht ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut."
+      "error": "Beim Senden Ihrer Nachricht ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut.",
+      "sources": {
+        "internet": "Internet",
+        "friends": "Freunde/Familie",
+        "doctor": "Arzt/Ärztin",
+        "social": "Soziale Medien",
+        "other": "Sonstiges"
+      }
     }
   },
   "privacy policy": "Datenschutzerklärung",

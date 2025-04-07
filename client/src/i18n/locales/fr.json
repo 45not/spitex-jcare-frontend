@@ -77,7 +77,14 @@
       "privacy": "J'accepte la",
       "button": "Envoyer",
       "success": "Merci pour votre message. Nous vous répondrons sous peu.",
-      "error": "Une erreur s'est produite lors de l'envoi de votre message. Veuillez réessayer plus tard."
+      "error": "Une erreur s'est produite lors de l'envoi de votre message. Veuillez réessayer plus tard.",
+      "sources": {
+        "internet": "Internet",
+        "friends": "Amis/Famille",
+        "doctor": "Médecin",
+        "social": "Réseaux sociaux",
+        "other": "Autre"
+      }
     }
   },
   "privacy policy": "politique de confidentialité",
