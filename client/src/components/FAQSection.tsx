@@ -1,6 +1,7 @@
+import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import { ChevronRightIcon } from "lucide-react";
-import { useTranslation } from "react-i18next";
 import {
   Accordion,
   AccordionContent,
@@ -9,76 +10,117 @@ import {
 } from "@/components/ui/accordion";
 import { BackgroundBubbles } from "@/components/ui/background-bubbles";
 
-type FAQ = {
-  question: string;
-  answer: string;
+type Category = "general" | "caregivers" | "needs";
+
+const colorPalette: Record<Category, { base: string; active: string }> = {
+  general: { base: "#FF9155", active: "#FF6A4D" },
+  caregivers: { base: "#FF6A4D", active: "#F94C3D" },
+  needs: { base: "#F94C3D", active: "#E23B3B" },
 };
 
 export function FAQSection() {
   const { t } = useTranslation();
-  
+  const [activeCategory, setActiveCategory] = useState<Category>("general");
+
   const scrollToContact = () => {
     const contactSection = document.getElementById("contact");
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: "smooth" });
-    }
+    if (contactSection) contactSection.scrollIntoView({ behavior: "smooth" });
   };
 
-  const faqs: FAQ[] = [
-    {
-      question: t('faq.questions.1.question'),
-      answer: t('faq.questions.1.answer')
+  // Prepare the FAQ data dynamically from translations:
+  const faqData: Record<Category, { label: string; faqs: { question: string; answer: string }[] }> = {
+    general: {
+      label: t("faq.general.label"),
+      faqs: Object.keys(t("faq.general.faqs", { returnObjects: true })).map((key) => ({
+        question: t(`faq.general.faqs.${key}.question`),
+        answer: t(`faq.general.faqs.${key}.answer`),
+      })),
     },
-    {
-      question: t('faq.questions.2.question'),
-      answer: t('faq.questions.2.answer')
+    caregivers: {
+      label: t("faq.caregivers.label"),
+      faqs: Object.keys(t("faq.caregivers.faqs", { returnObjects: true })).map((key) => ({
+        question: t(`faq.caregivers.faqs.${key}.question`),
+        answer: t(`faq.caregivers.faqs.${key}.answer`),
+      })),
     },
-    {
-      question: t('faq.questions.3.question'),
-      answer: t('faq.questions.3.answer')
+    needs: {
+      label: t("faq.needs.label"),
+      faqs: Object.keys(t("faq.needs.faqs", { returnObjects: true })).map((key) => ({
+        question: t(`faq.needs.faqs.${key}.question`),
+        answer: t(`faq.needs.faqs.${key}.answer`),
+      })),
     },
-    {
-      question: t('faq.questions.4.question'),
-      answer: t('faq.questions.4.answer')
-    },
-    {
-      question: t('faq.questions.5.question'),
-      answer: t('faq.questions.5.answer')
-    }
-  ];
+  };
 
   return (
     <section id="faq" className="bg-white py-16 md:py-24 relative overflow-hidden">
-      {/* Background bubbles */}
       <BackgroundBubbles density="medium" opacity="low" className="z-0" />
-      
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <h2 className="text-3xl font-bold text-center mb-2 bg-gradient-to-r from-[#FF9155] to-[#E23B3B] bg-clip-text text-transparent">
-          {t('faq.title')}
+          {t("faq.title")}
         </h2>
-        <p className="text-center text-xl text-gray-700 mb-12">{t('faq.subtitle')}</p>
-        
-        <div className="space-y-6">
-          <Accordion type="single" collapsible className="w-full">
-            {faqs.map((faq, index) => (
-              <AccordionItem key={index} value={`item-${index}`} className="border border-gray-200 rounded-lg overflow-hidden mb-4">
-                <AccordionTrigger className="p-4 text-left bg-gray-50 hover:bg-gray-100 font-medium text-lg">
+        <p className="text-center text-xl text-gray-700 mb-12">{t("faq.subtitle")}</p>
+
+        {/* Tabs */}
+        <div className="flex justify-center gap-4 mb-8">
+          {(Object.keys(faqData) as Category[]).map((key) => {
+            const isActive = activeCategory === key;
+            const baseColor = colorPalette[key].base;
+            return (
+              <button
+                key={key}
+                onClick={() => setActiveCategory(key)}
+                className={`px-4 py-2 rounded-full font-semibold border-2 transition-colors duration-300`}
+                style={{
+                  backgroundColor: isActive ? baseColor : "transparent",
+                  color: isActive ? "white" : baseColor,
+                  borderColor: baseColor,
+                }}
+              >
+                {faqData[key].label}
+              </button>
+            );
+          })}
+        </div>
+
+        {/* Accordion */}
+        <Accordion type="single" collapsible className="w-full space-y-6">
+          {faqData[activeCategory].faqs.map((faq, index) => {
+            const baseColor = colorPalette[activeCategory].base;
+            const activeColor = colorPalette[activeCategory].active;
+            return (
+              <AccordionItem
+                key={index}
+                value={`item-${index}`}
+                className={`border rounded-lg overflow-hidden mb-4`}
+              >
+                <AccordionTrigger
+                  className={`p-4 text-left font-semibold text-lg transition-colors duration-300`}
+                  style={{
+                    color: "white",
+                    border: `2px solid ${baseColor}`,
+                    backgroundColor: baseColor,
+                  }}
+                >
                   {faq.question}
                 </AccordionTrigger>
-                <AccordionContent className="p-4 bg-white text-gray-600">
+                <AccordionContent
+                  className="p-4 bg-white"
+                  style={{ color: activeColor, border: `2px solid ${activeColor}` }}
+                >
                   {faq.answer}
                 </AccordionContent>
               </AccordionItem>
-            ))}
-          </Accordion>
-        </div>
-        
+            );
+          })}
+        </Accordion>
+
         <div className="mt-12 text-center">
-          <Button 
+          <Button
             onClick={scrollToContact}
             className="bg-gradient-to-r from-[#FF9155] to-[#E23B3B] text-white hover:shadow-lg px-6 py-3 rounded-full text-lg font-medium inline-flex items-center transition-all"
           >
-            {t('hero.button')}
+            {t("hero.button")}
             <ChevronRightIcon className="h-5 w-5 ml-2" />
           </Button>
         </div>

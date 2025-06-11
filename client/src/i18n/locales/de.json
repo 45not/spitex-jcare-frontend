@@ -52,28 +52,40 @@
   "faq": {
     "title": "Häufig gestellte Fragen",
     "subtitle": "Antworten auf Ihre wichtigsten Fragen",
-    "questions": {
-      "1": {
-        "question": "Welche Dienstleistungen bietet Spitex JCare an?",
-        "answer": "Wir bieten eine Reihe von Unterstützungsdiensten für pflegende Angehörige an, darunter persönliche Beratung, Ressourcen zur Pflegeunterstützung, Schulungen und Zugang zu professioneller Pflegehilfe."
-      },
-      "2": {
-        "question": "Wie kann ich Ihre Dienste in Anspruch nehmen?",
-        "answer": "Sie können uns einfach über unser Kontaktformular erreichen, und ein Mitglied unseres Teams wird sich innerhalb von 24 Stunden bei Ihnen melden, um ein Erstgespräch zu vereinbaren."
-      },
-      "3": {
-        "question": "Werden Ihre Dienstleistungen von der Krankenversicherung übernommen?",
-        "answer": "Viele unserer Dienstleistungen können je nach Ihrer spezifischen Versicherungspolice von der Krankenversicherung übernommen werden. Wir können Ihnen bei der Klärung Ihrer Deckung und der Einreichung notwendiger Unterlagen behilflich sein."
-      },
-      "4": {
-        "question": "In welchen Kantonen sind Sie tätig?",
-        "answer": "Derzeit bieten wir unsere Dienstleistungen in den Kantonen Zürich, Bern, Basel und Luzern an. Wir planen, unsere Dienste in naher Zukunft auf weitere Kantone auszuweiten."
-      },
-      "5": {
-        "question": "Wie unterscheiden Sie sich von anderen Pflegediensten?",
-        "answer": "Unser einzigartiger Ansatz konzentriert sich auf die umfassende Unterstützung von pflegenden Angehörigen. Wir bieten nicht nur direkte Pflegedienste an, sondern stellen auch sicher, dass die Pflegepersonen selbst die Unterstützung, Schulung und Ressourcen erhalten, die sie benötigen, um qualitativ hochwertige Pflege zu leisten und gleichzeitig auf ihr eigenes Wohlbefinden zu achten."
+    "general": {
+      "label": "Allgemein",
+      "faqs": {
+        "0": {
+          "question": "Was genau ist Carela und welche Dienstleistungen bieten wir an?",
+          "answer": "Hier steht eine allgemeine Beschreibung von Carela und den angebotenen Dienstleistungen."
+        },
+        "1": {
+          "question": "Wie unterscheidet sich Carela von anderen Pflegediensten in der Schweiz?",
+          "answer": "Hier steht eine Beschreibung, wie sich Carela von anderen unterscheidet."
+        }
+        
+      }
+    },
+    "caregivers": {
+      "label": "Pflegende Angehörige",
+      "faqs": {
+        "0": {
+          "question": "Welche Qualifikationen müssen pflegende Angehörige haben?",
+          "answer": "Hier stehen die erforderlichen Qualifikationen für pflegende Angehörige."
+        }
+        
+    },
+    "needs": {
+      "label": "Pflegebedürftige",
+      "faqs": {
+        "0": {
+          "question": "Wer wird von Carela gepflegt?",
+          "answer": "Beschreibung der Zielgruppe der Pflegebedürftigen."
+        }
+       
       }
     }
+  }
   },
   "contact": {
     "title": "Kontaktieren Sie uns",
