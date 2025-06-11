@@ -1,5 +1,6 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
+import i18n from "i18next";
 import { Button } from "@/components/ui/button";
 import { ChevronRightIcon } from "lucide-react";
 import {
@@ -22,12 +23,16 @@ export function FAQSection() {
   const { t } = useTranslation();
   const [activeCategory, setActiveCategory] = useState<Category>("general");
 
+  // ✅ Force German for debugging (you can remove this later if needed)
+  useEffect(() => {
+    i18n.changeLanguage("de");
+  }, []);
+
   const scrollToContact = () => {
     const contactSection = document.getElementById("contact");
     if (contactSection) contactSection.scrollIntoView({ behavior: "smooth" });
   };
 
-  // Prepare the FAQ data dynamically from translations:
   const faqData: Record<Category, { label: string; faqs: { question: string; answer: string }[] }> = {
     general: {
       label: t("faq.general.label"),
@@ -70,7 +75,7 @@ export function FAQSection() {
               <button
                 key={key}
                 onClick={() => setActiveCategory(key)}
-                className={`px-4 py-2 rounded-full font-semibold border-2 transition-colors duration-300`}
+                className="px-4 py-2 rounded-full font-semibold border-2 transition-colors duration-300"
                 style={{
                   backgroundColor: isActive ? baseColor : "transparent",
                   color: isActive ? "white" : baseColor,
@@ -90,12 +95,12 @@ export function FAQSection() {
             const activeColor = colorPalette[activeCategory].active;
             return (
               <AccordionItem
-                key={index}
-                value={`item-${index}`}
-                className={`border rounded-lg overflow-hidden mb-4`}
+                key={`${activeCategory}-${index}`}
+                value={`item-${activeCategory}-${index}`}
+                className="border rounded-lg overflow-hidden mb-4"
               >
                 <AccordionTrigger
-                  className={`p-4 text-left font-semibold text-lg transition-colors duration-300`}
+                  className="p-4 text-left font-semibold text-lg transition-colors duration-300"
                   style={{
                     color: "white",
                     border: `2px solid ${baseColor}`,
@@ -106,7 +111,10 @@ export function FAQSection() {
                 </AccordionTrigger>
                 <AccordionContent
                   className="p-4 bg-white"
-                  style={{ color: activeColor, border: `2px solid ${activeColor}` }}
+                  style={{
+                    color: activeColor,
+                    border: `2px solid ${activeColor}`,
+                  }}
                 >
                   {faq.answer}
                 </AccordionContent>

@@ -49,44 +49,122 @@
       }
     }
   },
-  "faq": {
+"faq": {
     "title": "Häufig gestellte Fragen",
     "subtitle": "Antworten auf Ihre wichtigsten Fragen",
     "general": {
       "label": "Allgemein",
       "faqs": {
         "0": {
-          "question": "Was genau ist Carela und welche Dienstleistungen bieten wir an?",
-          "answer": "Hier steht eine allgemeine Beschreibung von Carela und den angebotenen Dienstleistungen."
+          "question": "Was ist Spitex und welche Leistungen bietet sie an?",
+          "answer": "Spitex ist ein ambulanter Pflegedienst, der Menschen zuhause bei der Pflege und Betreuung unterstützt. JCare bietet dabei professionelle Pflege, Haushaltshilfe, Betreuung und Beratung, damit Sie oder Ihre Angehörigen möglichst selbstbestimmt leben können."
         },
         "1": {
-          "question": "Wie unterscheidet sich Carela von anderen Pflegediensten in der Schweiz?",
-          "answer": "Hier steht eine Beschreibung, wie sich Carela von anderen unterscheidet."
+          "question": "Wer kann Spitex-Leistungen in Anspruch nehmen?",
+          "answer": "Jeder, der aufgrund von Alter, Krankheit oder Unfall Unterstützung zuhause braucht, kann Spitex-Leistungen beantragen – unabhängig von Alter oder Gesundheitszustand."
+        },
+        "2": {
+          "question": "Wie funktioniert die Finanzierung von Spitex-Leistungen?",
+          "answer": "Die Kosten werden in der Regel von der obligatorischen Krankenpflegeversicherung übernommen. Je nach Pflegebedarf und Kanton können Zuzahlungen anfallen. JCare berät Sie individuell zur Kostenübernahme."
+        },
+        "3": {
+          "question": "Wie beantrage ich Unterstützung oder Pflegeleistungen?",
+          "answer": "Sie können bei JCare oder Ihrer Krankenkasse direkt einen Antrag stellen. Wir begleiten Sie dabei und helfen, die notwendigen Formulare auszufüllen und den Pflegebedarf einzuschätzen."
+        },
+        "4": {
+          "question": "Welche Voraussetzungen muss ich erfüllen, um Pflegeleistungen zu erhalten?",
+          "answer": "Es muss ein medizinisch festgestellter Pflegebedarf vorliegen, der eine ambulante Betreuung nötig macht. JCare arbeitet eng mit Ärzten und Versicherungen zusammen, um den Bedarf zu ermitteln."
+        },
+        "5": {
+          "question": "Welche Rolle spielen Krankenkassen und Pflegeversicherung?",
+          "answer": "Die Krankenkassen übernehmen die Kosten für medizinisch notwendige Pflegeleistungen. JCare hilft Ihnen, den richtigen Versicherungsumfang zu klären und unterstützt bei der Abrechnung."
+        },
+        "6": {
+          "question": "Wie unterscheiden sich die Leistungen von Spitex und Heimen?",
+          "answer": "Spitex bietet ambulante Pflege zuhause an, während Heime eine stationäre Betreuung ermöglichen. JCare fokussiert sich darauf, Pflegebedürftige möglichst lange im gewohnten Umfeld zu unterstützen."
+        },
+        "7": {
+          "question": "Wie läuft die Zusammenarbeit zwischen Ärzten, Spitex und anderen Institutionen?",
+          "answer": "JCare koordiniert sich eng mit Ärzten, Therapeuten und sozialen Diensten, um eine ganzheitliche Betreuung sicherzustellen und Ihre Bedürfnisse bestmöglich zu erfüllen."
         }
-        
       }
     },
     "caregivers": {
       "label": "Pflegende Angehörige",
       "faqs": {
         "0": {
-          "question": "Welche Qualifikationen müssen pflegende Angehörige haben?",
-          "answer": "Hier stehen die erforderlichen Qualifikationen für pflegende Angehörige."
+          "question": "Welche Unterstützungsmöglichkeiten gibt es für pflegende Angehörige?",
+          "answer": "JCare bietet Beratung, Schulungen und Entlastungsangebote an, damit pflegende Angehörige unterstützt werden und ihre wichtige Rolle bestmöglich ausfüllen können."
+        },
+        "1": {
+          "question": "Wie kann ich mich als pflegende Angehörige entlasten lassen?",
+          "answer": "Durch zeitweise Übernahme der Pflege, Tagesstrukturen oder Beratungsangebote können wir Sie bei JCare entlasten und Ihnen Raum für Erholung schaffen."
+        },
+        "2": {
+          "question": "Welche Rechte und Ansprüche haben pflegende Angehörige?",
+          "answer": "Pflegende Angehörige können je nach Kanton finanzielle Unterstützung, Pflegefreibeträge oder Freistellungen vom Beruf erhalten. JCare informiert Sie gerne zu Ihren individuellen Ansprüchen."
+        },
+        "3": {
+          "question": "Wie kann ich Pflege und Beruf besser miteinander vereinbaren?",
+          "answer": "Mit flexiblen Pflegezeiten, Unterstützung durch JCare und Beratung zur Organisation helfen wir Ihnen, Beruf und Pflege zu kombinieren."
+        },
+        "4": {
+          "question": "Gibt es finanzielle Unterstützung oder Entschädigung für pflegende Angehörige?",
+          "answer": "Ja, je nach Situation gibt es Entschädigungen oder Unterstützungsangebote. JCare hilft Ihnen, diese zu beantragen und nutzt vorhandene Angebote optimal."
+        },
+        "5": {
+          "question": "Wie erkenne ich, wann ich Hilfe in Anspruch nehmen sollte?",
+          "answer": "Wenn Sie sich überfordert, erschöpft oder unsicher fühlen, ist es Zeit, Unterstützung zu holen. JCare steht Ihnen jederzeit beratend zur Seite."
+        },
+        "6": {
+          "question": "Welche Schulungen oder Beratungen stehen für pflegende Angehörige zur Verfügung?",
+          "answer": "Wir bieten praktische Kurse und individuelle Beratung an, um Sie für die Herausforderungen der Pflege zu stärken."
+        },
+        "7": {
+          "question": "Wie kann ich mit Stress und Überforderung umgehen?",
+          "answer": "JCare unterstützt Sie durch Beratung, Stressbewältigungsstrategien und vermittelt bei Bedarf professionelle Hilfe."
         }
-        
+      }
     },
     "needs": {
       "label": "Pflegebedürftige",
       "faqs": {
         "0": {
-          "question": "Wer wird von Carela gepflegt?",
-          "answer": "Beschreibung der Zielgruppe der Pflegebedürftigen."
+          "question": "Wie wird der Pflegebedarf ermittelt und wer entscheidet darüber?",
+          "answer": "Der Pflegebedarf wird von medizinischen Fachpersonen zusammen mit Ihnen und JCare eingeschätzt. Versicherungen und Ärzte entscheiden anhand von Gutachten über Leistungen."
+        },
+        "1": {
+          "question": "Welche Leistungen kann ich als Pflegebedürftiger erwarten?",
+          "answer": "JCare bietet individuelle Pflege, Betreuung, Medikamentenmanagement, Haushaltshilfe und Begleitung – alles angepasst an Ihre persönlichen Bedürfnisse."
+        },
+        "2": {
+          "question": "Welche Voraussetzungen müssen erfüllt sein, um Pflegeleistungen zu erhalten?",
+          "answer": "Sie müssen einen medizinisch bestätigten Bedarf für ambulante Pflege haben. JCare unterstützt Sie beim Antrag und bei der Begutachtung."
+        },
+        "3": {
+          "question": "Wie kann ich die Qualität der Pflege sicherstellen?",
+          "answer": "JCare arbeitet mit qualifizierten Fachpersonen und setzt auf regelmässige Kontrollen und Feedback, um Ihre Zufriedenheit sicherzustellen."
+        },
+        "4": {
+          "question": "Was passiert, wenn sich mein Gesundheitszustand ändert?",
+          "answer": "Bei Änderungen passen wir gemeinsam mit Ihnen den Pflegeplan an und koordinieren neue Leistungen."
+        },
+        "5": {
+          "question": "Wie werden Medikamente und Therapien im Rahmen der Pflege koordiniert?",
+          "answer": "JCare koordiniert mit Ärzten und Apotheken, um eine sichere und zuverlässige Medikamentenversorgung zu gewährleisten."
+        },
+        "6": {
+          "question": "Welche Möglichkeiten der Betreuung gibt es neben der ambulanten Pflege?",
+          "answer": "Neben der Pflege zuhause bieten wir Beratung zu Tagesstrukturen, betreutem Wohnen oder stationärer Pflege, falls gewünscht."
+        },
+        "7": {
+          "question": "Wie kann ich meine Selbstständigkeit so lange wie möglich erhalten?",
+          "answer": "JCare fördert Ihre Fähigkeiten durch gezielte Unterstützung und motivierende Begleitung, damit Sie möglichst lange selbstständig bleiben."
         }
-       
       }
     }
-  }
   },
+  
   "contact": {
     "title": "Kontaktieren Sie uns",
     "subtitle": "Wir sind hier, um zu helfen",
