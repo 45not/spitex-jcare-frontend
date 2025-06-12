@@ -9,6 +9,9 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { useToast } from "@/hooks/use-toast";
 import { sendEmail } from "@/lib/emailjs";
+import { useRef, useState, useEffect } from "react";
+import ReCAPTCHA from "react-google-recaptcha";
+import { SmartSelect } from "@/components/ui/SmartSelect";
 
 type FormValues = {
   firstName: string;
@@ -36,6 +39,27 @@ const getSourceOptions = (t: any) => [
   t('contact.form.sources.social'), 
   t('contact.form.sources.other')
 ];
+
+export function useGoogleTranslateActive() {
+  const [active, setActive] = useState(false);
+
+  useEffect(() => {
+    function checkTranslate() {
+      return !!document.querySelector('iframe.goog-te-banner-frame');
+    }
+    setActive(checkTranslate());
+
+    const observer = new MutationObserver(() => {
+      setActive(checkTranslate());
+    });
+
+    observer.observe(document.body, { childList: true, subtree: true });
+
+    return () => observer.disconnect();
+  }, []);
+
+  return active;
+}
 
 export function ContactForm() {
   const { t } = useTranslation();
@@ -66,6 +90,8 @@ export function ContactForm() {
     },
   });
 
+  const recaptchaRef = useRef<ReCAPTCHA>(null);
+
   const onSubmit = async (data: FormValues) => {
     try {
       await sendEmail(data);
@@ -87,6 +113,11 @@ export function ContactForm() {
   return (
     <Form {...form}>
       <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+        <ReCAPTCHA
+          ref={recaptchaRef}
+          size="invisible"
+          sitekey={import.meta.env.VITE_RECAPTCHA_SITE_KEY}
+        />
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <FormField
             control={form.control}
@@ -152,20 +183,14 @@ export function ContactForm() {
             render={({ field }) => (
               <FormItem>
                 <FormLabel>{t('contact.form.canton')} *</FormLabel>
-                <Select onValueChange={field.onChange} defaultValue={field.value}>
-                  <FormControl>
-                    <SelectTrigger>
-                      <SelectValue placeholder={t('please select')} />
-                    </SelectTrigger>
-                  </FormControl>
-                  <SelectContent>
-                    {cantons.map((canton) => (
-                      <SelectItem key={canton} value={canton}>
-                        {canton}
-                      </SelectItem>
-                    ))}
-                  </SelectContent>
-                </Select>
+                <FormControl>
+                  <SmartSelect
+                    options={cantons.map(c => ({ value: c, label: c }))}
+                    value={field.value}
+                    onChange={field.onChange}
+                    placeholder={t('please select')}
+                  />
+                </FormControl>
                 <FormMessage />
               </FormItem>
             )}
@@ -176,23 +201,14 @@ export function ContactForm() {
             render={({ field }) => (
               <FormItem>
                 <FormLabel>{t('contact.form.source')}</FormLabel>
-                <Select 
-                  onValueChange={field.onChange} 
-                  defaultValue={field.value}
-                >
-                  <FormControl>
-                    <SelectTrigger>
-                      <SelectValue placeholder={t('please select')} />
-                    </SelectTrigger>
-                  </FormControl>
-                  <SelectContent>
-                    {getSourceOptions(t).map((source) => (
-                      <SelectItem key={source} value={source}>
-                        {source}
-                      </SelectItem>
-                    ))}
-                  </SelectContent>
-                </Select>
+                <FormControl>
+                  <SmartSelect
+                    options={getSourceOptions(t).map(s => ({ value: s, label: s }))}
+                    value={field.value}
+                    onChange={field.onChange}
+                    placeholder={t('please select')}
+                  />
+                </FormControl>
                 <FormMessage />
               </FormItem>
             )}
