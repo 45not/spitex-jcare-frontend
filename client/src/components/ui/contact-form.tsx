@@ -9,9 +9,8 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { useToast } from "@/hooks/use-toast";
 import { sendEmail } from "@/lib/emailjs";
-import { useRef, useState, useEffect } from "react";
-import ReCAPTCHA from "react-google-recaptcha";
-import { SmartSelect } from "@/components/ui/SmartSelect";
+import { useState, useRef } from "react";
+import { useGoogleReCaptcha } from 'react-google-recaptcha-v3';
 
 type FormValues = {
   firstName: string;
@@ -40,31 +39,13 @@ const getSourceOptions = (t: any) => [
   t('contact.form.sources.other')
 ];
 
-export function useGoogleTranslateActive() {
-  const [active, setActive] = useState(false);
-
-  useEffect(() => {
-    function checkTranslate() {
-      return !!document.querySelector('iframe.goog-te-banner-frame');
-    }
-    setActive(checkTranslate());
-
-    const observer = new MutationObserver(() => {
-      setActive(checkTranslate());
-    });
-
-    observer.observe(document.body, { childList: true, subtree: true });
-
-    return () => observer.disconnect();
-  }, []);
-
-  return active;
-}
-
 export function ContactForm() {
   const { t } = useTranslation();
   const { toast } = useToast();
-  
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const { executeRecaptcha } = useGoogleReCaptcha();
+
   const formSchema = z.object({
     firstName: z.string().min(1, { message: t('contact.form.firstName') + " " + t('is required') }),
     lastName: z.string().min(1, { message: t('contact.form.lastName') + " " + t('is required') }),
@@ -90,34 +71,46 @@ export function ContactForm() {
     },
   });
 
-  const recaptchaRef = useRef<ReCAPTCHA>(null);
-
   const onSubmit = async (data: FormValues) => {
     try {
-      await sendEmail(data);
-      toast({
-        title: t('contact.form.success'),
-        description: t('contact.form.success'),
+      setIsSubmitting(true);
+      console.log('VITE_RECAPTCHA_SITE_KEY:', import.meta.env.VITE_RECAPTCHA_SITE_KEY);      console.log("Submitting form data:", data);
+      if (!executeRecaptcha) {
+        throw new Error('reCAPTCHA not yet available');
+      }
+      const token = await executeRecaptcha('contact_form');
+      console.log("reCAPTCHA v3 token:", token);
+      if (!token) {
+        throw new Error('reCAPTCHA verification failed');
+      }
+      // Send to backend
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ ...data, recaptchaToken: token }),
       });
+      console.log("Fetch response:", response);
+      if (!response.ok) {
+        const error = await response.json();
+        throw new Error(error.message || 'Failed to send message');
+      }
+      toast({ title: t('contact.form.success'), description: t('contact.form.success') });
       form.reset();
+      setTimeout(() => setIsSubmitting(false), 30000);
     } catch (error) {
       toast({
         title: t('contact.form.error'),
-        description: t('contact.form.error'),
+        description: error instanceof Error ? error.message : t('contact.form.error'),
         variant: "destructive",
       });
-      console.error("Error sending email:", error);
+      setIsSubmitting(false);
+      console.error("Error in onSubmit:", error);
     }
   };
 
   return (
     <Form {...form}>
       <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
-        <ReCAPTCHA
-          ref={recaptchaRef}
-          size="invisible"
-          sitekey={import.meta.env.VITE_RECAPTCHA_SITE_KEY}
-        />
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <FormField
             control={form.control}
@@ -183,14 +176,20 @@ export function ContactForm() {
             render={({ field }) => (
               <FormItem>
                 <FormLabel>{t('contact.form.canton')} *</FormLabel>
-                <FormControl>
-                  <SmartSelect
-                    options={cantons.map(c => ({ value: c, label: c }))}
-                    value={field.value}
-                    onChange={field.onChange}
-                    placeholder={t('please select')}
-                  />
-                </FormControl>
+                <Select onValueChange={field.onChange} defaultValue={field.value}>
+                  <FormControl>
+                    <SelectTrigger>
+                      <SelectValue placeholder={t('please select')} />
+                    </SelectTrigger>
+                  </FormControl>
+                  <SelectContent>
+                    {cantons.map((canton) => (
+                      <SelectItem key={canton} value={canton}>
+                        {canton}
+                      </SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
                 <FormMessage />
               </FormItem>
             )}
@@ -201,14 +200,23 @@ export function ContactForm() {
             render={({ field }) => (
               <FormItem>
                 <FormLabel>{t('contact.form.source')}</FormLabel>
-                <FormControl>
-                  <SmartSelect
-                    options={getSourceOptions(t).map(s => ({ value: s, label: s }))}
-                    value={field.value}
-                    onChange={field.onChange}
-                    placeholder={t('please select')}
-                  />
-                </FormControl>
+                <Select 
+                  onValueChange={field.onChange} 
+                  defaultValue={field.value}
+                >
+                  <FormControl>
+                    <SelectTrigger>
+                      <SelectValue placeholder={t('please select')} />
+                    </SelectTrigger>
+                  </FormControl>
+                  <SelectContent>
+                    {getSourceOptions(t).map((source) => (
+                      <SelectItem key={source} value={source}>
+                        {source}
+                      </SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
                 <FormMessage />
               </FormItem>
             )}

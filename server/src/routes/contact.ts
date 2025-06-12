@@ -24,22 +24,21 @@ const contactSchema = z.object({
   privacy: z.literal(true),
   recaptchaToken: z.string()
 });
-
-// Create Nodemailer transporter
-const transporter = nodemailer.createTransport({
+console.log('Nodemailer config:', {
   host: process.env.SMTP_HOST,
-  port: parseInt(process.env.SMTP_PORT || '587'),
-  secure: process.env.SMTP_PORT === '465',
-  auth: {
-    user: process.env.SMTP_USER,
-    pass: process.env.SMTP_PASS,
-  },
+  port: process.env.SMTP_PORT,
+  user: process.env.SMTP_USER,
+  pass: process.env.SMTP_PASS ? '***HIDDEN***' : 'NOT SET', // don't print the real password
 });
 
 router.post('/contact', contactLimiter, async (req, res) => {
   try {
     // Validate request body
     const data = contactSchema.parse(req.body);
+   
+    // Debug: Log incoming reCAPTCHA token
+    //console.log('Received reCAPTCHA token:', data.recaptchaToken?.slice(0, 20) + '...');
+    //console.log('Using reCAPTCHA secret (first 8 chars):', (process.env.RECAPTCHA_SECRET_KEY || '').slice(0, 8));
 
     // Verify reCAPTCHA
     const recaptchaResponse = await axios.post(
@@ -53,9 +52,41 @@ router.post('/contact', contactLimiter, async (req, res) => {
       }
     );
 
+    // Debug: Log Google API response
+    console.log('Google reCAPTCHA API response:', recaptchaResponse.data);
+
+    // For v3: check success and score
     if (!recaptchaResponse.data.success) {
+      console.log('reCAPTCHA not successful');
       return res.status(400).json({ message: 'reCAPTCHA verification failed' });
     }
+    if (typeof recaptchaResponse.data.score === 'number') {
+      console.log('reCAPTCHA v3 score:', recaptchaResponse.data.score);
+      if (recaptchaResponse.data.score < 0.5) {
+        console.log('reCAPTCHA v3 score too low');
+        return res.status(400).json({ message: 'reCAPTCHA score too low' });
+      }
+    }
+
+    // Create Nodemailer transporter INSIDE the handler
+    const transporter = nodemailer.createTransport({
+      host: process.env.SMTP_HOST,
+      port: parseInt(process.env.SMTP_PORT || '587'),
+      secure: process.env.SMTP_PORT === '465',
+      auth: {
+        user: process.env.SMTP_USER,
+        pass: process.env.SMTP_PASS,
+      },
+    });
+
+    // Optionally verify transporter
+    transporter.verify(function(error, success) {
+      if (error) {
+        console.error('Nodemailer connection error:', error);
+      } else {
+        console.log("Server is ready to take our messages");
+      }
+    });
 
     // Prepare email content
     const mailOptions = {

@@ -1,13 +1,30 @@
+import dotenv from 'dotenv';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+// Polyfill __dirname for ES Modules:
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+// Load environment variables BEFORE any other imports
+dotenv.config({ path: path.resolve(__dirname, '.env') });
+console.log('SMTP_HOST:', process.env.SMTP_HOST);
+console.log('SMTP_PORT:', process.env.SMTP_PORT);
+
 import express, { type Request, Response, NextFunction } from "express";
 import { registerRoutes } from "./routes";
 import { setupVite, serveStatic, log } from "./vite";
 import cors from 'cors';
-import dotenv from 'dotenv';
-import path from 'path';
+
 import contactRouter from './src/routes/contact';
 
+// Polyfill __dirname for ES Modules:
+
+
 // Load environment variables
-dotenv.config();
+
+
+
 
 const app = express();
 const port = process.env.PORT || 3000;

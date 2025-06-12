@@ -3,6 +3,7 @@ import App from "./App";
 import "./index.css";
 // Import i18n
 import "./i18n/i18n";
+import { GoogleReCaptchaProvider } from 'react-google-recaptcha-v3';
 
 // Initialize EmailJS
 (function() {
@@ -13,4 +14,8 @@ import "./i18n/i18n";
   }
 })();
 
-createRoot(document.getElementById("root")!).render(<App />);
+createRoot(document.getElementById("root")!).render(
+  <GoogleReCaptchaProvider reCaptchaKey={import.meta.env.VITE_RECAPTCHA_SITE_KEY}>
+    <App />
+  </GoogleReCaptchaProvider>
+);
