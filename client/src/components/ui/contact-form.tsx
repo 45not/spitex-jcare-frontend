@@ -43,7 +43,6 @@ export function ContactForm() {
   const { t } = useTranslation();
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
-
   const { executeRecaptcha } = useGoogleReCaptcha();
 
   const formSchema = z.object({
@@ -74,12 +73,10 @@ export function ContactForm() {
   const onSubmit = async (data: FormValues) => {
     try {
       setIsSubmitting(true);
-      console.log('VITE_RECAPTCHA_SITE_KEY:', import.meta.env.VITE_RECAPTCHA_SITE_KEY);      console.log("Submitting form data:", data);
       if (!executeRecaptcha) {
         throw new Error('reCAPTCHA not yet available');
       }
       const token = await executeRecaptcha('contact_form');
-      console.log("reCAPTCHA v3 token:", token);
       if (!token) {
         throw new Error('reCAPTCHA verification failed');
       }
@@ -89,7 +86,6 @@ export function ContactForm() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ ...data, recaptchaToken: token }),
       });
-      console.log("Fetch response:", response);
       if (!response.ok) {
         const error = await response.json();
         throw new Error(error.message || 'Failed to send message');
