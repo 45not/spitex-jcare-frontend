@@ -17,14 +17,14 @@
     "description": "Spitex JCare wurde gegründet, um pflegenden Angehörigen in der Schweiz umfassende Unterstützung zu bieten. Wir verstehen die Herausforderungen, mit denen Sie konfrontiert sind, und sind hier, um Ihnen durch personalisierte Unterstützung, Ressourcen und Beratung zu helfen. Unser Team aus erfahrenen Pflegefachleuten ist darauf spezialisiert, Sie durch den Pflegeprozess zu führen und sicherzustellen, dass Sie die Unterstützung erhalten, die Sie benötigen.",
     "button": "Mehr erfahren",
     "contact_phone_title": "Telefonisch erreichen Sie uns unter:",
-    "contact_hours": "zwischen 8:00 - 17:00 Uhr CET",
+    "contact_hours": "zwischen 9:00 - 17:00 Uhr CET",
     "contact_email_title": "Per E-Mail:",
     "support_areas_title": "Wir unterstützen Sie in den folgenden Bereichen:",
     "support_areas": {
-      "applications": "Antragsstellung und Behördengänge",
-      "care_tips": "Pflegetipps und -schulungen",
+      "applications": "Beratung",
+      "care_tips": "Planung",
       "emotional_support": "Emotionale Unterstützung",
-      "financial_advice": "Finanzielle Beratung"
+      "financial_advice": "Finanzielle Unterstützung"
     }
   },
   "support": {
@@ -40,12 +40,12 @@
         "description": "Entwicklung eines maßgeschneiderten Pflegeplans, der auf Ihre Situation zugeschnitten ist."
       },
       "3": {
-        "title": "Unterstützung",
-        "description": "Kontinuierliche Unterstützung und Anleitung während Ihrer Pflegereise."
+        "title": "Finanzielle Unterstützung",
+        "description": "Sie haben Anspruch auf eine finanzielle Entschädigung für die Pflege Ihrer Angehörigen. Wir koordinieren mit Ihrer Krankenkasse und zahlen Ihnen einen fairen Stundenlohn inklusive Sozialleistungen."
       },
       "4": {
-        "title": "Nachbetreuung",
-        "description": "Regelmäßige Überprüfungen, um sicherzustellen, dass Ihre Bedürfnisse erfüllt werden."
+        "title": "Wohlbefinden",
+        "description": "Kontinuierliche Unterstützung und regelmässige Nachfragen, damit Sie sich auf Ihrer Pflege-Reise nie allein fühlen."
       }
     }
   },
@@ -56,36 +56,20 @@
       "label": "Allgemein",
       "faqs": {
         "0": {
-          "question": "Was ist Spitex und welche Leistungen bietet sie an?",
-          "answer": "Spitex ist ein ambulanter Pflegedienst, der Menschen zuhause bei der Pflege und Betreuung unterstützt. JCare bietet dabei professionelle Pflege, Haushaltshilfe, Betreuung und Beratung, damit Sie oder Ihre Angehörigen möglichst selbstbestimmt leben können."
+          "question": "Was ist JCare und welche Leistungen bietet JCare an?",
+          "answer": "JCare ist eine Organisation für Betreuung zuhause, die sich auf die Unterstützung von Familien konzentriert. Wir begleiten und unterstützen pflegende Angehörige professionell, finanziell und emotional."
         },
         "1": {
-          "question": "Wer kann Spitex-Leistungen in Anspruch nehmen?",
-          "answer": "Jeder, der aufgrund von Alter, Krankheit oder Unfall Unterstützung zuhause braucht, kann Spitex-Leistungen beantragen – unabhängig von Alter oder Gesundheitszustand."
+          "question": "Welche Qualifikationen brauchen pflegende Angehörige?",
+          "answer": "Es ist keine spezielle Ausbildung nötig. JCare heisst alle pflegenden Angehörigen willkommen – mit oder ohne Vorkenntnisse. Unser erfahrenes Pflegefachteam steht Ihnen zur Seite und gibt praktische Tipps, damit Sie sich nie allein fühlen und Überlastung vermeiden."
         },
         "2": {
-          "question": "Wie funktioniert die Finanzierung von Spitex-Leistungen?",
-          "answer": "Die Kosten werden in der Regel von der obligatorischen Krankenpflegeversicherung übernommen. Je nach Pflegebedarf und Kanton können Zuzahlungen anfallen. JCare berät Sie individuell zur Kostenübernahme."
+          "question": "Wie stellt JCare sicher, dass die Pflegequalität stimmt?",
+          "answer": "JCare übernimmt Verantwortung für die Qualität der Betreuung durch pflegende Angehörige. Sie werden von einer erfahrenen Pflegefachperson begleitet, die regelmässig Kontakt hält, Schulungen gibt und persönliche Beratung anbietet – vor Ort und telefonisch."
         },
         "3": {
-          "question": "Wie beantrage ich Unterstützung oder Pflegeleistungen?",
-          "answer": "Sie können bei JCare oder Ihrer Krankenkasse direkt einen Antrag stellen. Wir begleiten Sie dabei und helfen, die notwendigen Formulare auszufüllen und den Pflegebedarf einzuschätzen."
-        },
-        "4": {
-          "question": "Welche Voraussetzungen muss ich erfüllen, um Pflegeleistungen zu erhalten?",
-          "answer": "Es muss ein medizinisch festgestellter Pflegebedarf vorliegen, der eine ambulante Betreuung nötig macht. JCare arbeitet eng mit Ärzten und Versicherungen zusammen, um den Bedarf zu ermitteln."
-        },
-        "5": {
-          "question": "Welche Rolle spielen Krankenkassen und Pflegeversicherung?",
-          "answer": "Die Krankenkassen übernehmen die Kosten für medizinisch notwendige Pflegeleistungen. JCare hilft Ihnen, den richtigen Versicherungsumfang zu klären und unterstützt bei der Abrechnung."
-        },
-        "6": {
-          "question": "Wie unterscheiden sich die Leistungen von Spitex und Heimen?",
-          "answer": "Spitex bietet ambulante Pflege zuhause an, während Heime eine stationäre Betreuung ermöglichen. JCare fokussiert sich darauf, Pflegebedürftige möglichst lange im gewohnten Umfeld zu unterstützen."
-        },
-        "7": {
-          "question": "Wie läuft die Zusammenarbeit zwischen Ärzten, Spitex und anderen Institutionen?",
-          "answer": "JCare koordiniert sich eng mit Ärzten, Therapeuten und sozialen Diensten, um eine ganzheitliche Betreuung sicherzustellen und Ihre Bedürfnisse bestmöglich zu erfüllen."
+          "question": "Wie finanziert sich JCare? Gibt es staatliche Unterstützung oder andere Fördermöglichkeiten?",
+          "answer": "In der Schweiz leisten Angehörige jährlich Millionen von Betreuungsstunden. Seit 2019 können pflegende Angehörige für Grundpflege wie Körperpflege, Mobilisation, An- und Ausziehen oder Unterstützung beim Essen bezahlt werden, wenn sie mit einer anerkannten Organisation wie JCare zusammenarbeiten. Die Finanzierung erfolgt durch die Krankenkassen und in gewissen Fällen durch Gemeinden oder Kantone."
         }
       }
     },
@@ -93,36 +77,40 @@
       "label": "Pflegende Angehörige",
       "faqs": {
         "0": {
-          "question": "Welche Unterstützungsmöglichkeiten gibt es für pflegende Angehörige?",
-          "answer": "JCare bietet Beratung, Schulungen und Entlastungsangebote an, damit pflegende Angehörige unterstützt werden und ihre wichtige Rolle bestmöglich ausfüllen können."
+          "question": "Wer kann als pflegende Angehörige gelten?",
+          "answer": "Pflegende Angehörige sind Personen, die regelmässig eine nahestehende Person im Alltag unterstützen, zum Beispiel Eltern, Kinder, Partnerinnen und Partner, Geschwister oder auch enge Freunde und Nachbarn."
         },
         "1": {
-          "question": "Wie kann ich mich als pflegende Angehörige entlasten lassen?",
-          "answer": "Durch zeitweise Übernahme der Pflege, Tagesstrukturen oder Beratungsangebote können wir Sie bei JCare entlasten und Ihnen Raum für Erholung schaffen."
+          "question": "Kann ich eine finanzielle Entschädigung für die Pflege meiner Eltern oder Angehörigen erhalten?",
+          "answer": "Ja, in der Schweiz können Sie für die Pflege Ihrer Eltern oder nahestehenden Personen eine finanzielle Entschädigung erhalten. Wenn Sie bei JCare als pflegende Angehörige angestellt sind, werden anerkannte Grundpflegeleistungen vergütet. Wir beraten Sie gerne zu allen Möglichkeiten."
         },
         "2": {
-          "question": "Welche Rechte und Ansprüche haben pflegende Angehörige?",
-          "answer": "Pflegende Angehörige können je nach Kanton finanzielle Unterstützung, Pflegefreibeträge oder Freistellungen vom Beruf erhalten. JCare informiert Sie gerne zu Ihren individuellen Ansprüchen."
+          "question": "Welche Pflegeaufgaben werden vergütet?",
+          "answer": "Sie erhalten finanzielle Unterstützung für Grundpflege nach Artikel 7 KLV, zum Beispiel Hilfe beim Essen und Trinken, An- und Ausziehen, Körperpflege, Mobilität und Lagerung. Diese Leistungen werden mit einem Stundenlohn von CHF 37.90 vergütet."
         },
         "3": {
-          "question": "Wie kann ich Pflege und Beruf besser miteinander vereinbaren?",
-          "answer": "Mit flexiblen Pflegezeiten, Unterstützung durch JCare und Beratung zur Organisation helfen wir Ihnen, Beruf und Pflege zu kombinieren."
+          "question": "Wie viel verdiene ich als pflegende Angehörige?",
+          "answer": "Für anerkannte Grundpflegeleistungen zahlt JCare einen Stundenlohn von CHF 37.90, inklusive Ferien, 13. Monatslohn und Sozialversicherungen. Der genaue Betrag richtet sich nach dem individuellen Pflegeaufwand."
         },
         "4": {
-          "question": "Gibt es finanzielle Unterstützung oder Entschädigung für pflegende Angehörige?",
-          "answer": "Ja, je nach Situation gibt es Entschädigungen oder Unterstützungsangebote. JCare hilft Ihnen, diese zu beantragen und nutzt vorhandene Angebote optimal."
+          "question": "Brauche ich eine spezielle Ausbildung?",
+          "answer": "Nein, Sie benötigen keine spezielle Ausbildung. Wenn Sie sich in der Lage fühlen, eine nahestehende Person zu pflegen, unterstützen und schulen wir Sie persönlich bei JCare."
         },
         "5": {
-          "question": "Wie erkenne ich, wann ich Hilfe in Anspruch nehmen sollte?",
-          "answer": "Wenn Sie sich überfordert, erschöpft oder unsicher fühlen, ist es Zeit, Unterstützung zu holen. JCare steht Ihnen jederzeit beratend zur Seite."
+          "question": "Welche Voraussetzungen muss ich erfüllen, um als pflegende Angehörige tätig zu werden?",
+          "answer": "Die Anforderungen sind einfach: Sie sollten körperlich in der Lage sein, pflegerische Aufgaben zu übernehmen, und über Geduld und Einfühlungsvermögen verfügen. Das Mindestalter beträgt achtzehn Jahre. Die betreute Person muss in einem Kanton wohnen, in dem JCare zugelassen ist. Auch nach dem Pensionsalter ist eine Anstellung möglich."
         },
         "6": {
-          "question": "Welche Schulungen oder Beratungen stehen für pflegende Angehörige zur Verfügung?",
-          "answer": "Wir bieten praktische Kurse und individuelle Beratung an, um Sie für die Herausforderungen der Pflege zu stärken."
+          "question": "Kann ich Pflegeleistungen direkt beantragen, oder brauche ich JCare?",
+          "answer": "Pflegeleistungen können nicht privat beantragt werden. Für eine Vergütung müssen Sie bei einer anerkannten Organisation wie JCare angestellt sein. Wir sorgen dafür, dass alle gesetzlichen Vorgaben und Qualitätsstandards erfüllt werden."
         },
         "7": {
-          "question": "Wie kann ich mit Stress und Überforderung umgehen?",
-          "answer": "JCare unterstützt Sie durch Beratung, Stressbewältigungsstrategien und vermittelt bei Bedarf professionelle Hilfe."
+          "question": "Kostet mich die Unterstützung von JCare etwas?",
+          "answer": "Nein, unser Service ist für Sie und die betreute Person kostenlos. Die Finanzierung erfolgt über die Krankenversicherung und manchmal auch durch Kanton oder Gemeinde. Sie zahlen nur die üblichen Krankenkassenprämien, Selbstbehalte und Kostenbeteiligungen, nicht mehr."
+        },
+        "8": {
+          "question": "Wie gross ist der administrative Aufwand für mich?",
+          "answer": "Der administrative Aufwand ist minimal. Das Wichtigste ist, dass Sie möglichst viel Zeit mit Ihren Liebsten verbringen können."
         }
       }
     },
@@ -130,41 +118,32 @@
       "label": "Pflegebedürftige",
       "faqs": {
         "0": {
-          "question": "Wie wird der Pflegebedarf ermittelt und wer entscheidet darüber?",
-          "answer": "Der Pflegebedarf wird von medizinischen Fachpersonen zusammen mit Ihnen und JCare eingeschätzt. Versicherungen und Ärzte entscheiden anhand von Gutachten über Leistungen."
+          "question": "Welche Voraussetzungen müssen erfüllt sein um Unterstützung von JCare zu erhalten?",
+          "answer": "Wenn Sie oder Ihr Kind Unterstützung bei der Grundpflege wie Hygiene, Mobilität, Toilettengang oder An und Ausziehen benötigen sei es aufgrund von Alter, Krankheit oder Behinderung kann JCare Sie unterstützen. Wir besprechen Ihre individuellen Bedürfnisse gerne persönlich mit Ihnen und Ihren Angehörigen."
         },
         "1": {
-          "question": "Welche Leistungen kann ich als Pflegebedürftiger erwarten?",
-          "answer": "JCare bietet individuelle Pflege, Betreuung, Medikamentenmanagement, Haushaltshilfe und Begleitung – alles angepasst an Ihre persönlichen Bedürfnisse."
+          "question": "Gibt es ein bestimmtes Alter oder gesundheitliche Voraussetzungen?",
+          "answer": "JCare unterstützt Menschen jeden Alters die zu Hause langfristige Betreuung benötigen egal ob Erwachsene Seniorinnen und Senioren Jugendliche oder Kinder. Entscheidend ist dass eine regelmässige Grundpflege durch eine vertraute Person notwendig ist."
         },
         "2": {
-          "question": "Welche Voraussetzungen müssen erfüllt sein, um Pflegeleistungen zu erhalten?",
-          "answer": "Sie müssen einen medizinisch bestätigten Bedarf für ambulante Pflege haben. JCare unterstützt Sie beim Antrag und bei der Begutachtung."
+          "question": "Wie funktioniert die Anmeldung bei JCare?",
+          "answer": "Der Einstieg ist einfach. Kontaktieren Sie uns per Telefon E Mail oder über unsere Website. Wir besprechen Ihre persönliche Situation gemeinsam und begleiten Sie bei den nächsten Schritten."
         },
         "3": {
-          "question": "Wie kann ich die Qualität der Pflege sicherstellen?",
-          "answer": "JCare arbeitet mit qualifizierten Fachpersonen und setzt auf regelmässige Kontrollen und Feedback, um Ihre Zufriedenheit sicherzustellen."
+          "question": "Kann ich selbst bestimmen wer mich pflegt?",
+          "answer": "Ja Sie können eine vertraute Person als Betreuungsperson auswählen das kann ein Familienmitglied eine Freundin ein Freund oder auch eine Nachbarin oder ein Nachbar sein sofern sie bereit sind bei der täglichen Pflege zu helfen."
         },
         "4": {
-          "question": "Was passiert, wenn sich mein Gesundheitszustand ändert?",
-          "answer": "Bei Änderungen passen wir gemeinsam mit Ihnen den Pflegeplan an und koordinieren neue Leistungen."
+          "question": "Wer übernimmt die Kosten für meine Pflege?",
+          "answer": "Die Kosten für Grundpflege werden von der obligatorischen Krankenversicherung und zum Teil auch vom Kanton oder der Gemeinde übernommen. Sie bezahlen nur die regulären Krankenkassenprämien Selbstbehalte und Kostenbeteiligungen. Wir verrechnen keinen täglichen Patientenbeitrag."
         },
         "5": {
-          "question": "Wie werden Medikamente und Therapien im Rahmen der Pflege koordiniert?",
-          "answer": "JCare koordiniert mit Ärzten und Apotheken, um eine sichere und zuverlässige Medikamentenversorgung zu gewährleisten."
-        },
-        "6": {
-          "question": "Welche Möglichkeiten der Betreuung gibt es neben der ambulanten Pflege?",
-          "answer": "Neben der Pflege zuhause bieten wir Beratung zu Tagesstrukturen, betreutem Wohnen oder stationärer Pflege, falls gewünscht."
-        },
-        "7": {
-          "question": "Wie kann ich meine Selbstständigkeit so lange wie möglich erhalten?",
-          "answer": "JCare fördert Ihre Fähigkeiten durch gezielte Unterstützung und motivierende Begleitung, damit Sie möglichst lange selbstständig bleiben."
+          "question": "Wie viele Stunden Pflege erhalte ich pro Woche?",
+          "answer": "Der Umfang der Pflege richtet sich nach Ihrem persönlichen Bedarf und wird gemeinsam mit Ihnen Ihrer Betreuungsperson und dem JCare Team festgelegt."
         }
       }
     }
   },
-  
   "contact": {
     "title": "Kontaktieren Sie uns",
     "subtitle": "Wir sind hier, um zu helfen",
@@ -196,7 +175,7 @@
   "sending...": "Wird gesendet...",
   "please select": "Bitte wählen...",
   "footer": {
-    "tagline": "Wir unterstützen pflegende Angehörige mit klaren Lösungen und menschlichem Verständnis.",
+    "tagline": "Wo Ihre Pflege zählt.",
     "contact": "Kontakt",
     "hours": "Öffnungszeiten",
     "monday": "Montag",
@@ -221,12 +200,12 @@
       "company_info": "Angaben gemäß § 5 TMG",
       "company_details": {
         "name": "Spitex JCare",
-        "address": "Bahnhofstrasse 10, 8001 Zürich, Schweiz"
+        "address": "Langgrütstrasse 101, 8047 Zürich, Schweiz"
       },
       "contact": "Kontakt",
       "contact_details": {
-        "phone": "Telefon: +41 800 247 247",
-        "email": "E-Mail: info@spitex-jcare.ch"
+        "phone": "Telefon: +41 797 90 70",
+        "email": "E-Mail: info@j-care.ch"
       },
       "responsible": "Verantwortlich für den Inhalt",
       "registry": "Handelsregistereintrag",

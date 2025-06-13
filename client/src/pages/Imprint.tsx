@@ -24,22 +24,22 @@ export default function Imprint() {
               <h3>{t('legal.imprint.info')}</h3>
               <p>
                 Spitex JCare<br />
-                Bahnhofstrasse 10<br />
-                8001 Zürich<br />
+                Langgrütstrasse 101<br />
+                8047 Zürich<br />
                 Schweiz
               </p>
               
               <h3>{t('legal.imprint.contact')}</h3>
               <p>
-                Telefon: +41 800 247 247<br />
-                E-Mail: info@spitex-jcare.ch
+                Telefon: +41 797 90 70<br />
+                E-Mail: info@j-care.ch
               </p>
               
               <h3>{t('legal.imprint.responsible')}</h3>
               <p>
                 Spitex JCare<br />
-                Bahnhofstrasse 10<br />
-                8001 Zürich<br />
+                Langgrütstrasse 101<br />
+                8047 Zürich<br />
                 Schweiz
               </p>
               

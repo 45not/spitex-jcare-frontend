@@ -34,23 +34,13 @@ export function AboutSection() {
               <div className="mt-8 space-y-4">
                 <div>
                   <p className="font-semibold">{t('about.contact_phone_title')}</p>
-                  <p className="text-xl text-[#E23B3B] font-bold">+41 800 247 247</p>
+                  <p className="text-xl text-[#E23B3B] font-bold">+41 797 90 70</p>
                   <p className="text-sm text-gray-600">{t('about.contact_hours')}</p>
                 </div>
                 
                 <div>
                   <p className="font-semibold">{t('about.contact_email_title')}</p>
-                  <p className="text-[#E23B3B]">info@spitex-jcare.ch</p>
-                </div>
-                
-                <div>
-                  <p className="font-semibold">{t('about.support_areas_title')}</p>
-                  <ul className="list-disc pl-5 mt-2 space-y-1">
-                    <li>{t('about.support_areas.applications')}</li>
-                    <li>{t('about.support_areas.care_tips')}</li>
-                    <li>{t('about.support_areas.emotional_support')}</li>
-                    <li>{t('about.support_areas.financial_advice')}</li>
-                  </ul>
+                  <p className="text-[#E23B3B]">info@j-care.ch</p>
                 </div>
               </div>
             </div>
