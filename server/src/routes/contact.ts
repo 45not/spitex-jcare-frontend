@@ -26,9 +26,12 @@ const contactSchema = z.object({
 });
 console.log('Nodemailer config:', {
   host: process.env.SMTP_HOST,
-  port: process.env.SMTP_PORT,
-  user: process.env.SMTP_USER,
-  pass: process.env.SMTP_PASS ? '***HIDDEN***' : 'NOT SET', // don't print the real password
+  port: parseInt(process.env.SMTP_PORT || '587'),
+  secure: process.env.SMTP_PORT === '465',
+  auth: {
+    user: process.env.SMTP_USER,
+    pass: process.env.SMTP_PASS,
+  },
 });
 
 router.post('/contact', contactLimiter, async (req, res) => {
