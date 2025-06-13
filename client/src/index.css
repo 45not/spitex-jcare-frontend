@@ -37,3 +37,8 @@
     }
   }
 }
+
+/* Hide Google reCAPTCHA v3 badge (permitted if mentioned in privacy policy) */
+.grecaptcha-badge {
+  display: none !important;
+}
