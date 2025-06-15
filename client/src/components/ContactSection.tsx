@@ -1,4 +1,4 @@
-import { ContactForm } from "@/components/ui/contact-form";
+import ContactForm  from "@/components/ui/contact-form";
 import { PhoneIcon, MailIcon, CheckIcon } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { BackgroundBubbles } from "@/components/ui/background-bubbles";
