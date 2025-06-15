@@ -77,6 +77,7 @@ export function ContactForm() {
         throw new Error('reCAPTCHA not yet available');
       }
       const token = await executeRecaptcha('contact_form');
+      console.log('reCAPTCHA token:', token);
       if (!token) {
         throw new Error('reCAPTCHA verification failed');
       }
