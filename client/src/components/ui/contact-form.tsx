@@ -1,253 +1,145 @@
-import { useForm } from "react-hook-form";
-import { z } from "zod";
-import { zodResolver } from "@hookform/resolvers/zod";
-import { useTranslation } from "react-i18next";
-import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
-import { Checkbox } from "@/components/ui/checkbox";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { useToast } from "@/hooks/use-toast";
-import { sendEmail } from "@/lib/emailjs";
-import { useState, useRef } from "react";
-import { useGoogleReCaptcha } from 'react-google-recaptcha-v3';
+import React, { useState } from 'react';
 
-type FormValues = {
-  firstName: string;
-  lastName: string;
-  email: string;
-  phone: string;
-  canton: string;
-  source?: string;
-  privacy: boolean;
-};
-
-const cantons = [
-  "Aargau", "Appenzell Innerrhoden", "Appenzell Ausserrhoden", "Bern", 
-  "Basel-Landschaft", "Basel-Stadt", "Fribourg", "Genève", "Glarus", 
-  "Graubünden", "Jura", "Luzern", "Neuchâtel", "Nidwalden", "Obwalden", 
-  "St. Gallen", "Schaffhausen", "Solothurn", "Schwyz", "Thurgau", 
-  "Ticino", "Uri", "Vaud", "Valais", "Zug", "Zürich"
-];
-
-// The sources will be translated according to the current language
-const getSourceOptions = (t: any) => [
-  t('contact.form.sources.internet'), 
-  t('contact.form.sources.friends'), 
-  t('contact.form.sources.doctor'), 
-  t('contact.form.sources.social'), 
-  t('contact.form.sources.other')
-];
-
-export function ContactForm() {
-  const { t } = useTranslation();
-  const { toast } = useToast();
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const { executeRecaptcha } = useGoogleReCaptcha();
-
-  const formSchema = z.object({
-    firstName: z.string().min(1, { message: t('contact.form.firstName') + " " + t('is required') }),
-    lastName: z.string().min(1, { message: t('contact.form.lastName') + " " + t('is required') }),
-    email: z.string().email({ message: t('valid email required') }),
-    phone: z.string().min(1, { message: t('contact.form.phone') + " " + t('is required') }),
-    canton: z.string().min(1, { message: t('contact.form.canton') + " " + t('is required') }),
-    source: z.string().optional(),
-    privacy: z.literal(true, {
-      errorMap: () => ({ message: t('must agree to privacy policy') }),
-    }),
-  });
-  
-  const form = useForm<FormValues>({
-    resolver: zodResolver(formSchema),
-    defaultValues: {
-      firstName: "",
-      lastName: "",
-      email: "",
-      phone: "",
-      canton: "",
-      source: "",
-      privacy: false as any, // Using 'as any' to bypass TypeScript check, will be set by user interaction
-    },
+const ContactForm: React.FC = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    phone: '',
+    email: '',
+    message: '',
+    privacy: false,
   });
 
-  const onSubmit = async (data: FormValues) => {
+  const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
+  const [errorMsg, setErrorMsg] = useState('');
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setStatus('loading');
+    setErrorMsg('');
+
     try {
-      setIsSubmitting(true);
-      if (!executeRecaptcha) {
-        throw new Error('reCAPTCHA not yet available');
-      }
-      const token = await executeRecaptcha('contact_form');
-      if (!token) {
-        throw new Error('reCAPTCHA verification failed');
-      }
-      // Send to backend
-      const response = await fetch('/api/contact', {
+      const response = await fetch('https://website-jcare.onrender.com/api/contact', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ ...data, recaptchaToken: token }),
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
       });
-      if (!response.ok) {
-        const error = await response.json();
-        throw new Error(error.message || 'Failed to send message');
+
+      if (response.ok) {
+        setStatus('success');
+        setFormData({
+          name: '',
+          phone: '',
+          email: '',
+          message: '',
+          privacy: false,
+        });
+      } else {
+        const data = await response.json();
+        setErrorMsg(data.message || 'Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut.');
+        setStatus('error');
       }
-      toast({ title: t('contact.form.success'), description: t('contact.form.success') });
-      form.reset();
-      setTimeout(() => setIsSubmitting(false), 30000);
     } catch (error) {
-      toast({
-        title: t('contact.form.error'),
-        description: error instanceof Error ? error.message : t('contact.form.error'),
-        variant: "destructive",
-      });
-      setIsSubmitting(false);
-      console.error("Error in onSubmit:", error);
+      setErrorMsg('Verbindungsfehler. Bitte versuchen Sie es erneut.');
+      setStatus('error');
     }
   };
 
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value, type } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: type === 'checkbox' ? (e.target as HTMLInputElement).checked : value,
+    }));
+  };
+
   return (
-    <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <FormField
-            control={form.control}
-            name="firstName"
-            render={({ field }) => (
-              <FormItem>
-                <FormLabel>{t('contact.form.firstName')} *</FormLabel>
-                <FormControl>
-                  <Input placeholder={t('contact.form.firstName')} {...field} />
-                </FormControl>
-                <FormMessage />
-              </FormItem>
-            )}
-          />
-          <FormField
-            control={form.control}
-            name="lastName"
-            render={({ field }) => (
-              <FormItem>
-                <FormLabel>{t('contact.form.lastName')} *</FormLabel>
-                <FormControl>
-                  <Input placeholder={t('contact.form.lastName')} {...field} />
-                </FormControl>
-                <FormMessage />
-              </FormItem>
-            )}
-          />
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <FormField
-            control={form.control}
-            name="email"
-            render={({ field }) => (
-              <FormItem>
-                <FormLabel>{t('contact.form.email')} *</FormLabel>
-                <FormControl>
-                  <Input placeholder={t('contact.form.email')} type="email" {...field} />
-                </FormControl>
-                <FormMessage />
-              </FormItem>
-            )}
-          />
-          <FormField
-            control={form.control}
-            name="phone"
-            render={({ field }) => (
-              <FormItem>
-                <FormLabel>{t('contact.form.phone')} *</FormLabel>
-                <FormControl>
-                  <Input placeholder={t('contact.form.phone')} {...field} />
-                </FormControl>
-                <FormMessage />
-              </FormItem>
-            )}
-          />
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <FormField
-            control={form.control}
-            name="canton"
-            render={({ field }) => (
-              <FormItem>
-                <FormLabel>{t('contact.form.canton')} *</FormLabel>
-                <Select onValueChange={field.onChange} defaultValue={field.value}>
-                  <FormControl>
-                    <SelectTrigger>
-                      <SelectValue placeholder={t('please select')} />
-                    </SelectTrigger>
-                  </FormControl>
-                  <SelectContent>
-                    {cantons.map((canton) => (
-                      <SelectItem key={canton} value={canton}>
-                        {canton}
-                      </SelectItem>
-                    ))}
-                  </SelectContent>
-                </Select>
-                <FormMessage />
-              </FormItem>
-            )}
-          />
-          <FormField
-            control={form.control}
-            name="source"
-            render={({ field }) => (
-              <FormItem>
-                <FormLabel>{t('contact.form.source')}</FormLabel>
-                <Select 
-                  onValueChange={field.onChange} 
-                  defaultValue={field.value}
-                >
-                  <FormControl>
-                    <SelectTrigger>
-                      <SelectValue placeholder={t('please select')} />
-                    </SelectTrigger>
-                  </FormControl>
-                  <SelectContent>
-                    {getSourceOptions(t).map((source) => (
-                      <SelectItem key={source} value={source}>
-                        {source}
-                      </SelectItem>
-                    ))}
-                  </SelectContent>
-                </Select>
-                <FormMessage />
-              </FormItem>
-            )}
-          />
-        </div>
-
-        <FormField
-          control={form.control}
-          name="privacy"
-          render={({ field }) => (
-            <FormItem className="flex flex-row items-start space-x-3 space-y-0">
-              <FormControl>
-                <Checkbox
-                  checked={field.value}
-                  onCheckedChange={field.onChange}
-                />
-              </FormControl>
-              <div className="space-y-1 leading-none">
-                <FormLabel>
-                  {t('contact.form.privacy')} <a href="/privacy" className="text-[#E23B3B] hover:underline">{t('privacy policy')}</a> *
-                </FormLabel>
-                <FormMessage />
-              </div>
-            </FormItem>
-          )}
+    <form onSubmit={handleSubmit} className="max-w-lg mx-auto space-y-6">
+      <div className="space-y-4">
+        <input
+          type="text"
+          name="name"
+          placeholder="Name"
+          value={formData.name}
+          onChange={handleChange}
+          className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-red-500 focus:ring-1 focus:ring-red-500"
+          required
         />
+        <input
+          type="tel"
+          name="phone"
+          placeholder="Telefon"
+          value={formData.phone}
+          onChange={handleChange}
+          className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-red-500 focus:ring-1 focus:ring-red-500"
+          required
+        />
+        <input
+          type="email"
+          name="email"
+          placeholder="E-Mail"
+          value={formData.email}
+          onChange={handleChange}
+          className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-red-500 focus:ring-1 focus:ring-red-500"
+          required
+        />
+        <textarea
+          name="message"
+          placeholder="Nachricht (optional)"
+          value={formData.message}
+          onChange={handleChange}
+          className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-red-500 focus:ring-1 focus:ring-red-500"
+          rows={4}
+        />
+      </div>
 
-        <Button 
-          type="submit" 
-          className="w-full py-3 px-4 text-lg font-medium rounded-full bg-gradient-to-r from-[#FF9155] to-[#E23B3B] hover:shadow-lg text-white"
-          disabled={form.formState.isSubmitting}
+      <div className="flex items-start space-x-3">
+        <input
+          type="checkbox"
+          name="privacy"
+          id="privacy"
+          checked={formData.privacy}
+          onChange={handleChange}
+          className="mt-1"
+          required
+        />
+        <label htmlFor="privacy" className="text-sm text-gray-600">
+          Ich akzeptiere die <a href="#" className="text-red-500 hover:underline">Datenschutzbestimmungen</a>
+        </label>
+      </div>
+
+      <button
+        type="submit"
+        className="w-full btn-primary"
+        disabled={status === 'loading'}
+      >
+        {status === 'loading' ? 'Senden...' : 'Absenden'}
+      </button>
+
+      {status === 'success' && (
+        <div className="text-green-600 text-center font-medium">
+          Vielen Dank! Ihre Nachricht wurde gesendet.
+        </div>
+      )}
+      {status === 'error' && (
+        <div className="text-red-600 text-center font-medium">
+          {errorMsg}
+        </div>
+      )}
+
+      <div className="text-center space-y-4">
+        <p className="text-xl font-semibold">Wir freuen uns auf Ihren Anruf</p>
+        <a
+          href="tel:+41800247247"
+          className="block text-2xl font-bold text-red-500 hover:text-red-600"
         >
-          {form.formState.isSubmitting ? t('sending...') : t('contact.form.button')}
-        </Button>
-      </form>
-    </Form>
+          +41 800 247 247
+        </a>
+        <p className="text-sm text-gray-600">zwischen 8:00 - 17:00 Uhr CET</p>
+      </div>
+    </form>
   );
-}
+};
+
+export default ContactForm;
