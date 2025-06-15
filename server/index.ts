@@ -1,8 +1,36 @@
+import dotenv from 'dotenv';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+// Polyfill __dirname for ES Modules:
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+// Load environment variables BEFORE any other imports
+dotenv.config({ path: path.resolve(__dirname, '.env') });
+console.log('SMTP_HOST:', process.env.SMTP_HOST);
+console.log('SMTP_PORT:', process.env.SMTP_PORT);
+
 import express, { type Request, Response, NextFunction } from "express";
 import { registerRoutes } from "./routes";
 import { setupVite, serveStatic, log } from "./vite";
+import cors from 'cors';
+
+import contactRouter from './src/routes/contact';
+
+// Polyfill __dirname for ES Modules:
+
+
+// Load environment variables
+
+
+
 
 const app = express();
+const port = process.env.PORT || 3000;
+
+// Middleware
+app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
@@ -36,6 +64,9 @@ app.use((req, res, next) => {
   next();
 });
 
+// API routes
+app.use('/api', contactRouter);
+
 (async () => {
   const server = await registerRoutes(app);
 
@@ -56,10 +87,20 @@ app.use((req, res, next) => {
     serveStatic(app);
   }
 
+  // Serve static files in production
+  if (process.env.NODE_ENV === 'production') {
+    const clientBuildPath = path.join(__dirname, '../client/dist');
+    app.use(express.static(clientBuildPath));
+    
+    // Handle client-side routing
+    app.get('*', (req, res) => {
+      res.sendFile(path.join(clientBuildPath, 'index.html'));
+    });
+  }
+
   // ALWAYS serve the app on port 5000
   // this serves both the API and the client.
   // It is the only port that is not firewalled.
-  const port = 5000;
   server.listen({
     port,
     host: "127.0.0.1",

@@ -17,14 +17,14 @@
     "description": "Spitex JCare wurde gegründet, um pflegenden Angehörigen in der Schweiz umfassende Unterstützung zu bieten. Wir verstehen die Herausforderungen, mit denen Sie konfrontiert sind, und sind hier, um Ihnen durch personalisierte Unterstützung, Ressourcen und Beratung zu helfen. Unser Team aus erfahrenen Pflegefachleuten ist darauf spezialisiert, Sie durch den Pflegeprozess zu führen und sicherzustellen, dass Sie die Unterstützung erhalten, die Sie benötigen.",
     "button": "Mehr erfahren",
     "contact_phone_title": "Telefonisch erreichen Sie uns unter:",
-    "contact_hours": "zwischen 8:00 - 17:00 Uhr CET",
+    "contact_hours": "zwischen 9:00 - 17:00 Uhr CET",
     "contact_email_title": "Per E-Mail:",
     "support_areas_title": "Wir unterstützen Sie in den folgenden Bereichen:",
     "support_areas": {
-      "applications": "Antragsstellung und Behördengänge",
-      "care_tips": "Pflegetipps und -schulungen",
+      "applications": "Beratung",
+      "care_tips": "Planung",
       "emotional_support": "Emotionale Unterstützung",
-      "financial_advice": "Finanzielle Beratung"
+      "financial_advice": "Finanzielle Unterstützung"
     }
   },
   "support": {
@@ -40,12 +40,12 @@
         "description": "Entwicklung eines maßgeschneiderten Pflegeplans, der auf Ihre Situation zugeschnitten ist."
       },
       "3": {
-        "title": "Unterstützung",
-        "description": "Kontinuierliche Unterstützung und Anleitung während Ihrer Pflegereise."
+        "title": "Finanzielle Unterstützung",
+        "description": "Sie haben Anspruch auf eine finanzielle Entschädigung für die Pflege Ihrer Angehörigen. Wir koordinieren mit Ihrer Krankenkasse und zahlen Ihnen einen fairen Stundenlohn inklusive Sozialleistungen."
       },
       "4": {
-        "title": "Nachbetreuung",
-        "description": "Regelmäßige Überprüfungen, um sicherzustellen, dass Ihre Bedürfnisse erfüllt werden."
+        "title": "Wohlbefinden",
+        "description": "Kontinuierliche Unterstützung und regelmässige Nachfragen, damit Sie sich auf Ihrer Pflege-Reise nie allein fühlen."
       }
     }
   },
@@ -56,36 +56,20 @@
       "label": "Allgemein",
       "faqs": {
         "0": {
-          "question": "Was ist Spitex und welche Leistungen bietet sie an?",
-          "answer": "Spitex ist ein ambulanter Pflegedienst, der Menschen zuhause bei der Pflege und Betreuung unterstützt. JCare bietet dabei professionelle Pflege, Haushaltshilfe, Betreuung und Beratung, damit Sie oder Ihre Angehörigen möglichst selbstbestimmt leben können."
+          "question": "Was ist JCare und welche Leistungen bietet JCare an?",
+          "answer": "JCare ist eine Organisation für Betreuung zuhause, die sich auf die Unterstützung von Familien konzentriert. Wir begleiten und unterstützen pflegende Angehörige professionell, finanziell und emotional."
         },
         "1": {
-          "question": "Wer kann Spitex-Leistungen in Anspruch nehmen?",
-          "answer": "Jeder, der aufgrund von Alter, Krankheit oder Unfall Unterstützung zuhause braucht, kann Spitex-Leistungen beantragen – unabhängig von Alter oder Gesundheitszustand."
+          "question": "Welche Qualifikationen brauchen pflegende Angehörige?",
+          "answer": "Es ist keine spezielle Ausbildung nötig. JCare heisst alle pflegenden Angehörigen willkommen – mit oder ohne Vorkenntnisse. Unser erfahrenes Pflegefachteam steht Ihnen zur Seite und gibt praktische Tipps, damit Sie sich nie allein fühlen und Überlastung vermeiden."
         },
         "2": {
-          "question": "Wie funktioniert die Finanzierung von Spitex-Leistungen?",
-          "answer": "Die Kosten werden in der Regel von der obligatorischen Krankenpflegeversicherung übernommen. Je nach Pflegebedarf und Kanton können Zuzahlungen anfallen. JCare berät Sie individuell zur Kostenübernahme."
+          "question": "Wie stellt JCare sicher, dass die Pflegequalität stimmt?",
+          "answer": "JCare übernimmt Verantwortung für die Qualität der Betreuung durch pflegende Angehörige. Sie werden von einer erfahrenen Pflegefachperson begleitet, die regelmässig Kontakt hält, Schulungen gibt und persönliche Beratung anbietet – vor Ort und telefonisch."
         },
         "3": {
-          "question": "Wie beantrage ich Unterstützung oder Pflegeleistungen?",
-          "answer": "Sie können bei JCare oder Ihrer Krankenkasse direkt einen Antrag stellen. Wir begleiten Sie dabei und helfen, die notwendigen Formulare auszufüllen und den Pflegebedarf einzuschätzen."
-        },
-        "4": {
-          "question": "Welche Voraussetzungen muss ich erfüllen, um Pflegeleistungen zu erhalten?",
-          "answer": "Es muss ein medizinisch festgestellter Pflegebedarf vorliegen, der eine ambulante Betreuung nötig macht. JCare arbeitet eng mit Ärzten und Versicherungen zusammen, um den Bedarf zu ermitteln."
-        },
-        "5": {
-          "question": "Welche Rolle spielen Krankenkassen und Pflegeversicherung?",
-          "answer": "Die Krankenkassen übernehmen die Kosten für medizinisch notwendige Pflegeleistungen. JCare hilft Ihnen, den richtigen Versicherungsumfang zu klären und unterstützt bei der Abrechnung."
-        },
-        "6": {
-          "question": "Wie unterscheiden sich die Leistungen von Spitex und Heimen?",
-          "answer": "Spitex bietet ambulante Pflege zuhause an, während Heime eine stationäre Betreuung ermöglichen. JCare fokussiert sich darauf, Pflegebedürftige möglichst lange im gewohnten Umfeld zu unterstützen."
-        },
-        "7": {
-          "question": "Wie läuft die Zusammenarbeit zwischen Ärzten, Spitex und anderen Institutionen?",
-          "answer": "JCare koordiniert sich eng mit Ärzten, Therapeuten und sozialen Diensten, um eine ganzheitliche Betreuung sicherzustellen und Ihre Bedürfnisse bestmöglich zu erfüllen."
+          "question": "Wie finanziert sich JCare? Gibt es staatliche Unterstützung oder andere Fördermöglichkeiten?",
+          "answer": "In der Schweiz leisten Angehörige jährlich Millionen von Betreuungsstunden. Seit 2019 können pflegende Angehörige für Grundpflege wie Körperpflege, Mobilisation, An- und Ausziehen oder Unterstützung beim Essen bezahlt werden, wenn sie mit einer anerkannten Organisation wie JCare zusammenarbeiten. Die Finanzierung erfolgt durch die Krankenkassen und in gewissen Fällen durch Gemeinden oder Kantone."
         }
       }
     },
@@ -93,36 +77,40 @@
       "label": "Pflegende Angehörige",
       "faqs": {
         "0": {
-          "question": "Welche Unterstützungsmöglichkeiten gibt es für pflegende Angehörige?",
-          "answer": "JCare bietet Beratung, Schulungen und Entlastungsangebote an, damit pflegende Angehörige unterstützt werden und ihre wichtige Rolle bestmöglich ausfüllen können."
+          "question": "Wer kann als pflegende Angehörige gelten?",
+          "answer": "Pflegende Angehörige sind Personen, die regelmässig eine nahestehende Person im Alltag unterstützen, zum Beispiel Eltern, Kinder, Partnerinnen und Partner, Geschwister oder auch enge Freunde und Nachbarn."
         },
         "1": {
-          "question": "Wie kann ich mich als pflegende Angehörige entlasten lassen?",
-          "answer": "Durch zeitweise Übernahme der Pflege, Tagesstrukturen oder Beratungsangebote können wir Sie bei JCare entlasten und Ihnen Raum für Erholung schaffen."
+          "question": "Kann ich eine finanzielle Entschädigung für die Pflege meiner Eltern oder Angehörigen erhalten?",
+          "answer": "Ja, in der Schweiz können Sie für die Pflege Ihrer Eltern oder nahestehenden Personen eine finanzielle Entschädigung erhalten. Wenn Sie bei JCare als pflegende Angehörige angestellt sind, werden anerkannte Grundpflegeleistungen vergütet. Wir beraten Sie gerne zu allen Möglichkeiten."
         },
         "2": {
-          "question": "Welche Rechte und Ansprüche haben pflegende Angehörige?",
-          "answer": "Pflegende Angehörige können je nach Kanton finanzielle Unterstützung, Pflegefreibeträge oder Freistellungen vom Beruf erhalten. JCare informiert Sie gerne zu Ihren individuellen Ansprüchen."
+          "question": "Welche Pflegeaufgaben werden vergütet?",
+          "answer": "Sie erhalten finanzielle Unterstützung für Grundpflege nach Artikel 7 KLV, zum Beispiel Hilfe beim Essen und Trinken, An- und Ausziehen, Körperpflege, Mobilität und Lagerung. Diese Leistungen werden mit einem Stundenlohn von CHF 37.90 vergütet."
         },
         "3": {
-          "question": "Wie kann ich Pflege und Beruf besser miteinander vereinbaren?",
-          "answer": "Mit flexiblen Pflegezeiten, Unterstützung durch JCare und Beratung zur Organisation helfen wir Ihnen, Beruf und Pflege zu kombinieren."
+          "question": "Wie viel verdiene ich als pflegende Angehörige?",
+          "answer": "Für anerkannte Grundpflegeleistungen zahlt JCare einen Stundenlohn von CHF 37.90, inklusive Ferien, 13. Monatslohn und Sozialversicherungen. Der genaue Betrag richtet sich nach dem individuellen Pflegeaufwand."
         },
         "4": {
-          "question": "Gibt es finanzielle Unterstützung oder Entschädigung für pflegende Angehörige?",
-          "answer": "Ja, je nach Situation gibt es Entschädigungen oder Unterstützungsangebote. JCare hilft Ihnen, diese zu beantragen und nutzt vorhandene Angebote optimal."
+          "question": "Brauche ich eine spezielle Ausbildung?",
+          "answer": "Nein, Sie benötigen keine spezielle Ausbildung. Wenn Sie sich in der Lage fühlen, eine nahestehende Person zu pflegen, unterstützen und schulen wir Sie persönlich bei JCare."
         },
         "5": {
-          "question": "Wie erkenne ich, wann ich Hilfe in Anspruch nehmen sollte?",
-          "answer": "Wenn Sie sich überfordert, erschöpft oder unsicher fühlen, ist es Zeit, Unterstützung zu holen. JCare steht Ihnen jederzeit beratend zur Seite."
+          "question": "Welche Voraussetzungen muss ich erfüllen, um als pflegende Angehörige tätig zu werden?",
+          "answer": "Die Anforderungen sind einfach: Sie sollten körperlich in der Lage sein, pflegerische Aufgaben zu übernehmen, und über Geduld und Einfühlungsvermögen verfügen. Das Mindestalter beträgt achtzehn Jahre. Die betreute Person muss in einem Kanton wohnen, in dem JCare zugelassen ist. Auch nach dem Pensionsalter ist eine Anstellung möglich."
         },
         "6": {
-          "question": "Welche Schulungen oder Beratungen stehen für pflegende Angehörige zur Verfügung?",
-          "answer": "Wir bieten praktische Kurse und individuelle Beratung an, um Sie für die Herausforderungen der Pflege zu stärken."
+          "question": "Kann ich Pflegeleistungen direkt beantragen, oder brauche ich JCare?",
+          "answer": "Pflegeleistungen können nicht privat beantragt werden. Für eine Vergütung müssen Sie bei einer anerkannten Organisation wie JCare angestellt sein. Wir sorgen dafür, dass alle gesetzlichen Vorgaben und Qualitätsstandards erfüllt werden."
         },
         "7": {
-          "question": "Wie kann ich mit Stress und Überforderung umgehen?",
-          "answer": "JCare unterstützt Sie durch Beratung, Stressbewältigungsstrategien und vermittelt bei Bedarf professionelle Hilfe."
+          "question": "Kostet mich die Unterstützung von JCare etwas?",
+          "answer": "Nein, unser Service ist für Sie und die betreute Person kostenlos. Die Finanzierung erfolgt über die Krankenversicherung und manchmal auch durch Kanton oder Gemeinde. Sie zahlen nur die üblichen Krankenkassenprämien, Selbstbehalte und Kostenbeteiligungen, nicht mehr."
+        },
+        "8": {
+          "question": "Wie gross ist der administrative Aufwand für mich?",
+          "answer": "Der administrative Aufwand ist minimal. Das Wichtigste ist, dass Sie möglichst viel Zeit mit Ihren Liebsten verbringen können."
         }
       }
     },
@@ -130,41 +118,32 @@
       "label": "Pflegebedürftige",
       "faqs": {
         "0": {
-          "question": "Wie wird der Pflegebedarf ermittelt und wer entscheidet darüber?",
-          "answer": "Der Pflegebedarf wird von medizinischen Fachpersonen zusammen mit Ihnen und JCare eingeschätzt. Versicherungen und Ärzte entscheiden anhand von Gutachten über Leistungen."
+          "question": "Welche Voraussetzungen müssen erfüllt sein um Unterstützung von JCare zu erhalten?",
+          "answer": "Wenn Sie oder Ihr Kind Unterstützung bei der Grundpflege wie Hygiene, Mobilität, Toilettengang oder An und Ausziehen benötigen sei es aufgrund von Alter, Krankheit oder Behinderung kann JCare Sie unterstützen. Wir besprechen Ihre individuellen Bedürfnisse gerne persönlich mit Ihnen und Ihren Angehörigen."
         },
         "1": {
-          "question": "Welche Leistungen kann ich als Pflegebedürftiger erwarten?",
-          "answer": "JCare bietet individuelle Pflege, Betreuung, Medikamentenmanagement, Haushaltshilfe und Begleitung – alles angepasst an Ihre persönlichen Bedürfnisse."
+          "question": "Gibt es ein bestimmtes Alter oder gesundheitliche Voraussetzungen?",
+          "answer": "JCare unterstützt Menschen jeden Alters die zu Hause langfristige Betreuung benötigen egal ob Erwachsene Seniorinnen und Senioren Jugendliche oder Kinder. Entscheidend ist dass eine regelmässige Grundpflege durch eine vertraute Person notwendig ist."
         },
         "2": {
-          "question": "Welche Voraussetzungen müssen erfüllt sein, um Pflegeleistungen zu erhalten?",
-          "answer": "Sie müssen einen medizinisch bestätigten Bedarf für ambulante Pflege haben. JCare unterstützt Sie beim Antrag und bei der Begutachtung."
+          "question": "Wie funktioniert die Anmeldung bei JCare?",
+          "answer": "Der Einstieg ist einfach. Kontaktieren Sie uns per Telefon E Mail oder über unsere Website. Wir besprechen Ihre persönliche Situation gemeinsam und begleiten Sie bei den nächsten Schritten."
         },
         "3": {
-          "question": "Wie kann ich die Qualität der Pflege sicherstellen?",
-          "answer": "JCare arbeitet mit qualifizierten Fachpersonen und setzt auf regelmässige Kontrollen und Feedback, um Ihre Zufriedenheit sicherzustellen."
+          "question": "Kann ich selbst bestimmen wer mich pflegt?",
+          "answer": "Ja Sie können eine vertraute Person als Betreuungsperson auswählen das kann ein Familienmitglied eine Freundin ein Freund oder auch eine Nachbarin oder ein Nachbar sein sofern sie bereit sind bei der täglichen Pflege zu helfen."
         },
         "4": {
-          "question": "Was passiert, wenn sich mein Gesundheitszustand ändert?",
-          "answer": "Bei Änderungen passen wir gemeinsam mit Ihnen den Pflegeplan an und koordinieren neue Leistungen."
+          "question": "Wer übernimmt die Kosten für meine Pflege?",
+          "answer": "Die Kosten für Grundpflege werden von der obligatorischen Krankenversicherung und zum Teil auch vom Kanton oder der Gemeinde übernommen. Sie bezahlen nur die regulären Krankenkassenprämien Selbstbehalte und Kostenbeteiligungen. Wir verrechnen keinen täglichen Patientenbeitrag."
         },
         "5": {
-          "question": "Wie werden Medikamente und Therapien im Rahmen der Pflege koordiniert?",
-          "answer": "JCare koordiniert mit Ärzten und Apotheken, um eine sichere und zuverlässige Medikamentenversorgung zu gewährleisten."
-        },
-        "6": {
-          "question": "Welche Möglichkeiten der Betreuung gibt es neben der ambulanten Pflege?",
-          "answer": "Neben der Pflege zuhause bieten wir Beratung zu Tagesstrukturen, betreutem Wohnen oder stationärer Pflege, falls gewünscht."
-        },
-        "7": {
-          "question": "Wie kann ich meine Selbstständigkeit so lange wie möglich erhalten?",
-          "answer": "JCare fördert Ihre Fähigkeiten durch gezielte Unterstützung und motivierende Begleitung, damit Sie möglichst lange selbstständig bleiben."
+          "question": "Wie viele Stunden Pflege erhalte ich pro Woche?",
+          "answer": "Der Umfang der Pflege richtet sich nach Ihrem persönlichen Bedarf und wird gemeinsam mit Ihnen Ihrer Betreuungsperson und dem JCare Team festgelegt."
         }
       }
     }
   },
-  
   "contact": {
     "title": "Kontaktieren Sie uns",
     "subtitle": "Wir sind hier, um zu helfen",
@@ -196,7 +175,7 @@
   "sending...": "Wird gesendet...",
   "please select": "Bitte wählen...",
   "footer": {
-    "tagline": "Wir unterstützen pflegende Angehörige mit klaren Lösungen und menschlichem Verständnis.",
+    "tagline": "Wo Ihre Pflege zählt.",
     "contact": "Kontakt",
     "hours": "Öffnungszeiten",
     "monday": "Montag",
@@ -218,74 +197,68 @@
   "legal": {
     "imprint": {
       "title": "Impressum",
-      "company_info": "Angaben gemäß § 5 TMG",
       "company_details": {
-        "name": "Spitex JCare",
-        "address": "Bahnhofstrasse 10, 8001 Zürich, Schweiz"
+        "name": "JCare GmbH",
+        "address": "Langgrütstrasse 101\n8047 Zürich\nSchweiz"
       },
-      "contact": "Kontakt",
-      "contact_details": {
-        "phone": "Telefon: +41 800 247 247",
-        "email": "E-Mail: info@spitex-jcare.ch"
+      "contact": {
+        "email": "E-Mail: info@j-care.ch / Kontaktformular",
+        "phone": "Telefon: +41 78 306 90 10"
       },
-      "responsible": "Verantwortlich für den Inhalt",
-      "registry": "Handelsregistereintrag",
-      "registry_details": "Eingetragen im Handelsregister des Kantons Zürich, Handelsregisternummer: CHE-XXX.XXX.XXX",
-      "vat": "Mehrwertsteuer-Identifikationsnummer",
-      "vat_details": "Umsatzsteuer-Identifikationsnummer gemäß §27 a Umsatzsteuergesetz: CHE-XXX.XXX.XXX MWST",
-      "disclaimer": "Haftungsausschluss",
-      "content_liability": "Haftung für Inhalte",
-      "content_liability_text": "Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.",
-      "link_liability": "Haftung für Links",
-      "link_liability_text": "Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar.",
-      "copyright": "Urheberrecht",
-      "copyright_text": "Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem schweizerischen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet."
+      "registry": {
+        "text": "Eingetragen im Handelsregister des Kantons Zürich",
+        "uid": "UID CHE-199.875.120"
+      },
+      "represented_by": "Vertreten durch: Sam Elevitsky",
+      "advertising_prohibition": "JCare GmbH und ihre Mitarbeitenden untersagen jede Form der Verwendung, Bearbeitung oder sonstigen Nutzung der auf dieser Website veröffentlichten Kontaktangaben und Personendaten für Werbezwecke.",
+      "legal_protection": "Alle Inhalte auf dieser Website können urheberrechtlich oder anderweitig rechtlich geschützt sein."
     },
     "privacy": {
       "title": "Datenschutzerklärung",
       "intro": "Diese Datenschutzerklärung klärt Sie über die Art, den Umfang und Zweck der Verarbeitung von personenbezogenen Daten innerhalb unseres Onlineangebotes und der mit ihm verbundenen Webseiten, Funktionen und Inhalte auf. Die Datenschutzerklärung gilt unabhängig von den verwendeten Domains, Systemen, Plattformen und Geräten auf denen das Onlineangebot ausgeführt wird.",
       "responsible": "Verantwortlicher",
+      "responsible_details": "Spitex JCare\nBahnhofstrasse 10\n8001 Zürich\nSchweiz\nE-Mail: info@spitex-jcare.ch\nTelefon: +41 800 247 247",
       "data_types": "Arten der verarbeiteten Daten",
       "data_types_list": {
-        "inventory": "Bestandsdaten (z.B., Namen, Adressen)",
-        "contact": "Kontaktdaten (z.B., E-Mail, Telefonnummern)",
-        "content": "Inhaltsdaten (z.B., Texteingaben, Fotografien, Videos)",
-        "usage": "Nutzungsdaten (z.B., besuchte Webseiten, Interesse an Inhalten, Zugriffszeiten)",
-        "meta": "Meta-/Kommunikationsdaten (z.B., Geräte-Informationen, IP-Adressen)"
+        "inventory": "Bestandsdaten (z. B. Namen, Adressen)",
+        "contact": "Kontaktdaten (z. B. E-Mail, Telefonnummern)",
+        "content": "Inhaltsdaten (z. B. Texteingaben, Fotografien, Videos)",
+        "usage": "Nutzungsdaten (z. B. besuchte Seiten, Zugriffszeiten)",
+        "meta": "Meta-/Kommunikationsdaten (z. B. Geräte-Infos, IP-Adressen)"
       },
       "categories": "Kategorien betroffener Personen",
-      "categories_text": "Besucher und Nutzer des Onlineangebotes (Nachfolgend bezeichnen wir die betroffenen Personen zusammenfassend auch als Nutzer).",
+      "categories_text": "Besucher und Nutzer des Onlineangebotes (nachfolgend „Nutzer“).",
       "processing_purpose": "Zweck der Verarbeitung",
       "purpose_list": {
-        "provision": "Zurverfügungstellung des Onlineangebotes, seiner Funktionen und Inhalte",
-        "contact": "Beantwortung von Kontaktanfragen und Kommunikation mit Nutzern",
+        "provision": "Bereitstellung des Onlineangebots und seiner Funktionen",
+        "contact": "Beantwortung von Kontaktanfragen und Kommunikation",
         "security": "Sicherheitsmaßnahmen",
         "reach": "Reichweitenmessung/Marketing"
       },
       "terminology": "Verwendete Begrifflichkeiten",
       "personal_data": "Personenbezogene Daten sind alle Informationen, die sich auf eine Person beziehen.",
       "processing": "Verarbeitung ist jeder Vorgang mit personenbezogenen Daten.",
-      "pseudonymization": "Pseudonymisierung ist die Verarbeitung personenbezogener Daten in einer Weise, dass die Daten ohne zusätzliche Informationen nicht mehr zugeordnet werden können.",
-      "profiling": "Profiling ist die automatisierte Verarbeitung personenbezogener Daten zur Bewertung bestimmter persönlicher Aspekte."
+      "pseudonymization": "Pseudonymisierung bedeutet Verarbeitung so, dass Zuordnung nur mit Zusatzinformationen möglich ist.",
+      "profiling": "Profiling ist die automatisierte Bewertung persönlicher Aspekte."
     },
     "terms": {
       "title": "Allgemeine Geschäftsbedingungen",
-      "intro": "Die nachfolgenden Allgemeinen Geschäftsbedingungen (AGB) regeln das Vertragsverhältnis zwischen dem Nutzer und Spitex JCare betreffend den Zugriff, das Durchsuchen sowie jede Form der Nutzung der Spitex JCare Webseite.",
       "scope": "1. Geltungsbereich",
-      "scope_text": "Diese AGB gelten für sämtliche Dienstleistungen und Angebote, die von Spitex JCare angeboten werden. Durch die Nutzung unserer Dienste erklären Sie sich mit diesen Bedingungen einverstanden. Bitte lesen Sie diese sorgfältig durch.",
-      "services": "2. Leistungsbeschreibung",
-      "services_text": "Spitex JCare bietet Unterstützung für pflegende Angehörige durch verschiedene Dienstleistungen an, darunter beratende und unterstützende Tätigkeiten im Bereich der Pflege und Betreuung von pflegebedürftigen Personen.",
+      "scope_text": "Diese AGB gelten für alle Online-Angebote und persönlichen Unterstützungsleistungen der JCare GmbH. Durch die Nutzung unserer Website oder die Anforderung von Leistungen erklären Sie sich mit diesen Bedingungen einverstanden.",
+      "services": "2. Unsere Leistungen",
+      "services_text": "JCare GmbH bietet fachkundige Beratung und Unterstützung für pflegende Angehörige. Ein verbindlicher Vertrag kommt nur durch Unterzeichnung unseres Dienstleistungsvertrags zustande.",
       "contract": "3. Vertragsschluss",
-      "contract_text": "Ein Vertrag zwischen dem Nutzer und Spitex JCare kommt durch die ausdrückliche Auftragserteilung des Nutzers bzw. durch die Inanspruchnahme der Leistungen von Spitex JCare zustande.",
-      "prices": "4. Preise und Zahlungsbedingungen",
-      "prices_text": "Die Preise für unsere Dienstleistungen werden individuell vereinbart und richten sich nach dem jeweiligen Leistungsumfang. Die Zahlungsbedingungen werden im Einzelfall festgelegt und dem Kunden mitgeteilt. Alle Preise verstehen sich in Schweizer Franken (CHF) und inklusive der gesetzlichen Mehrwertsteuer.",
+      "contract_text": "Das reine Surfen auf dieser Website begründet keine Vertragsbeziehung. Ein bindender Vertrag entsteht erst durch Ihre Unterschrift unter dem Dienstleistungsvertrag.",
+      "rates": "4. Preise & Änderungen",
+      "rates_text": "Alle auf unserer Website angezeigten Preise und Gebühren sind unverbindlich. Die tatsächlich gültigen Preise ergeben sich aus dem von Ihnen unterzeichneten Dienstleistungsvertrag. Wir behalten uns vor, unsere veröffentlichten Preise jederzeit vor Vertragsabschluss anzupassen.",
       "liability": "5. Haftung",
-      "liability_text": "Spitex JCare haftet für Schäden nur bei Vorsatz oder grober Fahrlässigkeit. Eine Haftung für leichte Fahrlässigkeit besteht nur bei der Verletzung von wesentlichen Vertragspflichten, auf deren Erfüllung der Kunde in besonderem Maße vertrauen darf. In diesem Fall ist die Haftung auf den typischerweise vorhersehbaren Schaden beschränkt.",
-      "data_protection": "6. Datenschutz",
-      "data_protection_text": "Der Schutz Ihrer persönlichen Daten ist uns ein wichtiges Anliegen. Wir halten uns bei der Erhebung, Verarbeitung und Nutzung personenbezogener Daten streng an die gesetzlichen Bestimmungen des Datenschutzrechts. Einzelheiten finden Sie in unserer Datenschutzerklärung.",
-      "final": "7. Schlussbestimmungen",
-      "final_text": "Es gilt das Recht der Schweiz unter Ausschluss des UN-Kaufrechts. Erfüllungsort und ausschließlicher Gerichtsstand für alle Streitigkeiten aus diesem Vertrag ist Zürich, Schweiz.",
-      "final_text2": "Sollten einzelne Bestimmungen dieser AGB ganz oder teilweise unwirksam sein oder werden, so wird hierdurch die Gültigkeit der übrigen Bestimmungen nicht berührt."
+      "liability_text": "Wir haften nur für Vorsatz und grobe Fahrlässigkeit. Die Haftung für einfache Fahrlässigkeit ist auf den Wert der jeweiligen Dienstleistung beschränkt. Sämtliche Angaben auf der Website dienen lediglich Informationszwecken und sind unverbindlich.",
+      "errors": "6. Fehler & Updates",
+      "errors_text": "Wir bemühen uns um inhaltliche Richtigkeit, übernehmen jedoch keine Haftung für Tippfehler oder veraltete Informationen. Inhalte können jederzeit und ohne Ankündigung geändert oder korrigiert werden.",
+      "privacy": "7. Datenschutz",
+      "privacy_text": "Personenbezogene Daten, die Sie uns übermitteln, werden gemäß unserer Datenschutzerklärung verarbeitet.",
+      "law": "8. Anwendbares Recht",
+      "law_text": "Es gilt Schweizer Recht. Gerichtsstand ist Zürich, Schweiz."
     }
   }
 }

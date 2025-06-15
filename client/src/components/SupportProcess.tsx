@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRightIcon, CalendarIcon, ClipboardIcon, PuzzleIcon, UsersIcon } from "lucide-react";
+import { ArrowRightIcon, CalendarIcon, ClipboardIcon, PuzzleIcon, HandCoinsIcon, HeartIcon, UsersIcon } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { BackgroundBubbles } from "@/components/ui/background-bubbles";
 
@@ -37,13 +37,13 @@ export function SupportProcess() {
       id: 3,
       title: t('support.steps.3.title'),
       description: t('support.steps.3.description'),
-      icon: <PuzzleIcon className="h-8 w-8 text-white" />,
+      icon: <HandCoinsIcon className="h-8 w-8 text-white" />,
     },
     {
       id: 4,
       title: t('support.steps.4.title'),
       description: t('support.steps.4.description'),
-      icon: <UsersIcon className="h-8 w-8 text-white" />,
+      icon: <HeartIcon className="h-8 w-8 text-white" />,
     },
   ];
 
