@@ -103,7 +103,7 @@ app.use('/api', contactRouter);
   // It is the only port that is not firewalled.
   server.listen({
     port,
-    host: "127.0.0.1",
+    host: "0.0.0.0",
 
   }, () => {
     log(`serving on port ${port}`);
