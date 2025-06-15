@@ -25,15 +25,15 @@ export function Footer() {
             <ul className="space-y-2">
               <li className="flex items-start">
                 <MapPinIcon className="h-5 w-5 mt-0.5 mr-3 text-gray-400" />
-                <span>Bahnhofstrasse 10, 8001 Zürich</span>
+                <span>Langgrütstrasse 101, 8047 Zürich</span>
               </li>
               <li className="flex items-start">
                 <PhoneIcon className="h-5 w-5 mt-0.5 mr-3 text-gray-400" />
-                <span>+41 800 247 247</span>
+                <span>+41 797 90 70</span>
               </li>
               <li className="flex items-start">
                 <MailIcon className="h-5 w-5 mt-0.5 mr-3 text-gray-400" />
-                <span>info@spitex-jcare.ch</span>
+                <span>info@j-care.ch</span>
               </li>
             </ul>
           </div>
@@ -46,11 +46,7 @@ export function Footer() {
                 <span>8:00 - 17:00</span>
               </li>
               <li className="flex justify-between">
-                <span>{t('footer.saturday')}:</span>
-                <span>9:00 - 14:00</span>
-              </li>
-              <li className="flex justify-between">
-                <span>{t('footer.sunday')}:</span>
+                <span>{t('footer.saturday')}-{t('footer.sunday')}:</span>
                 <span>{t('footer.closed')}</span>
               </li>
             </ul>

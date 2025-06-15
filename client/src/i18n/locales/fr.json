@@ -40,12 +40,12 @@
         "description": "Élaboration d'un plan de soins personnalisé adapté à votre situation."
       },
       "3": {
-        "title": "Soutien",
-        "description": "Soutien et conseils continus tout au long de votre parcours d'aidant."
+        "title": "Soutien financier",
+        "description": "Vous avez droit à une compensation financière pour les soins apportés à vos proches. Nous nous chargeons de la coordination avec votre caisse maladie et vous versons un salaire horaire équitable avec prestations sociales."
       },
       "4": {
-        "title": "Suivi",
-        "description": "Contrôles réguliers pour s'assurer que vos besoins sont satisfaits."
+        "title": "Bien-être",
+        "description": "Soutien continu et suivis réguliers pour que vous ne soyez jamais seul·e dans votre parcours de soins."
       }
     }
   },

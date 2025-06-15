@@ -9,6 +9,8 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { useToast } from "@/hooks/use-toast";
 import { sendEmail } from "@/lib/emailjs";
+import { useState, useRef } from "react";
+import { useGoogleReCaptcha } from 'react-google-recaptcha-v3';
 
 type FormValues = {
   firstName: string;
@@ -40,7 +42,9 @@ const getSourceOptions = (t: any) => [
 export function ContactForm() {
   const { t } = useTranslation();
   const { toast } = useToast();
-  
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const { executeRecaptcha } = useGoogleReCaptcha();
+
   const formSchema = z.object({
     firstName: z.string().min(1, { message: t('contact.form.firstName') + " " + t('is required') }),
     lastName: z.string().min(1, { message: t('contact.form.lastName') + " " + t('is required') }),
@@ -68,19 +72,35 @@ export function ContactForm() {
 
   const onSubmit = async (data: FormValues) => {
     try {
-      await sendEmail(data);
-      toast({
-        title: t('contact.form.success'),
-        description: t('contact.form.success'),
+      setIsSubmitting(true);
+      if (!executeRecaptcha) {
+        throw new Error('reCAPTCHA not yet available');
+      }
+      const token = await executeRecaptcha('contact_form');
+      if (!token) {
+        throw new Error('reCAPTCHA verification failed');
+      }
+      // Send to backend
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ ...data, recaptchaToken: token }),
       });
+      if (!response.ok) {
+        const error = await response.json();
+        throw new Error(error.message || 'Failed to send message');
+      }
+      toast({ title: t('contact.form.success'), description: t('contact.form.success') });
       form.reset();
+      setTimeout(() => setIsSubmitting(false), 30000);
     } catch (error) {
       toast({
         title: t('contact.form.error'),
-        description: t('contact.form.error'),
+        description: error instanceof Error ? error.message : t('contact.form.error'),
         variant: "destructive",
       });
-      console.error("Error sending email:", error);
+      setIsSubmitting(false);
+      console.error("Error in onSubmit:", error);
     }
   };
 
