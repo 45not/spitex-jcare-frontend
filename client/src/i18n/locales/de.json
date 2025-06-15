@@ -197,74 +197,68 @@
   "legal": {
     "imprint": {
       "title": "Impressum",
-      "company_info": "Angaben gemäß § 5 TMG",
       "company_details": {
-        "name": "Spitex JCare",
-        "address": "Langgrütstrasse 101, 8047 Zürich, Schweiz"
+        "name": "JCare GmbH",
+        "address": "Langgrütstrasse 101\n8047 Zürich\nSchweiz"
       },
-      "contact": "Kontakt",
-      "contact_details": {
-        "phone": "Telefon: +41 797 90 70",
-        "email": "E-Mail: info@j-care.ch"
+      "contact": {
+        "email": "E-Mail: info@j-care.ch / Kontaktformular",
+        "phone": "Telefon: +41 78 306 90 10"
       },
-      "responsible": "Verantwortlich für den Inhalt",
-      "registry": "Handelsregistereintrag",
-      "registry_details": "Eingetragen im Handelsregister des Kantons Zürich, Handelsregisternummer: CHE-XXX.XXX.XXX",
-      "vat": "Mehrwertsteuer-Identifikationsnummer",
-      "vat_details": "Umsatzsteuer-Identifikationsnummer gemäß §27 a Umsatzsteuergesetz: CHE-XXX.XXX.XXX MWST",
-      "disclaimer": "Haftungsausschluss",
-      "content_liability": "Haftung für Inhalte",
-      "content_liability_text": "Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.",
-      "link_liability": "Haftung für Links",
-      "link_liability_text": "Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar.",
-      "copyright": "Urheberrecht",
-      "copyright_text": "Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem schweizerischen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet."
+      "registry": {
+        "text": "Eingetragen im Handelsregister des Kantons Zürich",
+        "uid": "UID CHE-199.875.120"
+      },
+      "represented_by": "Vertreten durch: Sam Elevitsky",
+      "advertising_prohibition": "JCare GmbH und ihre Mitarbeitenden untersagen jede Form der Verwendung, Bearbeitung oder sonstigen Nutzung der auf dieser Website veröffentlichten Kontaktangaben und Personendaten für Werbezwecke.",
+      "legal_protection": "Alle Inhalte auf dieser Website können urheberrechtlich oder anderweitig rechtlich geschützt sein."
     },
     "privacy": {
       "title": "Datenschutzerklärung",
       "intro": "Diese Datenschutzerklärung klärt Sie über die Art, den Umfang und Zweck der Verarbeitung von personenbezogenen Daten innerhalb unseres Onlineangebotes und der mit ihm verbundenen Webseiten, Funktionen und Inhalte auf. Die Datenschutzerklärung gilt unabhängig von den verwendeten Domains, Systemen, Plattformen und Geräten auf denen das Onlineangebot ausgeführt wird.",
       "responsible": "Verantwortlicher",
+      "responsible_details": "Spitex JCare\nBahnhofstrasse 10\n8001 Zürich\nSchweiz\nE-Mail: info@spitex-jcare.ch\nTelefon: +41 800 247 247",
       "data_types": "Arten der verarbeiteten Daten",
       "data_types_list": {
-        "inventory": "Bestandsdaten (z.B., Namen, Adressen)",
-        "contact": "Kontaktdaten (z.B., E-Mail, Telefonnummern)",
-        "content": "Inhaltsdaten (z.B., Texteingaben, Fotografien, Videos)",
-        "usage": "Nutzungsdaten (z.B., besuchte Webseiten, Interesse an Inhalten, Zugriffszeiten)",
-        "meta": "Meta-/Kommunikationsdaten (z.B., Geräte-Informationen, IP-Adressen)"
+        "inventory": "Bestandsdaten (z. B. Namen, Adressen)",
+        "contact": "Kontaktdaten (z. B. E-Mail, Telefonnummern)",
+        "content": "Inhaltsdaten (z. B. Texteingaben, Fotografien, Videos)",
+        "usage": "Nutzungsdaten (z. B. besuchte Seiten, Zugriffszeiten)",
+        "meta": "Meta-/Kommunikationsdaten (z. B. Geräte-Infos, IP-Adressen)"
       },
       "categories": "Kategorien betroffener Personen",
-      "categories_text": "Besucher und Nutzer des Onlineangebotes (Nachfolgend bezeichnen wir die betroffenen Personen zusammenfassend auch als Nutzer).",
+      "categories_text": "Besucher und Nutzer des Onlineangebotes (nachfolgend „Nutzer“).",
       "processing_purpose": "Zweck der Verarbeitung",
       "purpose_list": {
-        "provision": "Zurverfügungstellung des Onlineangebotes, seiner Funktionen und Inhalte",
-        "contact": "Beantwortung von Kontaktanfragen und Kommunikation mit Nutzern",
+        "provision": "Bereitstellung des Onlineangebots und seiner Funktionen",
+        "contact": "Beantwortung von Kontaktanfragen und Kommunikation",
         "security": "Sicherheitsmaßnahmen",
         "reach": "Reichweitenmessung/Marketing"
       },
       "terminology": "Verwendete Begrifflichkeiten",
       "personal_data": "Personenbezogene Daten sind alle Informationen, die sich auf eine Person beziehen.",
       "processing": "Verarbeitung ist jeder Vorgang mit personenbezogenen Daten.",
-      "pseudonymization": "Pseudonymisierung ist die Verarbeitung personenbezogener Daten in einer Weise, dass die Daten ohne zusätzliche Informationen nicht mehr zugeordnet werden können.",
-      "profiling": "Profiling ist die automatisierte Verarbeitung personenbezogener Daten zur Bewertung bestimmter persönlicher Aspekte."
+      "pseudonymization": "Pseudonymisierung bedeutet Verarbeitung so, dass Zuordnung nur mit Zusatzinformationen möglich ist.",
+      "profiling": "Profiling ist die automatisierte Bewertung persönlicher Aspekte."
     },
     "terms": {
       "title": "Allgemeine Geschäftsbedingungen",
-      "intro": "Die nachfolgenden Allgemeinen Geschäftsbedingungen (AGB) regeln das Vertragsverhältnis zwischen dem Nutzer und Spitex JCare betreffend den Zugriff, das Durchsuchen sowie jede Form der Nutzung der Spitex JCare Webseite.",
       "scope": "1. Geltungsbereich",
-      "scope_text": "Diese AGB gelten für sämtliche Dienstleistungen und Angebote, die von Spitex JCare angeboten werden. Durch die Nutzung unserer Dienste erklären Sie sich mit diesen Bedingungen einverstanden. Bitte lesen Sie diese sorgfältig durch.",
-      "services": "2. Leistungsbeschreibung",
-      "services_text": "Spitex JCare bietet Unterstützung für pflegende Angehörige durch verschiedene Dienstleistungen an, darunter beratende und unterstützende Tätigkeiten im Bereich der Pflege und Betreuung von pflegebedürftigen Personen.",
+      "scope_text": "Diese AGB gelten für alle Online-Angebote und persönlichen Unterstützungsleistungen der JCare GmbH. Durch die Nutzung unserer Website oder die Anforderung von Leistungen erklären Sie sich mit diesen Bedingungen einverstanden.",
+      "services": "2. Unsere Leistungen",
+      "services_text": "JCare GmbH bietet fachkundige Beratung und Unterstützung für pflegende Angehörige. Ein verbindlicher Vertrag kommt nur durch Unterzeichnung unseres Dienstleistungsvertrags zustande.",
       "contract": "3. Vertragsschluss",
-      "contract_text": "Ein Vertrag zwischen dem Nutzer und Spitex JCare kommt durch die ausdrückliche Auftragserteilung des Nutzers bzw. durch die Inanspruchnahme der Leistungen von Spitex JCare zustande.",
-      "prices": "4. Preise und Zahlungsbedingungen",
-      "prices_text": "Die Preise für unsere Dienstleistungen werden individuell vereinbart und richten sich nach dem jeweiligen Leistungsumfang. Die Zahlungsbedingungen werden im Einzelfall festgelegt und dem Kunden mitgeteilt. Alle Preise verstehen sich in Schweizer Franken (CHF) und inklusive der gesetzlichen Mehrwertsteuer.",
+      "contract_text": "Das reine Surfen auf dieser Website begründet keine Vertragsbeziehung. Ein bindender Vertrag entsteht erst durch Ihre Unterschrift unter dem Dienstleistungsvertrag.",
+      "rates": "4. Preise & Änderungen",
+      "rates_text": "Alle auf unserer Website angezeigten Preise und Gebühren sind unverbindlich. Die tatsächlich gültigen Preise ergeben sich aus dem von Ihnen unterzeichneten Dienstleistungsvertrag. Wir behalten uns vor, unsere veröffentlichten Preise jederzeit vor Vertragsabschluss anzupassen.",
       "liability": "5. Haftung",
-      "liability_text": "Spitex JCare haftet für Schäden nur bei Vorsatz oder grober Fahrlässigkeit. Eine Haftung für leichte Fahrlässigkeit besteht nur bei der Verletzung von wesentlichen Vertragspflichten, auf deren Erfüllung der Kunde in besonderem Maße vertrauen darf. In diesem Fall ist die Haftung auf den typischerweise vorhersehbaren Schaden beschränkt.",
-      "data_protection": "6. Datenschutz",
-      "data_protection_text": "Der Schutz Ihrer persönlichen Daten ist uns ein wichtiges Anliegen. Wir halten uns bei der Erhebung, Verarbeitung und Nutzung personenbezogener Daten streng an die gesetzlichen Bestimmungen des Datenschutzrechts. Einzelheiten finden Sie in unserer Datenschutzerklärung.",
-      "final": "7. Schlussbestimmungen",
-      "final_text": "Es gilt das Recht der Schweiz unter Ausschluss des UN-Kaufrechts. Erfüllungsort und ausschließlicher Gerichtsstand für alle Streitigkeiten aus diesem Vertrag ist Zürich, Schweiz.",
-      "final_text2": "Sollten einzelne Bestimmungen dieser AGB ganz oder teilweise unwirksam sein oder werden, so wird hierdurch die Gültigkeit der übrigen Bestimmungen nicht berührt."
+      "liability_text": "Wir haften nur für Vorsatz und grobe Fahrlässigkeit. Die Haftung für einfache Fahrlässigkeit ist auf den Wert der jeweiligen Dienstleistung beschränkt. Sämtliche Angaben auf der Website dienen lediglich Informationszwecken und sind unverbindlich.",
+      "errors": "6. Fehler & Updates",
+      "errors_text": "Wir bemühen uns um inhaltliche Richtigkeit, übernehmen jedoch keine Haftung für Tippfehler oder veraltete Informationen. Inhalte können jederzeit und ohne Ankündigung geändert oder korrigiert werden.",
+      "privacy": "7. Datenschutz",
+      "privacy_text": "Personenbezogene Daten, die Sie uns übermitteln, werden gemäß unserer Datenschutzerklärung verarbeitet.",
+      "law": "8. Anwendbares Recht",
+      "law_text": "Es gilt Schweizer Recht. Gerichtsstand ist Zürich, Schweiz."
     }
   }
 }

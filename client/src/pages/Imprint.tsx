@@ -19,52 +19,29 @@ export default function Imprint() {
             </h1>
             
             <div className="prose prose-lg max-w-none">
+              {/* Title */}
               <h2>{t('legal.imprint.title')}</h2>
               
-              <h3>{t('legal.imprint.info')}</h3>
+              {/* Company Details */}
+              <h3>{t('legal.imprint.company_details.name')}</h3>
               <p>
-                Spitex JCare<br />
-                Langgrütstrasse 101<br />
-                8047 Zürich<br />
-                Schweiz
+                {t('legal.imprint.company_details.address')}
               </p>
               
-              <h3>{t('legal.imprint.contact')}</h3>
-              <p>
-                Telefon: +41 797 90 70<br />
-                E-Mail: info@j-care.ch
-              </p>
+              {/* Contact */}
+              <h3>{t('legal.imprint.contact.email')}</h3>
+              <p>{t('legal.imprint.contact.phone')}</p>
               
-              <h3>{t('legal.imprint.responsible')}</h3>
-              <p>
-                Spitex JCare<br />
-                Langgrütstrasse 101<br />
-                8047 Zürich<br />
-                Schweiz
-              </p>
+              {/* Registry */}
+              <h3>{t('legal.imprint.registry.text')}</h3>
+              <p>{t('legal.imprint.registry.uid')}</p>
               
-              <h3>{t('legal.imprint.register')}</h3>
-              <p>
-                {t('legal.imprint.register_text')}<br />
-                {t('legal.imprint.register_number')}: CHE-XXX.XXX.XXX
-              </p>
+              {/* Representative */}
+              <h3>{t('legal.imprint.represented_by')}</h3>
               
-              <h3>{t('legal.imprint.vat')}</h3>
-              <p>
-                {t('legal.imprint.vat_text')}<br />
-                CHE-XXX.XXX.XXX MWST
-              </p>
-              
-              <h2>{t('legal.imprint.disclaimer')}</h2>
-              
-              <h3>{t('legal.imprint.content_liability')}</h3>
-              <p>{t('legal.imprint.content_text')}</p>
-              
-              <h3>{t('legal.imprint.link_liability')}</h3>
-              <p>{t('legal.imprint.link_text')}</p>
-              
-              <h3>{t('legal.imprint.copyright')}</h3>
-              <p>{t('legal.imprint.copyright_text')}</p>
+              {/* Prohibitions & Legal Protection */}
+              <p>{t('legal.imprint.advertising_prohibition')}</p>
+              <p>{t('legal.imprint.legal_protection')}</p>
             </div>
           </div>
         </section>

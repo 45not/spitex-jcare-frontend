@@ -1,100 +1,169 @@
 {
   "nav": {
     "support": "Support",
-    "about": "About Us",
+    "about": "About us",
     "faq": "FAQ",
-    "contact": "Contact Us",
+    "contact": "Contact us",
     "home": "Home"
   },
   "hero": {
-    "title": "Support for Caregiving Relatives",
-    "subtitle": "We provide helpful resources to make your caregiving journey easier.",
-    "button": "Contact Us"
+    "title": "Support for Family Caregivers",
+    "subtitle": "We offer helpful resources to make your caregiving journey easier.",
+    "button": "Contact us"
   },
   "about": {
-    "title": "About Us",
-    "subtitle": "Our Commitment to Caregivers",
-    "description": "Spitex JCare was founded to provide comprehensive support to caregiving relatives in Switzerland. We understand the challenges you face and are here to help through personalized support, resources, and guidance. Our team of experienced care professionals specializes in guiding you through the caregiving process and ensuring you receive the support you need.",
-    "button": "Learn More",
+    "title": "About us",
+    "subtitle": "Our commitment to family caregivers",
+    "description": "Spitex JCare was founded to provide comprehensive support to family caregivers in Switzerland. We understand the challenges you face and are here to help you with personalized support, resources, and advice. Our team of experienced care professionals is dedicated to guiding you through the care process and ensuring you receive the support you need.",
+    "button": "Learn more",
     "contact_phone_title": "You can reach us by phone at:",
-    "contact_hours": "between 8:00 - 17:00 CET",
-    "contact_email_title": "By Email:",
+    "contact_hours": "between 9:00 and 17:00 CET",
+    "contact_email_title": "By email:",
     "support_areas_title": "We support you in the following areas:",
     "support_areas": {
-      "applications": "Application submission and government procedures",
-      "care_tips": "Care tips and training",
+      "applications": "Consultation",
+      "care_tips": "Planning",
       "emotional_support": "Emotional support",
-      "financial_advice": "Financial advice"
+      "financial_advice": "Financial support"
     }
   },
   "support": {
     "title": "Our Support Process",
-    "subtitle": "How We Help You",
+    "subtitle": "How we help you",
     "steps": {
       "1": {
         "title": "Consultation",
-        "description": "Personal initial meeting to understand your specific needs."
+        "description": "Personal initial consultation to understand your specific needs."
       },
       "2": {
         "title": "Planning",
-        "description": "Development of a customized care plan tailored to your situation."
+        "description": "Development of a tailored care plan customized to your situation."
       },
       "3": {
-        "title": "Financial Support",
-        "description": "You are entitled to financial compensation for caring for your loved one. We coordinate with your health insurance and pay you a fair hourly wage with social benefits."
+        "title": "Financial support",
+        "description": "You are entitled to financial compensation for caring for your relatives. We coordinate with your health insurance and pay you a fair hourly wage including social benefits."
       },
       "4": {
-        "title": "Wellbeing",
-        "description": "Continuous support and regular check-ins to ensure you’re never alone in your caregiving journey."
+        "title": "Well-being",
+        "description": "Continuous support and regular check-ins so you never feel alone on your caregiving journey."
       }
     }
   },
   "faq": {
     "title": "Frequently Asked Questions",
-    "subtitle": "Answers to Your Most Important Questions",
-    "questions": {
-      "1": {
-        "question": "What services does Spitex JCare offer?",
-        "answer": "We offer a range of support services for caregiving relatives, including personal consultation, caregiving support resources, training, and access to professional care assistance."
-      },
-      "2": {
-        "question": "How can I access your services?",
-        "answer": "You can easily reach us through our contact form, and a member of our team will contact you within 24 hours to arrange an initial consultation."
-      },
-      "3": {
-        "question": "Are your services covered by health insurance?",
-        "answer": "Many of our services may be covered by health insurance depending on your specific policy. We can help you clarify your coverage and submit necessary documentation."
-      },
-      "4": {
-        "question": "In which cantons do you operate?",
-        "answer": "We currently offer our services in the cantons of Zurich, Bern, Basel, and Lucerne. We plan to expand our services to additional cantons in the near future."
-      },
-      "5": {
-        "question": "How do you differ from other care services?",
-        "answer": "Our unique approach focuses on comprehensive support for caregiving relatives. We not only provide direct care services but also ensure that caregivers themselves receive the support, training, and resources they need to provide quality care while looking after their own well-being."
+    "subtitle": "Answers to your most important questions",
+    "general": {
+      "label": "General",
+      "faqs": {
+        "0": {
+          "question": "What is JCare and what services does JCare offer?",
+          "answer": "JCare is a home care organization focused on supporting families. We provide professional, financial, and emotional support to family caregivers."
+        },
+        "1": {
+          "question": "What qualifications do family caregivers need?",
+          "answer": "No special training is required. JCare welcomes all family caregivers – with or without prior experience. Our experienced care team is there to support you and provide practical tips so you never feel alone or overwhelmed."
+        },
+        "2": {
+          "question": "How does JCare ensure quality of care?",
+          "answer": "JCare takes responsibility for the quality of care provided by family caregivers. You will be supported by an experienced care professional who maintains regular contact, offers training, and provides personal advice – both on-site and by phone."
+        },
+        "3": {
+          "question": "How is JCare financed? Is there government support or other funding?",
+          "answer": "In Switzerland, relatives provide millions of hours of care every year. Since 2019, family caregivers can be paid for basic care such as personal hygiene, mobility, dressing or undressing, or help with eating, if they cooperate with a recognized organization like JCare. Funding comes from health insurance and, in some cases, from municipalities or cantons."
+        }
+      }
+    },
+    "caregivers": {
+      "label": "Family caregivers",
+      "faqs": {
+        "0": {
+          "question": "Who can be considered a family caregiver?",
+          "answer": "Family caregivers are people who regularly support a close person in daily life, for example, parents, children, partners, siblings, or close friends and neighbors."
+        },
+        "1": {
+          "question": "Can I receive financial compensation for caring for my parents or relatives?",
+          "answer": "Yes, in Switzerland you can receive financial compensation for caring for your parents or close persons. If you are employed by JCare as a family caregiver, recognized basic care services are compensated. We are happy to advise you on all options."
+        },
+        "2": {
+          "question": "Which care tasks are compensated?",
+          "answer": "You receive financial support for basic care according to Article 7 KLV, for example, help with eating and drinking, dressing and undressing, personal hygiene, mobility, and positioning. These services are paid at an hourly wage of CHF 37.90."
+        },
+        "3": {
+          "question": "How much do I earn as a family caregiver?",
+          "answer": "For recognized basic care services, JCare pays an hourly wage of CHF 37.90, including holiday pay, a 13th salary, and social insurance. The exact amount depends on the individual care effort."
+        },
+        "4": {
+          "question": "Do I need special training?",
+          "answer": "No, you do not need special training. If you feel able to care for a close person, we will personally support and train you at JCare."
+        },
+        "5": {
+          "question": "What requirements must I meet to work as a family caregiver?",
+          "answer": "The requirements are simple: you should be physically able to take on care tasks and have patience and empathy. The minimum age is eighteen years. The person being cared for must live in a canton where JCare is approved. Employment is also possible after retirement age."
+        },
+        "6": {
+          "question": "Can I apply for care services directly, or do I need JCare?",
+          "answer": "Care services cannot be applied for privately. To receive compensation, you must be employed by a recognized organization like JCare. We ensure all legal requirements and quality standards are met."
+        },
+        "7": {
+          "question": "Does the support from JCare cost me anything?",
+          "answer": "No, our service is free for you and the person being cared for. Funding comes from health insurance and sometimes from the canton or municipality. You only pay the usual health insurance premiums, deductibles, and co-payments, nothing more."
+        },
+        "8": {
+          "question": "How much administrative effort is required from me?",
+          "answer": "The administrative effort is minimal. The most important thing is that you can spend as much time as possible with your loved ones."
+        }
+      }
+    },
+    "needs": {
+      "label": "People in need of care",
+      "faqs": {
+        "0": {
+          "question": "What requirements must be met to receive support from JCare?",
+          "answer": "If you or your child need support with basic care such as hygiene, mobility, using the toilet, or dressing and undressing – whether due to age, illness, or disability – JCare can support you. We are happy to discuss your individual needs personally with you and your relatives."
+        },
+        "1": {
+          "question": "Is there a certain age or health requirement?",
+          "answer": "JCare supports people of all ages who need long-term care at home, whether adults, seniors, teenagers, or children. What matters is that regular basic care by a trusted person is necessary."
+        },
+        "2": {
+          "question": "How does registration with JCare work?",
+          "answer": "Getting started is easy. Contact us by phone, email, or via our website. We will discuss your personal situation together and guide you through the next steps."
+        },
+        "3": {
+          "question": "Can I choose who cares for me?",
+          "answer": "Yes, you can choose a trusted person as your caregiver – this can be a family member, a friend, or even a neighbor, as long as they are willing to help with daily care."
+        },
+        "4": {
+          "question": "Who pays for my care?",
+          "answer": "The costs for basic care are covered by compulsory health insurance and, in part, by the canton or municipality. You only pay the regular health insurance premiums, deductibles, and co-payments. We do not charge any daily patient contribution."
+        },
+        "5": {
+          "question": "How many hours of care do I receive per week?",
+          "answer": "The amount of care depends on your personal needs and is determined together with you, your caregiver, and the JCare team."
+        }
       }
     }
   },
   "contact": {
-    "title": "Contact Us",
-    "subtitle": "We're Here to Help",
-    "leave_message": "Leave us your contact details, and we will get back to you within one business day.",
+    "title": "Contact us",
+    "subtitle": "We are here to help",
+    "leave_message": "Leave us your contact details and we will get back to you within one business day.",
     "form": {
-      "firstName": "First Name",
-      "lastName": "Last Name",
+      "firstName": "First name",
+      "lastName": "Last name",
       "email": "Email",
-      "phone": "Phone Number",
-      "canton": "Canton of the person requiring care",
+      "phone": "Phone number",
+      "canton": "Canton of the person in need of care",
       "source": "How did you hear about us?",
       "privacy": "I agree to the",
       "button": "Submit",
-      "success": "Thank you for your message. We will get back to you shortly.",
-      "error": "There was an error sending your message. Please try again later.",
+      "success": "Thank you for your message. We will contact you shortly.",
+      "error": "An error occurred while sending your message. Please try again later.",
       "sources": {
         "internet": "Internet",
         "friends": "Friends/Family",
         "doctor": "Doctor",
-        "social": "Social Media",
+        "social": "Social media",
         "other": "Other"
       }
     }
@@ -106,9 +175,9 @@
   "sending...": "Sending...",
   "please select": "Please select...",
   "footer": {
-    "tagline": "We support caregiving relatives with clear solutions and human understanding.",
+    "tagline": "Where your care matters.",
     "contact": "Contact",
-    "hours": "Opening Hours",
+    "hours": "Opening hours",
     "monday": "Monday",
     "friday": "Friday",
     "saturday": "Saturday",
@@ -116,8 +185,8 @@
     "closed": "Closed",
     "legal": "Legal",
     "imprint": "Imprint",
-    "privacy": "Privacy Policy",
-    "terms": "Terms and Conditions",
+    "privacy": "Privacy policy",
+    "terms": "Terms",
     "rights": "All rights reserved."
   },
   "language": {
@@ -128,74 +197,68 @@
   "legal": {
     "imprint": {
       "title": "Imprint",
-      "company_info": "Company Information",
       "company_details": {
-        "name": "Spitex JCare",
-        "address": "Bahnhofstrasse 10, 8001 Zürich, Switzerland"
+        "name": "JCare GmbH",
+        "address": "Langgrütstrasse 101\n8047 Zurich\nSwitzerland"
       },
-      "contact": "Contact",
-      "contact_details": {
-        "phone": "Phone: +41 800 247 247",
-        "email": "Email: info@spitex-jcare.ch"
+      "contact": {
+        "email": "Email: info@j-care.ch / Contact form",
+        "phone": "Phone: +41 78 306 90 10"
       },
-      "responsible": "Responsible for Content",
-      "registry": "Commercial Registry Entry",
-      "registry_details": "Registered in the commercial registry of Canton Zurich, Commercial registry number: CHE-XXX.XXX.XXX",
-      "vat": "VAT Identification Number",
-      "vat_details": "VAT number according to §27a VAT law: CHE-XXX.XXX.XXX VAT",
-      "disclaimer": "Disclaimer",
-      "content_liability": "Content Liability",
-      "content_liability_text": "The contents of our pages were created with the utmost care. However, we cannot guarantee the accuracy, completeness and timeliness of the content. As a service provider, we are responsible for our own content on these pages in accordance with general law. However, we are not obliged to monitor transmitted or stored third-party information or to investigate circumstances that indicate illegal activity.",
-      "link_liability": "Link Liability",
-      "link_liability_text": "Our offer contains links to external websites of third parties, on whose contents we have no influence. Therefore, we cannot assume any liability for these external contents. The respective provider or operator of the linked pages is always responsible for the content of the linked pages. The linked pages were checked for possible legal violations at the time of linking. Illegal content was not recognizable at the time of linking.",
-      "copyright": "Copyright",
-      "copyright_text": "The content and works created by the site operators on these pages are subject to Swiss copyright law. The reproduction, editing, distribution and any kind of exploitation outside the limits of copyright law require the written consent of the respective author or creator. Downloads and copies of this site are only permitted for private, non-commercial use."
+      "registry": {
+        "text": "Registered in the Commercial Register of the Canton of Zurich",
+        "uid": "UID CHE-199.875.120"
+      },
+      "represented_by": "Represented by: Sam Elevitsky",
+      "advertising_prohibition": "JCare GmbH and its employees prohibit any form of use, processing, or other utilization of the contact details and personal data published on this website for advertising purposes.",
+      "legal_protection": "All content on this website may be protected by copyright or other legal rights."
     },
     "privacy": {
       "title": "Privacy Policy",
-      "intro": "This privacy policy informs you about the nature, scope and purpose of the processing of personal data within our online offering and the websites, functions and content associated with it. The privacy policy applies regardless of the domains, systems, platforms and devices used on which the online offering is executed.",
-      "responsible": "Data Controller",
-      "data_types": "Types of Data Processed",
+      "intro": "This privacy policy informs you about the type, scope, and purpose of the processing of personal data within our online offering and the associated websites, functions, and content. The privacy policy applies regardless of the domains, systems, platforms, and devices used to execute the online offering.",
+      "responsible": "Responsible party",
+      "responsible_details": "Spitex JCare\nBahnhofstrasse 10\n8001 Zurich\nSwitzerland\nEmail: info@spitex-jcare.ch\nPhone: +41 800 247 247",
+      "data_types": "Types of data processed",
       "data_types_list": {
-        "inventory": "Inventory data (e.g., names, addresses)",
-        "contact": "Contact data (e.g., email, phone numbers)",
-        "content": "Content data (e.g., text entries, photographs, videos)",
-        "usage": "Usage data (e.g., websites visited, interest in content, access times)",
-        "meta": "Meta/communication data (e.g., device information, IP addresses)"
+        "inventory": "Inventory data (e.g. names, addresses)",
+        "contact": "Contact data (e.g. email, phone numbers)",
+        "content": "Content data (e.g. text entries, photographs, videos)",
+        "usage": "Usage data (e.g. pages visited, access times)",
+        "meta": "Meta/communication data (e.g. device information, IP addresses)"
       },
-      "categories": "Categories of Data Subjects",
-      "categories_text": "Visitors and users of the online offering (hereinafter we also collectively refer to the data subjects as 'users').",
-      "processing_purpose": "Purpose of Processing",
+      "categories": "Categories of data subjects",
+      "categories_text": "Visitors and users of the online offering (hereinafter 'users').",
+      "processing_purpose": "Purpose of processing",
       "purpose_list": {
-        "provision": "Providing the online offering, its functions and contents",
-        "contact": "Responding to contact requests and communicating with users",
+        "provision": "Provision of the online offering and its functions",
+        "contact": "Responding to contact inquiries and communication",
         "security": "Security measures",
-        "reach": "Reach measurement/marketing"
+        "reach": "Audience measurement/Marketing"
       },
-      "terminology": "Terms Used",
-      "personal_data": "'Personal data' means any information relating to an identified or identifiable natural person; an identifiable natural person is one who can be identified, directly or indirectly, in particular by reference to an identifier such as a name, an identification number, location data, an online identifier or to one or more factors specific to the physical, physiological, genetic, mental, economic, cultural or social identity of that natural person.",
-      "processing": "'Processing' means any operation or set of operations which is performed on personal data, whether or not by automated means. The term is broad and encompasses practically any handling of data.",
-      "pseudonymization": "'Pseudonymization' means the processing of personal data in such a manner that the personal data can no longer be attributed to a specific data subject without the use of additional information, provided that such additional information is kept separately and is subject to technical and organizational measures to ensure that the personal data are not attributed to an identified or identifiable natural person.",
-      "profiling": "'Profiling' means any form of automated processing of personal data consisting of the use of personal data to evaluate certain personal aspects relating to a natural person, in particular to analyze or predict aspects concerning that natural person's performance at work, economic situation, health, personal preferences, interests, reliability, behavior, location or movements."
+      "terminology": "Terminology used",
+      "personal_data": "Personal data is any information relating to a person.",
+      "processing": "Processing is any operation with personal data.",
+      "pseudonymization": "Pseudonymization means processing in such a way that assignment is only possible with additional information.",
+      "profiling": "Profiling is the automated evaluation of personal aspects."
     },
     "terms": {
       "title": "Terms and Conditions",
-      "intro": "The following General Terms and Conditions (GTC) govern the contractual relationship between the user and Spitex JCare concerning the access, browsing and any form of use of the Spitex JCare website.",
       "scope": "1. Scope",
-      "scope_text": "These GTC apply to all services and offers provided by Spitex JCare. By using our services, you agree to these terms. Please read them carefully.",
-      "services": "2. Description of Services",
-      "services_text": "Spitex JCare offers support for caregiving relatives through various services, including advisory and supportive activities in the field of nursing and care for people in need of care.",
-      "contract": "3. Contract Formation",
-      "contract_text": "A contract between the user and Spitex JCare is concluded through the express commissioning by the user or through the use of the services of Spitex JCare.",
-      "prices": "4. Prices and Payment Terms",
-      "prices_text": "The prices for our services are individually agreed upon and depend on the respective scope of services. The payment terms are determined on a case-by-case basis and communicated to the customer. All prices are in Swiss francs (CHF) and include the statutory value-added tax.",
+      "scope_text": "These terms and conditions apply to all online offers and personal support services of JCare GmbH. By using our website or requesting services, you agree to these terms.",
+      "services": "2. Our services",
+      "services_text": "JCare GmbH offers professional advice and support for family caregivers. A binding contract is only concluded by signing our service agreement.",
+      "contract": "3. Conclusion of contract",
+      "contract_text": "Mere browsing on this website does not create a contractual relationship. A binding contract is only established by your signature on the service agreement.",
+      "rates": "4. Prices & changes",
+      "rates_text": "All prices and fees displayed on our website are non-binding. The prices that apply are those specified in the service agreement you sign. We reserve the right to adjust our published prices at any time before the contract is concluded.",
       "liability": "5. Liability",
-      "liability_text": "Spitex JCare is liable for damages only in cases of intent or gross negligence. Liability for slight negligence exists only in the event of a breach of essential contractual obligations, the fulfillment of which the customer may particularly rely on. In this case, liability is limited to the typically foreseeable damage.",
-      "data_protection": "6. Data Protection",
-      "data_protection_text": "The protection of your personal data is important to us. We strictly adhere to the legal provisions of data protection law when collecting, processing and using personal data. Details can be found in our Privacy Policy.",
-      "final": "7. Final Provisions",
-      "final_text": "The law of Switzerland applies to the exclusion of the UN Convention on Contracts for the International Sale of Goods. Place of performance and exclusive place of jurisdiction for all disputes arising from this contract is Zurich, Switzerland.",
-      "final_text2": "Should individual provisions of these GTC be or become invalid in whole or in part, this shall not affect the validity of the remaining provisions."
+      "liability_text": "We are only liable for intent and gross negligence. Liability for simple negligence is limited to the value of the respective service. All information on the website is for information purposes only and is non-binding.",
+      "errors": "6. Errors & updates",
+      "errors_text": "We strive for content accuracy but accept no liability for typographical errors or outdated information. Content may be changed or corrected at any time without notice.",
+      "privacy": "7. Data protection",
+      "privacy_text": "Personal data you transmit to us will be processed in accordance with our privacy policy.",
+      "law": "8. Applicable law",
+      "law_text": "Swiss law applies. The place of jurisdiction is Zurich, Switzerland."
     }
   }
 }
