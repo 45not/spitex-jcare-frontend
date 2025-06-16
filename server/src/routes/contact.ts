@@ -36,20 +36,13 @@ console.log('Nodemailer config:', {
 
 router.post('/contact', contactLimiter, async (req, res) => {
   try {
-    // Debug: Log full request body
-    console.log('Request body:', req.body);
     // Validate request body
     const data = contactSchema.parse(req.body);
    
-    // Debug: Log incoming reCAPTCHA token (full and partial)
-    console.log('Token received in backend (first 8 chars):', data.recaptchaToken?.slice(0, 8));
-    console.log('Token received in backend (full):', data.recaptchaToken);
-    // Debug: Log secret key (first 8 chars)
-    if (!process.env.RECAPTCHA_SECRET_KEY) {
-      console.error('RECAPTCHA_SECRET_KEY is missing in backend environment variables!');
-    } else {
-      console.log('Using reCAPTCHA secret (first 8 chars):', process.env.RECAPTCHA_SECRET_KEY.slice(0, 8));
-    }
+    // Debug: Log incoming reCAPTCHA token
+    //console.log('Received reCAPTCHA token:', data.recaptchaToken?.slice(0, 20) + '...');
+    //console.log('Using reCAPTCHA secret (first 8 chars):', (process.env.RECAPTCHA_SECRET_KEY || '').slice(0, 8));
+    console.log('Token received in backend:', data.recaptchaToken?.slice(0, 8));
     // Verify reCAPTCHA
     const recaptchaResponse = await axios.post(
       'https://www.google.com/recaptcha/api/siteverify',
