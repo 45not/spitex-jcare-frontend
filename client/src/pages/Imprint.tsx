@@ -2,12 +2,18 @@ import { useTranslation } from "react-i18next";
 import { BackgroundBubbles } from "@/components/ui/background-bubbles";
 import { LegalPageHeader } from "@/components/LegalPageHeader";
 import { Footer } from "@/components/Footer";
+import { Helmet } from "react-helmet";
 
 export default function Imprint() {
   const { t } = useTranslation();
   
   return (
     <>
+      <Helmet>
+        <title>Impressum | Spitex JCare</title>
+        <meta name="description" content="Impressum und rechtliche Hinweise zu Spitex JCare, Ihrem Partner für Pflege und Betreuung in Zürich." />
+        <link rel="canonical" href="https://j-care.ch/imprint" />
+      </Helmet>
       <LegalPageHeader />
       <main className="min-h-screen bg-white pt-24">
         <section className="py-16 md:py-24 relative overflow-hidden">

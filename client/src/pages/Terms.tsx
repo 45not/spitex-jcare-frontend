@@ -2,12 +2,18 @@ import { useTranslation } from "react-i18next";
 import { BackgroundBubbles } from "@/components/ui/background-bubbles";
 import { LegalPageHeader } from "@/components/LegalPageHeader";
 import { Footer } from "@/components/Footer";
+import { Helmet } from "react-helmet";
 
 export default function Terms() {
   const { t } = useTranslation();
   
   return (
     <>
+      <Helmet>
+        <title>Nutzungsbedingungen | Spitex JCare</title>
+        <meta name="description" content="Nutzungsbedingungen für die Website und Dienstleistungen von Spitex JCare." />
+        <link rel="canonical" href="https://j-care.ch/terms" />
+      </Helmet>
       <LegalPageHeader />
       <main className="min-h-screen bg-white pt-24 pb-24">
         <section className="py-16 md:py-24 relative overflow-hidden">
@@ -48,6 +54,6 @@ export default function Terms() {
         </section>
       </main>
       <Footer />
-          </>
+    </>
   );
 }
