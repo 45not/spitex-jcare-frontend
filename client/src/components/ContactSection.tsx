@@ -24,7 +24,7 @@ export function ContactSection() {
                   <PhoneIcon className="h-6 w-6 mt-1 mr-4" />
                   <div>
                     <p className="font-medium text-lg">{t('about.contact_phone_title')}</p>
-                    <p className="text-2xl font-bold mt-2">+41 797 70 90</p>
+                    <p className="text-2xl font-bold mt-2">+41 44 797 90 70</p>
                     <p className="text-sm mt-1">{t('about.contact_hours')}</p>
                   </div>
                 </div>

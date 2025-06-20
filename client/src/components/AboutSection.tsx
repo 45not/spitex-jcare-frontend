@@ -34,7 +34,7 @@ export function AboutSection() {
               <div className="mt-8 space-y-4">
                 <div>
                   <p className="font-semibold">{t('about.contact_phone_title')}</p>
-                  <p className="text-xl text-[#E23B3B] font-bold">+41 797 90 70</p>
+                  <p className="text-xl text-[#E23B3B] font-bold">+41 44 797 90 70</p>
                   <p className="text-sm text-gray-600">{t('about.contact_hours')}</p>
                 </div>
                 

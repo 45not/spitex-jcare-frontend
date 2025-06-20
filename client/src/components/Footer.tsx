@@ -29,7 +29,7 @@ export function Footer() {
               </li>
               <li className="flex items-start">
                 <PhoneIcon className="h-5 w-5 mt-0.5 mr-3 text-gray-400" />
-                <span>+41 797 90 70</span>
+                <span>+41 44 797 90 70</span>
               </li>
               <li className="flex items-start">
                 <MailIcon className="h-5 w-5 mt-0.5 mr-3 text-gray-400" />
@@ -43,7 +43,7 @@ export function Footer() {
             <ul className="space-y-2">
               <li className="flex justify-between">
                 <span>{t('footer.monday')} - {t('footer.friday')}:</span>
-                <span>8:00 - 17:00</span>
+                <span>9:00 - 17:00</span>
               </li>
               <li className="flex justify-between">
                 <span>{t('footer.saturday')}-{t('footer.sunday')}:</span>

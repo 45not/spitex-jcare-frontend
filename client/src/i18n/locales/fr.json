@@ -37,7 +37,7 @@
       },
       "2": {
         "title": "Planification",
-        "description": "Élaboration d’un plan de soins sur mesure adapté à votre situation."
+        "description": "Élaboration d'un plan de soins sur mesure adapté à votre situation."
       },
       "3": {
         "title": "Soutien financier",
@@ -56,20 +56,20 @@
       "label": "Général",
       "faqs": {
         "0": {
-          "question": "Qu’est-ce que JCare et quels services propose JCare ?",
+          "question": "Qu'est-ce que JCare et quels services propose JCare ?",
           "answer": "JCare est une organisation de soins à domicile qui se concentre sur le soutien aux familles. Nous accompagnons et soutenons les proches aidants sur le plan professionnel, financier et émotionnel."
         },
         "1": {
           "question": "Quelles qualifications sont nécessaires pour être proche aidant ?",
-          "answer": "Aucune expérience ou qualification n’est requise. Il suffit de suivre un cours SRK la première année—JCare s’occupe de tout et prend en charge les frais. Nous vous accompagnons à chaque étape."	
+          "answer": "Aucune expérience ou qualification n'est requise. Il suffit de suivre un cours SRK la première année—JCare s'occupe de tout et prend en charge les frais. Nous vous accompagnons à chaque étape."	
         },
         "2": {
           "question": "Comment JCare garantit-elle la qualité des soins ?",
-          "answer": "JCare prend la responsabilité de la qualité de l’accompagnement assuré par les proches aidants. Vous êtes accompagné(e) par un professionnel expérimenté qui assure un suivi régulier, dispense des formations et propose des conseils personnalisés – sur place et par téléphone."
+          "answer": "JCare prend la responsabilité de la qualité de l'accompagnement assuré par les proches aidants. Vous êtes accompagné(e) par un professionnel expérimenté qui assure un suivi régulier, dispense des formations et propose des conseils personnalisés – sur place et par téléphone."
         },
         "3": {
-          "question": "Comment JCare est-elle financée ? Y a-t-il un soutien de l’État ou d’autres aides financières ?",
-          "answer": "En Suisse, les proches fournissent chaque année des millions d’heures de soins. Depuis 2019, les proches aidants peuvent être rémunérés pour des soins de base comme l’hygiène, la mobilité, l’habillage ou l’aide à l’alimentation, à condition de travailler avec une organisation reconnue comme JCare. Le financement provient des caisses maladie et, dans certains cas, des communes ou des cantons."
+          "question": "Comment JCare est-elle financée ? Y a-t-il un soutien de l'État ou d'autres aides financières ?",
+          "answer": "En Suisse, les proches fournissent chaque année des millions d'heures de soins. Depuis 2019, les proches aidants peuvent être rémunérés pour des soins de base comme l'hygiène, la mobilité, l'habillage ou l'aide à l'alimentation, à condition de travailler avec une organisation reconnue comme JCare. Le financement provient des caisses maladie et, dans certains cas, des communes ou des cantons."
         }
       }
     },
@@ -86,19 +86,19 @@
         },
         "2": {
           "question": "Quelles tâches de soins sont rémunérées ?",
-          "answer": "Vous recevez un soutien financier pour les soins de base selon l’article 7 KLV, par exemple l’aide à l’alimentation, l’habillage, l’hygiène personnelle, la mobilité et la mise en position."
+          "answer": "Vous recevez un soutien financier pour les soins de base selon l'article 7 KLV, par exemple l'aide à l'alimentation, l'habillage, l'hygiène personnelle, la mobilité et la mise en position."
         },
         "3": {
           "question": "Combien puis-je gagner en tant que proche aidant ?",
           "answer": "Pour les prestations de soins de base reconnues, JCare verse un salaire horaire de 37,90 CHF, incluant les congés payés, un treizième mois et les assurances sociales. Le montant exact dépend de la charge de soins individuelle."
         },
         "4": {
-          "question": "Ai-je besoin d’une formation particulière ?",
-          "answer": "Non, aucune formation spéciale n’est nécessaire pour commencer. Vous devrez simplement suivre un cours SRK dans la première année, que JCare organisera et financera pour vous."
+          "question": "Ai-je besoin d'une formation particulière ?",
+          "answer": "Non, aucune formation spéciale n'est nécessaire pour commencer. Vous devrez simplement suivre un cours SRK dans la première année, que JCare organisera et financera pour vous."
         },
         "5": {
           "question": "Quelles sont les conditions à remplir pour devenir proche aidant ?",
-          "answer": "Les conditions sont simples : vous devez être physiquement apte à assumer des tâches de soins et faire preuve de patience et d’empathie. L’âge minimum est de dix-huit ans. La personne prise en charge doit résider dans un canton où JCare est autorisé. Un emploi est aussi possible après l’âge de la retraite."
+          "answer": "Les conditions sont simples : vous devez être physiquement apte à assumer des tâches de soins et faire preuve de patience et d'empathie. L'âge minimum est de dix-huit ans. La personne prise en charge doit résider dans un canton où JCare est autorisé. Un emploi est aussi possible après l'âge de la retraite."
         },
         "6": {
           "question": "Puis-je demander des prestations de soins directement ou ai-je besoin de JCare ?",
@@ -106,11 +106,11 @@
         },
         "7": {
           "question": "Le soutien de JCare me coûte-t-il quelque chose ?",
-          "answer": "Non, notre service est gratuit pour vous et la personne prise en charge. Le financement est assuré par l’assurance maladie et parfois aussi par le canton ou la commune. Vous ne payez que les primes, franchises et participations habituelles à l’assurance maladie, rien de plus."
+          "answer": "Non, notre service est gratuit pour vous et la personne prise en charge. Le financement est assuré par l'assurance maladie et parfois aussi par le canton ou la commune. Vous ne payez que les primes, franchises et participations habituelles à l'assurance maladie, rien de plus."
         },
         "8": {
           "question": "Quelle charge administrative dois-je prévoir ?",
-          "answer": "La charge administrative est minimale. L’essentiel est que vous puissiez passer le plus de temps possible avec vos proches."
+          "answer": "La charge administrative est minimale. L'essentiel est que vous puissiez passer le plus de temps possible avec vos proches."
         }
       }
     },
@@ -119,27 +119,27 @@
       "faqs": {
         "0": {
           "question": "Quelles sont les conditions à remplir pour bénéficier du soutien de JCare ?",
-          "answer": "Si vous ou votre enfant avez besoin d’aide pour des soins de base comme l’hygiène, la mobilité, l’utilisation des toilettes ou l’habillage – que ce soit en raison de l’âge, d’une maladie ou d’un handicap – JCare peut vous accompagner. Nous discutons volontiers de vos besoins individuels avec vous et vos proches."
+          "answer": "Si vous ou votre enfant avez besoin d'aide pour des soins de base comme l'hygiène, la mobilité, l'utilisation des toilettes ou l'habillage – que ce soit en raison de l'âge, d'une maladie ou d'un handicap – JCare peut vous accompagner. Nous discutons volontiers de vos besoins individuels avec vous et vos proches."
         },
         "1": {
           "question": "Y a-t-il un âge ou un état de santé minimum requis ?",
-          "answer": "JCare soutient les personnes de tout âge ayant besoin d’une prise en charge à domicile de longue durée, qu’il s’agisse d’adultes, de seniors, de jeunes ou d’enfants. Ce qui compte, c’est qu’une aide régulière par une personne de confiance soit nécessaire."
+          "answer": "JCare soutient les personnes de tout âge ayant besoin d'une prise en charge à domicile de longue durée, qu'il s'agisse d'adultes, de seniors, de jeunes ou d'enfants. Ce qui compte, c'est qu'une aide régulière par une personne de confiance soit nécessaire."
         },
         "2": {
-          "question": "Comment s’inscrire chez JCare ?",
-          "answer": "L’inscription est simple. Contactez-nous par téléphone, par e-mail ou via notre site web. Nous discuterons ensemble de votre situation et vous accompagnerons pour les prochaines étapes."
+          "question": "Comment s'inscrire chez JCare ?",
+          "answer": "L'inscription est simple. Contactez-nous par téléphone, par e-mail ou via notre site web. Nous discuterons ensemble de votre situation et vous accompagnerons pour les prochaines étapes."
         },
         "3": {
-          "question": "Puis-je choisir qui s’occupe de moi ?",
-          "answer": "Oui, vous pouvez choisir une personne de confiance comme aidant – il peut s’agir d’un membre de la famille, d’un(e) ami(e) ou même d’un(e) voisin(e), à condition qu’il ou elle soit prêt(e) à aider au quotidien."
+          "question": "Puis-je choisir qui s'occupe de moi ?",
+          "answer": "Oui, vous pouvez choisir une personne de confiance comme aidant – il peut s'agir d'un membre de la famille, d'un(e) ami(e) ou même d'un(e) voisin(e), à condition qu'il ou elle soit prêt(e) à aider au quotidien."
         },
         "4": {
           "question": "Qui paie mes soins ?",
-          "answer": "Les frais pour les soins de base sont couverts par l’assurance maladie obligatoire et, en partie, par le canton ou la commune. Vous ne payez que les primes, franchises et participations habituelles à l’assurance maladie. Aucun forfait journalier n’est facturé."
+          "answer": "Les frais pour les soins de base sont couverts par l'assurance maladie obligatoire et, en partie, par le canton ou la commune. Vous ne payez que les primes, franchises et participations habituelles à l'assurance maladie. Aucun forfait journalier n'est facturé."
         },
         "5": {
-          "question": "Combien d’heures de soins puis-je recevoir par semaine ?",
-          "answer": "L’étendue des soins dépend de vos besoins personnels et est déterminée avec vous, votre aidant et l’équipe JCare."
+          "question": "Combien d'heures de soins puis-je recevoir par semaine ?",
+          "answer": "L'étendue des soins dépend de vos besoins personnels et est déterminée avec vous, votre aidant et l'équipe JCare."
         }
       }
     }
@@ -147,7 +147,7 @@
   "contact": {
     "title": "Contactez-nous",
     "subtitle": "Nous sommes là pour vous aider",
-    "leave_message": "Laissez-nous vos coordonnées et nous vous contacterons dans un délai d’un jour ouvrable.",
+    "leave_message": "Laissez-nous vos coordonnées et nous vous contacterons dans un délai d'un jour ouvrable.",
     "form": {
       "firstName": "Prénom",
       "lastName": "Nom",
@@ -155,10 +155,10 @@
       "phone": "Numéro de téléphone",
       "canton": "Canton de la personne ayant besoin de soins",
       "source": "Comment avez-vous entendu parler de nous ?",
-      "privacy": "J’accepte la",
+      "privacy": "J'accepte la",
       "button": "Envoyer",
       "success": "Merci pour votre message. Nous vous contacterons prochainement.",
-      "error": "Une erreur est survenue lors de l’envoi de votre message. Veuillez réessayer plus tard.",
+      "error": "Une erreur est survenue lors de l'envoi de votre message. Veuillez réessayer plus tard.",
       "sources": {
         "internet": "Internet",
         "friends": "Amis/Famille",
@@ -177,7 +177,7 @@
   "footer": {
     "tagline": "Là où vos soins comptent.",
     "contact": "Contact",
-    "hours": "Heures d’ouverture",
+    "hours": "Heures d'ouverture",
     "monday": "Lundi",
     "friday": "Vendredi",
     "saturday": "Samedi",
@@ -210,55 +210,55 @@
         "uid": "UID CHE-199.875.120"
       },
       "represented_by": "Représenté par : Sam Elevitsky",
-      "advertising_prohibition": "JCare GmbH et ses employés interdisent toute forme d’utilisation, de traitement ou d’exploitation des coordonnées et des données personnelles publiées sur ce site à des fins publicitaires.",
-      "legal_protection": "Tous les contenus de ce site peuvent être protégés par des droits d’auteur ou autres droits juridiques."
+      "advertising_prohibition": "JCare GmbH et ses employés interdisent toute forme d'utilisation, de traitement ou d'exploitation des coordonnées et des données personnelles publiées sur ce site à des fins publicitaires.",
+      "legal_protection": "Tous les contenus de ce site peuvent être protégés par des droits d'auteur ou autres droits juridiques."
     },
     "privacy": {
       "title": "Politique de confidentialité",
-      "intro": "La présente politique de confidentialité vous informe sur la nature, l’étendue et la finalité du traitement des données personnelles dans le cadre de notre offre en ligne et des sites web, fonctions et contenus qui y sont liés. Elle s’applique quel que soit le domaine, le système, la plateforme ou le terminal utilisé.",
+      "intro": "La présente politique de confidentialité vous informe sur la nature, l'étendue et la finalité du traitement des données personnelles dans le cadre de notre offre en ligne et des sites web, fonctions et contenus qui y sont liés. Elle s'applique quel que soit le domaine, le système, la plateforme ou le terminal utilisé.",
       "responsible": "Responsable",
-      "responsible_details": "Spitex JCare\nBahnhofstrasse 10\n8001 Zurich\nSuisse\nE-mail : info@spitex-jcare.ch\nTéléphone : +41 800 247 247",
+      "responsible_details": "Spitex JCare\nBahnhofstrasse 10\n8001 Zurich\nSuisse\nE-mail : info@spitex-jcare.ch\nTéléphone : +41 44 797 90 70",
       "data_types": "Types de données traitées",
       "data_types_list": {
         "inventory": "Données de base (par ex. noms, adresses)",
         "contact": "Données de contact (par ex. e-mail, numéros de téléphone)",
         "content": "Données de contenu (par ex. saisies de texte, photographies, vidéos)",
-        "usage": "Données d’utilisation (par ex. pages visitées, horaires d’accès)",
-        "meta": "Données méta/communication (par ex. informations sur l’appareil, adresses IP)"
+        "usage": "Données d'utilisation (par ex. pages visitées, horaires d'accès)",
+        "meta": "Données méta/communication (par ex. informations sur l'appareil, adresses IP)"
       },
       "categories": "Catégories de personnes concernées",
-      "categories_text": "Visiteurs et utilisateurs de l’offre en ligne (ci-après « utilisateurs »).",
+      "categories_text": "Visiteurs et utilisateurs de l'offre en ligne (ci-après « utilisateurs »).",
       "processing_purpose": "Finalité du traitement",
       "purpose_list": {
-        "provision": "Mise à disposition de l’offre en ligne et de ses fonctionnalités",
+        "provision": "Mise à disposition de l'offre en ligne et de ses fonctionnalités",
         "contact": "Réponse aux demandes de contact et communication",
         "security": "Mesures de sécurité",
-        "reach": "Mesure d’audience/Marketing"
+        "reach": "Mesure d'audience/Marketing"
       },
       "terminology": "Terminologie utilisée",
       "personal_data": "Les données personnelles sont toutes les informations se rapportant à une personne.",
       "processing": "Le traitement est toute opération portant sur des données personnelles.",
-      "pseudonymization": "La pseudonymisation signifie un traitement rendant l’attribution possible uniquement avec des informations supplémentaires.",
-      "profiling": "Le profilage est l’évaluation automatisée d’aspects personnels."
+      "pseudonymization": "La pseudonymisation signifie un traitement rendant l'attribution possible uniquement avec des informations supplémentaires.",
+      "profiling": "Le profilage est l'évaluation automatisée d'aspects personnels."
     },
     "terms": {
-      "title": "Conditions générales d’utilisation",
-      "scope": "1. Champ d’application",
-      "scope_text": "Les présentes CGU s’appliquent à toutes les offres en ligne et prestations d’accompagnement de JCare GmbH. En utilisant notre site web ou en sollicitant nos services, vous acceptez ces conditions.",
+      "title": "Conditions générales d'utilisation",
+      "scope": "1. Champ d'application",
+      "scope_text": "Les présentes CGU s'appliquent à toutes les offres en ligne et prestations d'accompagnement de JCare GmbH. En utilisant notre site web ou en sollicitant nos services, vous acceptez ces conditions.",
       "services": "2. Nos prestations",
-      "services_text": "JCare GmbH propose un accompagnement professionnel et des conseils pour les proches aidants. Un contrat contraignant n’est conclu qu’après la signature de notre contrat de prestations.",
+      "services_text": "JCare GmbH propose un accompagnement professionnel et des conseils pour les proches aidants. Un contrat contraignant n'est conclu qu'après la signature de notre contrat de prestations.",
       "contract": "3. Conclusion du contrat",
-      "contract_text": "La simple navigation sur ce site ne crée pas de relation contractuelle. Un contrat n’est effectif qu’après la signature du contrat de prestations.",
+      "contract_text": "La simple navigation sur ce site ne crée pas de relation contractuelle. Un contrat n'est effectif qu'après la signature du contrat de prestations.",
       "rates": "4. Prix et modifications",
       "rates_text": "Tous les prix et frais affichés sur notre site sont donnés à titre indicatif. Les prix effectivement applicables sont ceux mentionnés dans le contrat de prestations signé. Nous nous réservons le droit de modifier à tout moment les prix publiés avant la conclusion du contrat.",
       "liability": "5. Responsabilité",
-      "liability_text": "Nous ne sommes responsables qu’en cas d’intention ou de négligence grave. La responsabilité pour simple négligence est limitée à la valeur de la prestation concernée. Toutes les informations sur le site sont fournies à titre informatif et sans engagement.",
+      "liability_text": "Nous ne sommes responsables qu'en cas d'intention ou de négligence grave. La responsabilité pour simple négligence est limitée à la valeur de la prestation concernée. Toutes les informations sur le site sont fournies à titre informatif et sans engagement.",
       "errors": "6. Erreurs et mises à jour",
-      "errors_text": "Nous nous efforçons d’assurer l’exactitude des contenus, mais n’assumons aucune responsabilité en cas d’erreurs typographiques ou d’informations obsolètes. Les contenus peuvent être modifiés ou corrigés à tout moment sans préavis.",
+      "errors_text": "Nous nous efforçons d'assurer l'exactitude des contenus, mais n'assumons aucune responsabilité en cas d'erreurs typographiques ou d'informations obsolètes. Les contenus peuvent être modifiés ou corrigés à tout moment sans préavis.",
       "privacy": "7. Protection des données",
       "privacy_text": "Les données personnelles que vous nous transmettez sont traitées conformément à notre politique de confidentialité.",
       "law": "8. Droit applicable",
-      "law_text": "Le droit suisse s’applique. Le for juridique est Zurich, Suisse."
+      "law_text": "Le droit suisse s'applique. Le for juridique est Zurich, Suisse."
     }
   }
 }
