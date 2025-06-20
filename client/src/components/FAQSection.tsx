@@ -10,6 +10,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { BackgroundBubbles } from "@/components/ui/background-bubbles";
+import { Helmet } from "react-helmet";
 
 type Category = "general" | "caregivers" | "needs";
 
@@ -57,8 +58,32 @@ export function FAQSection() {
     },
   };
 
+  // Gather all FAQs for structured data
+  const allFaqs = ([] as { question: string; answer: string }[]).concat(
+    ...Object.values(faqData).map((cat) => cat.faqs)
+  );
+
+  // Build JSON-LD for FAQPage
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": allFaqs.map((faq) => ({
+      "@type": "Question",
+      "name": faq.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.answer,
+      },
+    })),
+  };
+
   return (
     <section id="faq" className="bg-white py-16 md:py-24 relative overflow-hidden">
+      <Helmet>
+        <title>{t("faq.title")} | Spitex JCare</title>
+        <meta name="description" content={t("faq.subtitle") + ' - Häufig gestellte Fragen zu Spitex JCare, Pflege, Betreuung und Unterstützung für Angehörige.'} />
+        <script type="application/ld+json">{JSON.stringify(faqJsonLd)}</script>
+      </Helmet>
       <BackgroundBubbles density="medium" opacity="low" className="z-0" />
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <h2 className="text-3xl font-bold text-center mb-2 bg-gradient-to-r from-[#FF9155] to-[#E23B3B] bg-clip-text text-transparent">

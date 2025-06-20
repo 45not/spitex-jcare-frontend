@@ -42,3 +42,8 @@
 .grecaptcha-badge {
   display: none !important;
 }
+
+/* Prevent caret from appearing on non-editable elements */
+body *:not(input):not(textarea):not([contenteditable="true"]) {
+  caret-color: transparent !important;
+}

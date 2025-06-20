@@ -12,7 +12,7 @@ export default function PrivacyPolicy() {
       <Helmet>
         <title>Datenschutz | Spitex JCare</title>
         <meta name="description" content="Datenschutzerklärung von Spitex JCare. Erfahren Sie, wie wir Ihre Daten schützen und verwenden." />
-        <link rel="canonical" href="https://j-care.ch/privacy" />
+        <link rel="canonical" href="https://j-care.ch/privacy-policy" />
       </Helmet>
       <LegalPageHeader />
       <main className="min-h-screen bg-white pt-24 pb-24">
