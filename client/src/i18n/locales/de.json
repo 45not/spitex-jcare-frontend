@@ -7,8 +7,8 @@
     "home": "Startseite"
   },
   "hero": {
-    "title": "Unterstützung für pflegende Angehörige",
-    "subtitle": "Wir bieten Ihnen hilfreiche Ressourcen, um Ihre Pflegereise einfacher zu gestalten.",
+    "title": "Professionelle Spitex Pflege zu Hause\nmit Unterstützung für pflegende Angehörige",
+    "subtitle": "Individuell abgestimmt auf Ihre Situation und die Ihrer Angehörigen.",
     "button": "Kontaktieren Sie uns"
   },
   "about": {
@@ -49,7 +49,7 @@
       }
     }
   },
-"faq": {
+  "faq": {
     "title": "Häufig gestellte Fragen",
     "subtitle": "Antworten auf Ihre wichtigsten Fragen",
     "general": {
